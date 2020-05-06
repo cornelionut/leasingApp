@@ -1,0 +1,30 @@
+Structura
+
+src
+-------- actions
+    |-- api.js (handler all http request)
+    |-- Offer.js (Redux actions & actions creators)
+    |-- store.js (configrue redux store)
+
+
+---    components
+    |--Offer (form operations) - child component -> aceasta componenta este afisata in OfferList component
+    |--OfferList (list of records) -> parent component
+    |--useForm.js(handles common form operations)
+
+
+---   reducers
+    |--offerAsset.js
+    |--index.js
+
+---| App.js - componenta default. Este componenta principala a proiectului React
+---| index.js -> 
+---| index.css - fisierul global cu stiluri
+
+Pentru a folosi redux avem nevoie de mai multe pachete
+    redux, react-redux, redux-thunk
+
+action -- describe what type of actions do we have like create, update, delete etc.Vom avea obiectul care contine operatia si obiect cu date (contine datele care vor fi sterse, create, inserate) 
+reducers -- apoi acest action object va fi trimis reducerului. Reducerul va modifica datele din interiorul storului(state).
+store - store all the records from state
+ 
