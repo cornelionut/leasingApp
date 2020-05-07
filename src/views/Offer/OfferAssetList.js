@@ -1,15 +1,15 @@
 import React, { useEffect } from "react";
 import { connect } from "react-redux";
-import * as actions from "../actions/offerAsset";
+import * as actions from "../../actions/offerAsset";
 import {
   Grid,
   Paper,
   TableHead,
   TableRow,
   TableCell,
-  TableContainer,
   Table,
   TableBody,
+  TableContainer,
   withStyles,
 } from "@material-ui/core"; //material-ui are pachete pentru componente ca input, checkbox,table etc.
 //import OfferAsset from "./OfferAsset";
@@ -31,10 +31,12 @@ const styles = (theme) => ({
 const OfferAssetList = ({ classes, ...props }) => {
   //const { fetchAllOfferAssets } = useState(props);
 
-  // //callback function called when the value of X is changed
+  //callback function called when the value of X is changed
+  //alternative for componentDidMount
+
   useEffect(() => {
     props.fetchAllOfferAssets();
-  }, []); //alternative for componentDidMount
+  }, []);
 
   // if pentru verificare props. Daca e gol afisam un mesaj
   return (
