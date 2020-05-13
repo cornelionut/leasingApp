@@ -13,7 +13,7 @@ import {
   withStyles,
 } from "@material-ui/core"; //material-ui are pachete pentru componente ca input, checkbox,table etc.
 //import OfferAsset from "./OfferAsset";
-import ClientForm from "./ClientForm";
+//import ClientForm from "./ClientForm";
 
 const styles = (theme) => ({
   root: {
@@ -29,24 +29,24 @@ const styles = (theme) => ({
 //const {classes, props} = props;
 
 const OfferAssetList = ({ classes, ...props }) => {
-  //const { fetchAllOfferAssets } = useState(props);
+  const { fetchAllOfferAssets } = props;
 
   //callback function called when the value of X is changed
   //alternative for componentDidMount
 
   useEffect(() => {
-    props.fetchAllOfferAssets();
-  }, []);
+    fetchAllOfferAssets();
+  });
 
   // if pentru verificare props. Daca e gol afisam un mesaj
   return (
     <Paper className={classes.paper} elevation={3}>
       <Grid container>
-        <Grid item xs={6}>
+        {/* <Grid item xs={6}>
           <ClientForm />
-        </Grid>
+        </Grid> */}
 
-        <Grid item xs={6}>
+        <Grid item xs={12}>
           <TableContainer>
             <Table>
               <TableHead className={classes.root}>
@@ -59,7 +59,8 @@ const OfferAssetList = ({ classes, ...props }) => {
                                     <TableCell>Versiune</TableCell> */}
 
                   <TableCell>TipAsset(PassengerCar or Commercial)</TableCell>
-                  <TableCell>AnSiLunaFabricatie</TableCell>
+                  <TableCell>An/Luna Fabricatie</TableCell>
+                  <TableCell>Pana la: An/Luna Fabricatie</TableCell>
                 </TableRow>
               </TableHead>
               <TableBody>

@@ -9,10 +9,12 @@ import Notifications from "@material-ui/icons/Notifications";
 //import Unarchive from "@material-ui/icons/Unarchive";
 import Language from "@material-ui/icons/Language";
 import AssignmentIcon from "@material-ui/icons/Assignment";
+import NotesIcon from "@material-ui/icons/Notes";
 
 // core components/views for Admin layout
 import DashboardPage from "views/Dashboard/Dashboard.js";
-import Offer from "views/Offer/Offer.js";
+//import Offer from "components/Asset/edit/Offer.js";
+import OfferList from "components/Asset/list/OfferList.js";
 import OfferAssetList from "views/Offer/OfferAssetList.js";
 import UserProfile from "views/UserProfile/UserProfile.js";
 import TableList from "views/TableList/TableList.js";
@@ -28,7 +30,7 @@ import RTLPage from "views/RTLPage/RTLPage.js";
 const dashboardRoutes = [
   {
     path: "/dashboard",
-    name: "Dashboard",
+    name: "Panou central",
     rtlName: "لوحة القيادة",
     icon: Dashboard,
     component: DashboardPage,
@@ -37,25 +39,15 @@ const dashboardRoutes = [
   {
     path: "/offer",
     name: "Oferte",
-    rtlName: "",
     icon: AssignmentIcon,
-    component: Offer,
+    component: OfferList,
     layout: "/admin",
   },
   {
-    path: "/maps",
-    name: "Offer With Reducer",
-    rtlName: "خرائط",
-    icon: AssignmentIcon,
+    path: "/GetOffer",
+    name: "Detalii active (cars)",
+    icon: NotesIcon,
     component: OfferAssetList,
-    layout: "/admin",
-  },
-  {
-    path: "/user",
-    name: "User Profile",
-    rtlName: "ملف تعريفي للمستخدم",
-    icon: Person,
-    component: UserProfile,
     layout: "/admin",
   },
   {
@@ -64,6 +56,14 @@ const dashboardRoutes = [
     rtlName: "قائمة الجدول",
     icon: "content_paste",
     component: TableList,
+    layout: "/admin",
+  },
+  {
+    path: "/user",
+    name: "User Profile",
+    rtlName: "ملف تعريفي للمستخدم",
+    icon: Person,
+    component: UserProfile,
     layout: "/admin",
   },
   {

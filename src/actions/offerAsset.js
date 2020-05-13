@@ -15,7 +15,8 @@ export const ACTION_TYPES = {
   CREATE: "CREATE",
   UPDATE: "UPDATE",
   DELETE: "DELETE",
-  FETCH_ALL: "FETCH_ALL",
+  FETCH_ALL_OFFER_ASSET: "FETCH_ALL_OFFER_ASSET",
+  FETCH_ALL_OFFERS: "FETCH_ALL_OFFERS",
 };
 
 //  Structura unei functii
@@ -37,8 +38,22 @@ export const fetchAll = () => (dispatch) => {
     .then((response) => {
       console.log(response);
       dispatch({
-        type: ACTION_TYPES.FETCH_ALL,
+        type: ACTION_TYPES.FETCH_ALL_OFFER_ASSET,
         payload: response.data, //retrieve DATA from asp.net core api
+      });
+    })
+    .catch((err) => console.log(err));
+};
+
+export const fetchOffers = () => (dispatch) => {
+  api
+    .offers()
+    .fetchAll()
+    .then((response) => {
+      console.log(response);
+      dispatch({
+        type: ACTION_TYPES.FETCH_ALL_OFFERS,
+        payload: response.data,
       });
     })
     .catch((err) => console.log(err));

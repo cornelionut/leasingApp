@@ -51,7 +51,7 @@ export default function Admin({ ...rest }) {
   // states and functions
   const [image, setImage] = useState(bgImage);
   const [color, setColor] = useState("blue");
-  const [fixedClasses, setFixedClasses] = useState("dropdown show");
+  const [fixedClasses, setFixedClasses] = useState("dropdown");
   const [mobileOpen, setMobileOpen] = useState(false);
 
   const handleImageClick = (image) => {
@@ -109,7 +109,7 @@ export default function Admin({ ...rest }) {
       <div className={classes.wrapper}>
         <Sidebar
           routes={routes}
-          logoText={"LEASING"}
+          logoText={"LEASING APP"}
           logo={logo}
           image={image}
           handleDrawerToggle={handleDrawerToggle}
