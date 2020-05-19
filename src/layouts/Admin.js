@@ -35,6 +35,11 @@ const switchRoutes = (
           />
         );
       }
+      // if (prop.layout === "/edit") {
+      //   return (
+      //     <Route path={"/admin" + "/editOffer"} component={Offer} key={key} />
+      //   );
+      // }
       return null;
     })}
     <Redirect from="/admin" to="/admin/dashboard" />

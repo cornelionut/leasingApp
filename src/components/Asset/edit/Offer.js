@@ -1,19 +1,19 @@
 import React from "react";
 import "../../../Offer.css";
-import AssetCard from "../edit/AssetCard.js";
-import { Grid } from "@material-ui/core";
+import GeneralData from "./GeneralData.js";
+import PassengerCar from "./PassengerCar.js";
+import { Grid, Button } from "@material-ui/core";
 import { makeStyles } from "@material-ui/core/styles";
 
 const useStyles = makeStyles({
   gridContainer: {
-    paddingLeft: "40px",
-    paddingRight: "40px",
+    paddingLeft: "20px",
+    paddingRight: "20px",
   },
 });
 
-export default function Offer() {
+const Offer = (props) => {
   const classes = useStyles();
-
   return (
     <Grid
       container
@@ -24,20 +24,24 @@ export default function Offer() {
       alignItems="stretch"
     >
       <Grid item xs={12} sm={12} md={12}>
-        <AssetCard />
+        <GeneralData props={props} />
       </Grid>
+
       <Grid item xs={12} sm={12} md={12}>
-        <AssetCard />
+        <PassengerCar props={props} />
       </Grid>
+
       <Grid item xs={12} sm={12} md={12}>
-        <AssetCard />
-      </Grid>
-      <Grid item xs={12} sm={12} md={12}>
-        <AssetCard />
-      </Grid>
-      <Grid item xs={12} sm={12} md={12}>
-        <AssetCard />
+        <Button
+          variant="contained"
+          color="primary"
+          // onClick={() => props.history.goBack()}
+        >
+          Back
+        </Button>
       </Grid>
     </Grid>
   );
-}
+};
+
+export default Offer;

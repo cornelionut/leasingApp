@@ -7,13 +7,14 @@ import BubbleChart from "@material-ui/icons/BubbleChart";
 import Notifications from "@material-ui/icons/Notifications";
 
 //import Unarchive from "@material-ui/icons/Unarchive";
-import Language from "@material-ui/icons/Language";
+//import Language from "@material-ui/icons/Language";
 import AssignmentIcon from "@material-ui/icons/Assignment";
 import NotesIcon from "@material-ui/icons/Notes";
+import SettingsIcon from "@material-ui/icons/Settings";
 
 // core components/views for Admin layout
 import DashboardPage from "views/Dashboard/Dashboard.js";
-//import Offer from "components/Asset/edit/Offer.js";
+import Offer from "components/Asset/edit/Offer.js";
 import OfferList from "components/Asset/list/OfferList.js";
 import OfferAssetList from "views/Offer/OfferAssetList.js";
 import UserProfile from "views/UserProfile/UserProfile.js";
@@ -25,13 +26,13 @@ import NotificationsPage from "views/Notifications/Notifications.js";
 //import UpgradeToPro from "views/UpgradeToPro/UpgradeToPro.js";
 
 // core components/views for RTL layout
-import RTLPage from "views/RTLPage/RTLPage.js";
+//import RTLPage from "views/RTLPage/RTLPage.js";
+//import UpgradeToPro from "views/UpgradeToPro/UpgradeToPro";
 
 const dashboardRoutes = [
   {
     path: "/dashboard",
     name: "Panou central",
-    rtlName: "لوحة القيادة",
     icon: Dashboard,
     component: DashboardPage,
     layout: "/admin",
@@ -53,7 +54,6 @@ const dashboardRoutes = [
   {
     path: "/table",
     name: "Table List",
-    rtlName: "قائمة الجدول",
     icon: "content_paste",
     component: TableList,
     layout: "/admin",
@@ -61,7 +61,6 @@ const dashboardRoutes = [
   {
     path: "/user",
     name: "User Profile",
-    rtlName: "ملف تعريفي للمستخدم",
     icon: Person,
     component: UserProfile,
     layout: "/admin",
@@ -69,7 +68,6 @@ const dashboardRoutes = [
   {
     path: "/typography",
     name: "Typography",
-    rtlName: "طباعة",
     icon: LibraryBooks,
     component: Typography,
     layout: "/admin",
@@ -77,7 +75,6 @@ const dashboardRoutes = [
   {
     path: "/icons",
     name: "Icons",
-    rtlName: "الرموز",
     icon: BubbleChart,
     component: Icons,
     layout: "/admin",
@@ -85,27 +82,24 @@ const dashboardRoutes = [
   {
     path: "/notifications",
     name: "Notifications",
-    rtlName: "إخطارات",
     icon: Notifications,
     component: NotificationsPage,
     layout: "/admin",
   },
   {
     path: "/rtl-page",
-    name: "RTL Support",
-    rtlName: "پشتیبانی از راست به چپ",
-    icon: Language,
-    component: RTLPage,
-    layout: "/rtl",
+    name: "Setari",
+    icon: SettingsIcon,
+    //component: UpgradeToPro,
+    layout: "/settings",
   },
-  // {
-  //   path: "/upgrade-to-pro",
-  //   name: "Upgrade To PRO",
-  //   rtlName: "التطور للاحترافية",
-  //   icon: Unarchive,
-  //   component: UpgradeToPro,
-  //   layout: "/admin",
-  // },
+  {
+    path: "/editOffer",
+    name: "Oferte",
+    icon: AssignmentIcon,
+    component: Offer,
+    layout: "/admin",
+  },
 ];
 
 export default dashboardRoutes;

@@ -122,13 +122,13 @@ export default function AdminNavbarLinks() {
                       onClick={handleCloseNotification}
                       className={classes.dropdownItem}
                     >
-                      Mike John responded to your email
+                      Oferta a fost adaugata!
                     </MenuItem>
                     <MenuItem
                       onClick={handleCloseNotification}
                       className={classes.dropdownItem}
                     >
-                      You have 5 new tasks
+                      Aveti o oferta in nesalvata!
                     </MenuItem>
                     <MenuItem
                       onClick={handleCloseNotification}
@@ -140,13 +140,13 @@ export default function AdminNavbarLinks() {
                       onClick={handleCloseNotification}
                       className={classes.dropdownItem}
                     >
-                      Another Notification
+                      Alta notificare!
                     </MenuItem>
                     <MenuItem
                       onClick={handleCloseNotification}
                       className={classes.dropdownItem}
                     >
-                      Another One
+                      Notificare noua!
                     </MenuItem>
                   </MenuList>
                 </ClickAwayListener>
