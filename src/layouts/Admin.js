@@ -1,20 +1,21 @@
 import React, { useState, useEffect } from "react";
 import { Switch, Route, Redirect } from "react-router-dom";
+
 // creates a beautiful scrollbar
 import PerfectScrollbar from "perfect-scrollbar";
 import "perfect-scrollbar/css/perfect-scrollbar.css";
+
 // @material-ui/core components
 import { makeStyles } from "@material-ui/core/styles";
+
 // core components
 import Navbar from "components/Navbars/Navbar.js";
 import Footer from "components/Footer/Footer.js";
 import Sidebar from "components/Sidebar/Sidebar.js";
 import FixedPlugin from "components/FixedPlugin/FixedPlugin.js";
-
 import routes from "routes.js";
-
+import sidebarRoutes from "sidebarRoutes.js";
 import styles from "assets/jss/material-dashboard-react/layouts/adminStyle.js";
-
 import bgImage from "assets/img/sidebar-2.jpg";
 import logo from "assets/img/reactlogo.png";
 import { store } from "../actions/store";
@@ -35,11 +36,7 @@ const switchRoutes = (
           />
         );
       }
-      // if (prop.layout === "/edit") {
-      //   return (
-      //     <Route path={"/admin" + "/editOffer"} component={Offer} key={key} />
-      //   );
-      // }
+
       return null;
     })}
     <Redirect from="/admin" to="/admin/dashboard" />
@@ -113,7 +110,7 @@ export default function Admin({ ...rest }) {
       <Container maxWidth="lg"></Container>
       <div className={classes.wrapper}>
         <Sidebar
-          routes={routes}
+          routes={sidebarRoutes}
           logoText={"LEASING APP"}
           logo={logo}
           image={image}

@@ -1,16 +1,16 @@
-import React, { useState, useEffect } from "react";
+import React, { useEffect, useState } from "react";
 import { connect } from "react-redux";
 import * as actions from "../../../actions/offerAsset";
 import EditIcon from "@material-ui/icons/Edit";
 import { green } from "@material-ui/core/colors";
 import { Link } from "react-router-dom";
 import Header from "../list/Header";
-import Offer from "../edit/Offer";
+//import Offer from "../edit/Offer";
 import {
   Grid,
   IconButton,
   Paper,
-  ButtonBase,
+  Typography,
   withStyles,
 } from "@material-ui/core";
 import Moment from "react-moment";
@@ -20,173 +20,173 @@ const styles = (theme) => ({
   root: {
     flexGrow: 20,
     overflow: "hidden",
-    padding: theme.spacing(0, 3),
-  },
-  image: {
-    width: "230px",
-    height: "230px",
+    padding: theme.spacing(0, 1),
   },
   img: {
     margin: "auto",
     display: "block",
-    maxWidth: "100%",
-    maxHeight: "100%",
+    maxWidth: "47%",
+    maxHeight: "47%",
   },
   paper: {
     maxWidth: 3000,
-    margin: `${theme.spacing(0.2)}px auto`,
-    padding: theme.spacing(3),
-  },
-  paperButtonsBar: {
-    maxWidth: 3000,
-    margin: `${theme.spacing(0)}px auto`,
-    padding: theme.spacing(0),
+    margin: `${theme.spacing(0.2)}px auto`, //latime intre "carduri"
+    padding: theme.spacing(4),
   },
   editButton: {
-    // position: "absolute",
-    //right: "0px",
-    // marginLeft: "auto",
-    left: "900px",
-    // float: "right",
-    // align: "right",
-    // padding: "10px",
+    position: "absolute",
+    right: "70px",
+    padding: "0px",
     color: green[500],
-    //fontSize: "100px",
   },
 });
 
 const administrator = "Administrator ";
 
 const OfferList = ({ classes, ...props }) => {
-  const [showEditOffer, setShowEditOffer] = useState(false);
-  const [offerToEdit, setOfferToEdit] = useState("");
+  const [localState, setLocalState] = useState({
+    imageUrl: "",
+    isLoading: true,
+  });
 
   useEffect(() => {
     props.fetchOffers();
-    // eslint-disable-next-line react-hooks/exhaustive-deps
-  }, [showEditOffer]);
-
-  const displayEditOffer = (id) => {
-    setShowEditOffer(!showEditOffer);
-    const index = props.offerList.findIndex((offer) => {
-      return (offer.leasingDocumentId = id);
+    setLocalState({
+      ...localState,
+      isLoading: false,
     });
-    const offerToEdit = Object.assign({}, props.offerList[index]);
-    setOfferToEdit(offerToEdit);
-  };
+
+    // eslint-disable-next-line react-hooks/exhaustive-deps
+  }, []);
 
   return (
     <div className={classes.root}>
       <Header></Header>
 
-      {!showEditOffer &&
-        props.offerList.map((offer, index) => (
-          <Paper className={classes.paper} key={offer.leasingDocumentId}>
-            {console.log(offer.leasingDocumentId)}
-            <Grid
-              container
-              spacing={2}
-              // className={classes.gridContainer}
-              //  direction="column"
-              //  justify="center"
-              alignItems="center"
-            >
-              <Grid item xs={4}>
-                <ButtonBase className={classes.image}>
-                  <img
-                    className={classes.img}
-                    alt="isn't available"
-                    src={
-                      process.env.PUBLIC_URL +
-                      "/images/cars/" +
-                      offer.document.documentDetail.item.assetHierarchy.imageUrl
-                    }
-                  />
-                </ButtonBase>
-              </Grid>
+      {!localState.isLoading && props.offerList.length > 0 ? (
+        props.offerList.map((offer) => {
+          const {
+            imageUrl,
+          } = offer.document.documentDetail.item.assetHierarchy;
+          const { documentNumber } = offer.document;
 
-              <Grid item xs={4}>
-                <div>
-                  <div>
-                    {"Numar oferta: "}
-                    <label>
-                      {offer.document.documentNumber
-                        ? offer.document.documentNumber
-                        : ""}
-                    </label>
-                  </div>
-                  <div>
-                    {"Data: "}
-                    <label>
-                      <Moment format="DD.MM.YYYY">
-                        {offer.document.documentDate}
-                      </Moment>
-                    </label>
-                  </div>
-                  <div>
-                    {"Canal vanzare: "}
-                    <label>Vanzari proprii</label>
-                  </div>
-                  <div>
-                    {"Stare: "}
-                    <label> Elaborare oferta</label>
-                  </div>
-                  <div>
-                    {"Utilizator: "}
-                    <label>{administrator.concat(administrator)}</label>
-                  </div>
-                </div>
-              </Grid>
+          return (
+            <Paper className={classes.paper} key={offer.leasingDocumentId}>
+              <Grid container direction="column">
+                <Grid
+                  xs={12}
+                  container
+                  // spacing={0}
+                  justify="center"
+                  alignItems="center"
+                >
+                  <Grid item xs={4} alignItems="center" justify="center">
+                    <Typography>
+                      <img
+                        className={classes.img}
+                        alt="isn't available"
+                        srcset={
+                          process.env.PUBLIC_URL + "/images/cars/" + imageUrl
+                        }
+                      />
+                    </Typography>
+                  </Grid>
 
-              <Grid item xs={4}>
-                <div>
-                  <div>
-                    {"Client: "}
-                    <label>
-                      {offer.partner.firstName + " " + offer.partner.lastName}
-                    </label>
-                  </div>
+                  <Grid item xs={4}>
+                    <div>
+                      <div>
+                        {"Numar oferta: "}
+                        <label>{documentNumber ? documentNumber : ""}</label>
+                      </div>
+                      <div>
+                        {"Data: "}
+                        <label>
+                          <Moment format="DD.MM.YYYY">
+                            {offer.document.documentDate}
+                          </Moment>
+                        </label>
+                      </div>
+                      <div>
+                        {"Canal vanzare: "}
+                        <label>Vanzari proprii</label>
+                      </div>
+                      <div>
+                        {"Stare: "}
+                        <label> Elaborare oferta</label>
+                      </div>
+                      <div>
+                        {"Utilizator: "}
+                        <label>{administrator.concat(administrator)}</label>
+                      </div>
+                    </div>
+                  </Grid>
 
-                  <div>
-                    {"Tip Contract: "}
-                    <label>{offer.product.productName}</label>
-                  </div>
+                  <Grid item xs={4}>
+                    <div>
+                      <div>
+                        {"Client: "}
+                        <label>
+                          {offer.partner.firstName +
+                            " " +
+                            offer.partner.lastName}
+                        </label>
+                      </div>
 
-                  <div>
-                    {"Valoare finantata: "}
-                    <label> {offer.amount}</label> {offer.currency.symbol}
-                    {/* {new Intl.NumberFormat("en-GB", {
+                      <div>
+                        {"Tip Contract: "}
+                        <label>{offer.product.productName}</label>
+                      </div>
+
+                      <div>
+                        {"Valoare finantata: "}
+                        <label> {offer.amount}</label> {offer.currency.symbol}
+                        {/* {new Intl.NumberFormat("en-GB", {
                       style: "currency",
                       currency: "GBP",
                     }).format(offer.amount)} */}
-                  </div>
+                      </div>
 
-                  <div>
-                    {"Comision: "}
-                    <label> {offer.commission}</label>
-                  </div>
-                </div>
+                      <div>
+                        {"Comision: "}
+                        <label> {offer.commission}</label>
+                      </div>
+                    </div>
+                  </Grid>
+                </Grid>
               </Grid>
-            </Grid>
-            <Grid item xs={12}>
-              <IconButton
-                component={Link}
-                pathname="/admin/editOffer"
-                className={classes.editButton}
-                onClick={() => displayEditOffer(offer.leasingDocumentId)}
-              >
-                <EditIcon></EditIcon>
-              </IconButton>
-            </Grid>
-          </Paper>
-        ))}
-      {showEditOffer && <Offer props={props} offerToEdit={offerToEdit} />}
+
+              <Grid container xs={12}>
+                <Grid item xs={9}></Grid>
+                <Grid item xs={3}>
+                  <Link
+                    to={{
+                      pathname: "/admin/editOffer/assets",
+                      search:
+                        "leasingDocumentId=" +
+                        offer.leasingDocumentId.toString(),
+                      state: {
+                        offerToEdit: offer,
+                      },
+                    }}
+                  >
+                    <IconButton className={classes.editButton}>
+                      <EditIcon size="medium" />
+                    </IconButton>
+                  </Link>
+                </Grid>
+              </Grid>
+            </Paper>
+          );
+        })
+      ) : (
+        <div className={"loader-offerList"}></div>
+      )}
     </div>
   );
 };
 
 const mapStateToProps = (state) => ({
-  offerList: state.offers.list, //offersList este din reducer
+  offerList: state.offers.list,
 });
 
 const mapActionToProps = {

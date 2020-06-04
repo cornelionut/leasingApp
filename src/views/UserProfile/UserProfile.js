@@ -166,7 +166,15 @@ export default function UserProfile() {
                 human foundation in truth And I love you like Kanye loves Kanye
                 I love Rick Owens’ bed design but the back is...
               </p>
-              <Button color="primary" round>
+              <Button
+                color="primary"
+                round
+                onClick={() =>
+                  window.open(
+                    "https://www.linkedin.com/in/cornel-ionut-baciu-dev/"
+                  )
+                }
+              >
                 Follow
               </Button>
             </CardBody>

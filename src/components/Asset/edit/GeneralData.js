@@ -44,7 +44,7 @@ const styles = (theme) => ({
 const GeneralData = (props) => {
   const [expanded, setExpanded] = useState(false);
   const { classes } = props;
-  const { offerToEdit } = props.props;
+  const { offerToEdit } = props.props.location.state;
 
   const [state, setState] = useState({
     responsible: "",
@@ -85,7 +85,7 @@ const GeneralData = (props) => {
           <Grid item xs={4}>
             <Typography>
               Partener:
-              {offerToEdit
+              {offerToEdit && offerToEdit !== undefined
                 ? offerToEdit.partner.firstName +
                   " " +
                   offerToEdit.partner.lastName

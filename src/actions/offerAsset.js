@@ -17,17 +17,14 @@ export const ACTION_TYPES = {
   DELETE: "DELETE",
   FETCH_ALL_OFFER_ASSET: "FETCH_ALL_OFFER_ASSET",
   FETCH_ALL_OFFERS: "FETCH_ALL_OFFERS",
+  FETCH_ALL_ASSET_TYPES: "FETCH_ALL_ASSET_TYPES",
+  FETCH_ALL_CAR_MAKE: "FETCH_ALL_CAR_MAKE",
+  FETCH_ALL_LEASING_DOCUMENT: "FETCH_ALL_LEASING_DOCUMENT",
+  FETCH_ALL_CAR_MODELS: "FETCH_ALL_CAR_MODELS",
+  FETCH_ALL_CAR_VERSIONS: "FETCH_ALL_CAR_VERSIONS",
 };
 
 //  Structura unei functii
-
-// export const fetchAll = () => {
-//     return dispatch => {
-//         //..
-//     }
-// }
-
-//  SAU
 
 export const fetchAll = () => (dispatch) => {
   //get api req
@@ -36,7 +33,6 @@ export const fetchAll = () => (dispatch) => {
     .offerAsset()
     .fetchAll()
     .then((response) => {
-      console.log(response);
       dispatch({
         type: ACTION_TYPES.FETCH_ALL_OFFER_ASSET,
         payload: response.data, //retrieve DATA from asp.net core api
@@ -50,9 +46,73 @@ export const fetchOffers = () => (dispatch) => {
     .offers()
     .fetchAll()
     .then((response) => {
-      console.log(response);
       dispatch({
         type: ACTION_TYPES.FETCH_ALL_OFFERS,
+        payload: response.data,
+      });
+    })
+    .catch((err) => console.log(err));
+};
+
+export const fetchAssetTypes = () => (dispatch) => {
+  api
+    .assetTypes()
+    .fetchAll()
+    .then((response) => {
+      dispatch({
+        type: ACTION_TYPES.FETCH_ALL_ASSET_TYPES,
+        payload: response.data,
+      });
+    })
+    .catch((err) => console.log(err));
+};
+
+export const fetchLeasingDocument = (id) => (dispatch) => {
+  api
+    .leasingDocument()
+    .fetchById(id)
+    .then((response) => {
+      dispatch({
+        type: ACTION_TYPES.FETCH_ALL_LEASING_DOCUMENT,
+        payload: response.data,
+      });
+    })
+    .catch((err) => console.log(err));
+};
+
+export const fetchCarMakes = () => (dispatch) => {
+  api
+    .carMakes()
+    .fetchAll()
+    .then((response) => {
+      dispatch({
+        type: ACTION_TYPES.FETCH_ALL_CAR_MAKE,
+        payload: response.data,
+      });
+    })
+    .catch((err) => console.log(err));
+};
+
+export const fetchCarModels = () => (dispatch) => {
+  api
+    .carModels()
+    .fetchById()
+    .then((response) => {
+      dispatch({
+        type: ACTION_TYPES.FETCH_ALL_CAR_MODELS,
+        payload: response.data,
+      });
+    })
+    .catch((err) => console.log(err));
+};
+
+export const fetchCarVersions = () => (dispatch) => {
+  api
+    .carVersions()
+    .fetch()
+    .then((response) => {
+      dispatch({
+        type: ACTION_TYPES.FETCH_ALL_CAR_VERSIONS,
         payload: response.data,
       });
     })

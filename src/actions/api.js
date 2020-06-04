@@ -22,4 +22,34 @@ export default {
       delete: (id) => axios.delete(url + id),
     };
   },
+
+  assetTypes(url = baseUrl + "Asset/GetAssetTypes") {
+    return {
+      fetchAll: () => axios.get(url),
+    };
+  },
+
+  carMakes(url = baseUrl + "Asset/GetCarMakes") {
+    return {
+      fetchAll: () => axios.get(url),
+    };
+  },
+
+  leasingDocument(url = baseUrl + "Asset/GetLeasingDocument/") {
+    return {
+      fetchById: (id) => axios.get(url + id),
+    };
+  },
+
+  carModels(url = baseUrl + "Asset/GetCarModels/") {
+    return {
+      fetchById: () => axios.get(url),
+    };
+  },
+
+  carVersions(url = baseUrl + "Asset/GetCarVersions") {
+    return {
+      fetch: () => axios.get(url),
+    };
+  },
 };

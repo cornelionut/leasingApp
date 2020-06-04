@@ -13,10 +13,8 @@ import DashboardPage from "views/Dashboard/Dashboard.js";
 import FlexDashboard from "views/FlexDashboard/FlexDashboard.js";
 import Icons from "views/Icons/Icons.js";
 import NotificationsPage from "views/Notifications/Notifications.js";
-import Offer from "components/Asset/edit/Offer.js";
 import OfferList from "components/Asset/list/OfferList.js";
 import OfferAssetList from "views/Offer/OfferAssetList.js";
-import Products from "components/Asset/edit/Products.js";
 import UserProfile from "views/UserProfile/UserProfile.js";
 import TableList from "views/TableList/TableList.js";
 
@@ -83,20 +81,6 @@ const dashboardRoutes = [
     icon: SettingsIcon,
     //component: UpgradeToPro,
     layout: "/settings",
-  },
-  {
-    path: "/editOffer/assets",
-    name: "Oferte",
-    icon: AssignmentIcon,
-    component: Offer,
-    layout: "/admin",
-  },
-  {
-    path: "/editOffer/products",
-    name: "Produse",
-    icon: AssignmentIcon,
-    component: Products,
-    layout: "/admin",
   },
 ];
 
