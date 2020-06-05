@@ -1,14 +1,18 @@
-import React from "react";
+import React, { useState } from "react";
 import { withRouter } from "react-router-dom";
 import "../../Offer.css";
 import {
   Button,
+  Grid,
   Typography,
   Stepper,
   Step,
   StepButton,
 } from "@material-ui/core";
 import { makeStyles } from "@material-ui/core/styles";
+import GeneralData from "views/Assets/edit/GeneralData.js";
+import PassengerCar from "views/Assets/edit/PassengerCar.js";
+import Products from "views/Products/Products.js";
 
 const useStyles = makeStyles((theme) => ({
   root: {
@@ -27,18 +31,39 @@ const useStyles = makeStyles((theme) => ({
     marginTop: theme.spacing(1),
     marginBottom: theme.spacing(1),
   },
+  gridContainer: {
+    marginTop: "50px",
+    paddingLeft: "20px",
+    paddingRight: "20px",
+  },
 }));
 
 function getSteps() {
   return ["Bunuri", "Produse", "Financiar", "Client", "Scoring", "Decizie"];
 }
 
-function getStepContent(step) {
+function getStepContent(step, props, classes) {
   switch (step) {
     case 0:
-      return "Step 1: Configureaza asset...";
+      return (
+        <Grid container spacing={4} className={classes.gridContainer}>
+          <Grid item xs={12} sm={12} md={12}>
+            <GeneralData props={props} />
+          </Grid>
+
+          <Grid item xs={12} sm={12} md={12}>
+            <PassengerCar props={props} />
+          </Grid>
+        </Grid>
+      );
     case 1:
-      return "Step 2: Alege produsul financiar";
+      return (
+        <Grid container spacing={4} className={classes.gridContainer}>
+          <Grid item xs={12} sm={12} md={12}>
+            <Products props={props} />
+          </Grid>
+        </Grid>
+      );
     case 2:
       return "Step 3: Introduceti datele financiare!";
     case 3:
@@ -54,33 +79,33 @@ function getStepContent(step) {
 
 const StepperComponent = (props) => {
   const classes = useStyles();
-  const [activeStep, setActiveStep] = React.useState(0);
-  const [completed, setCompleted] = React.useState(new Set());
-  const [skipped, setSkipped] = React.useState(new Set());
+  const [activeStep, setActiveStep] = useState(0);
+  const [completed, setCompleted] = useState(new Set());
+  const [skipped, setSkipped] = useState(new Set());
   const steps = getSteps();
 
   const totalSteps = () => {
     return getSteps().length;
   };
 
-  const isStepOptional = (step) => {
-    return step === 1;
-  };
+  // const isStepOptional = (step) => {
+  //   return step === 1;
+  // };
 
-  const handleSkip = () => {
-    if (!isStepOptional(activeStep)) {
-      // You probably want to guard against something like this
-      // it should never occur unless someone's actively trying to break something.
-      throw new Error("You can't skip a step that isn't optional.");
-    }
+  // const handleSkip = () => {
+  //   if (!isStepOptional(activeStep)) {
+  //     // You probably want to guard against something like this
+  //     // it should never occur unless someone's actively trying to break something.
+  //     throw new Error("You can't skip a step that isn't optional.");
+  //   }
 
-    setActiveStep((prevActiveStep) => prevActiveStep + 1);
-    setSkipped((prevSkipped) => {
-      const newSkipped = new Set(prevSkipped.values());
-      newSkipped.add(activeStep);
-      return newSkipped;
-    });
-  };
+  //   setActiveStep((prevActiveStep) => prevActiveStep + 1);
+  //   setSkipped((prevSkipped) => {
+  //     const newSkipped = new Set(prevSkipped.values());
+  //     newSkipped.add(activeStep);
+  //     return newSkipped;
+  //   });
+  // };
 
   const skippedSteps = () => {
     return skipped.size;
@@ -115,9 +140,13 @@ const StepperComponent = (props) => {
 
   const handleStep = (step) => () => {
     setActiveStep(step);
-    if (step === 1) {
-      props.history.push("/admin/editOffer/products");
-    }
+    // if (step === 1) {
+    //   props.history.push("/admin/editOffer/products");
+    // }
+
+    // else if (step === 0) {
+    //   props.history.push("/admin/editOffer/assets");
+    // }
   };
 
   const handleComplete = () => {
@@ -148,17 +177,18 @@ const StepperComponent = (props) => {
   function isStepComplete(step) {
     return completed.has(step);
   }
+
   return (
     <div className={classes.root}>
       <Stepper alternativeLabel nonLinear activeStep={activeStep}>
         {steps.map((label, index) => {
           const stepProps = {};
           const buttonProps = {};
-          if (isStepOptional(index)) {
-            buttonProps.optional = (
-              <Typography variant="caption">Optional</Typography>
-            );
-          }
+          // if (isStepOptional(index)) {
+          //   buttonProps.optional = (
+          //     <Typography variant="caption">Optional</Typography>
+          //   );
+          // }
           if (isStepSkipped(index)) {
             stepProps.completed = false;
           }
@@ -186,7 +216,7 @@ const StepperComponent = (props) => {
         ) : (
           <div>
             <Typography className={classes.instructions}>
-              {getStepContent(activeStep)}
+              {getStepContent(activeStep, props, classes)}
             </Typography>
             <div>
               <Button
@@ -204,7 +234,7 @@ const StepperComponent = (props) => {
               >
                 Next
               </Button>
-              {isStepOptional(activeStep) && !completed.has(activeStep) && (
+              {/* { isStepOptional(activeStep) &&!completed.has(activeStep) && (
                 <Button
                   variant="contained"
                   color="primary"
@@ -213,7 +243,7 @@ const StepperComponent = (props) => {
                 >
                   Skip
                 </Button>
-              )}
+              )} */}
 
               {activeStep !== steps.length &&
                 (completed.has(activeStep) ? (

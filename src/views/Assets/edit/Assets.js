@@ -1,11 +1,9 @@
 import React from "react";
-import "../../../Offer.css";
-import GeneralData from "./GeneralData.js";
-import StepperComponent from "../../Stepper/Stepper.js";
-import PassengerCar from "./PassengerCar.js";
-import { Grid, Button } from "@material-ui/core";
+import StepperComponent from "../../../components/Stepper/Stepper.js";
+import { Grid } from "@material-ui/core";
 import { makeStyles } from "@material-ui/core/styles";
-import { Link } from "react-router-dom";
+// import { Link } from "react-router-dom";
+import "../../../Offer.css";
 import "./passengerCars.css";
 
 const useStyles = makeStyles({
@@ -23,7 +21,7 @@ const useStyles = makeStyles({
   },
 });
 
-const Offer = (props) => {
+const Assets = (props) => {
   const classes = useStyles();
 
   return (
@@ -36,21 +34,11 @@ const Offer = (props) => {
       // alignItems="stretch"
     >
       <Grid item xs={12}>
-        <StepperComponent></StepperComponent>
-      </Grid>
-      <Grid item xs={12} sm={12} md={12}>
-        <GeneralData props={props} />
+        <StepperComponent props={props}></StepperComponent>
       </Grid>
 
-      <Grid item xs={12} sm={12} md={12}>
-        <PassengerCar props={props} />
-      </Grid>
-
-      <Grid
+      {/* <Grid
         container
-        //spacing={4}
-        // className={classes.gridContainer}
-        // alignItems="stretch"
       >
         <Grid item xs={9}>
           <Button
@@ -74,9 +62,9 @@ const Offer = (props) => {
             </Button>
           </Link>
         </Grid>
-      </Grid>
+      </Grid> */}
     </Grid>
   );
 };
 
-export default Offer;
+export default Assets;

@@ -13,10 +13,10 @@ import DashboardPage from "views/Dashboard/Dashboard.js";
 import FlexDashboard from "views/FlexDashboard/FlexDashboard.js";
 import Icons from "views/Icons/Icons.js";
 import NotificationsPage from "views/Notifications/Notifications.js";
-import Offer from "components/Asset/edit/Offer.js";
-import OfferList from "components/Asset/list/OfferList.js";
+import Assets from "views/Assets/edit/Assets.js";
+import OfferList from "views/Assets/list/OfferList.js";
 import OfferAssetList from "views/Offer/OfferAssetList.js";
-import Products from "components/Asset/edit/Products.js";
+import Products from "views/Products/Products.js";
 import UserProfile from "views/UserProfile/UserProfile.js";
 import TableList from "views/TableList/TableList.js";
 
@@ -88,7 +88,7 @@ const dashboardRoutes = [
     path: "/editOffer/assets",
     name: "Oferte",
     icon: AssignmentIcon,
-    component: Offer,
+    component: Assets,
     layout: "/admin",
   },
   {

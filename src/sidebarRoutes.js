@@ -13,7 +13,7 @@ import DashboardPage from "views/Dashboard/Dashboard.js";
 import FlexDashboard from "views/FlexDashboard/FlexDashboard.js";
 import Icons from "views/Icons/Icons.js";
 import NotificationsPage from "views/Notifications/Notifications.js";
-import OfferList from "components/Asset/list/OfferList.js";
+import OfferList from "views/Assets/list/OfferList.js";
 import OfferAssetList from "views/Offer/OfferAssetList.js";
 import UserProfile from "views/UserProfile/UserProfile.js";
 import TableList from "views/TableList/TableList.js";

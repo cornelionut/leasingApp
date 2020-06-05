@@ -4,7 +4,7 @@ import * as actions from "../../../actions/offerAsset";
 import EditIcon from "@material-ui/icons/Edit";
 import { green } from "@material-ui/core/colors";
 import { Link } from "react-router-dom";
-import Header from "../list/Header";
+import Header from "./Header";
 //import Offer from "../edit/Offer";
 import {
   Grid,
