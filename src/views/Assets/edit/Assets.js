@@ -25,14 +25,7 @@ const Assets = (props) => {
   const classes = useStyles();
 
   return (
-    <Grid
-      container
-      spacing={4}
-      className={classes.gridContainer}
-      // direction="column"
-      // justify="center"
-      // alignItems="stretch"
-    >
+    <Grid container spacing={2} className={classes.gridContainer}>
       <Grid item xs={12}>
         <StepperComponent props={props}></StepperComponent>
       </Grid>

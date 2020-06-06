@@ -13,6 +13,8 @@ import { makeStyles } from "@material-ui/core/styles";
 import GeneralData from "views/Assets/edit/GeneralData.js";
 import PassengerCar from "views/Assets/edit/PassengerCar.js";
 import Products from "views/Products/Products.js";
+import Financial from "views/Financial/Financial.js";
+import { blue } from "@material-ui/core/colors";
 
 const useStyles = makeStyles((theme) => ({
   root: {
@@ -20,6 +22,7 @@ const useStyles = makeStyles((theme) => ({
   },
   button: {
     marginRight: theme.spacing(1),
+    backgroundColor: blue[900],
   },
   backButton: {
     marginRight: theme.spacing(1),
@@ -33,8 +36,8 @@ const useStyles = makeStyles((theme) => ({
   },
   gridContainer: {
     marginTop: "50px",
-    paddingLeft: "20px",
-    paddingRight: "20px",
+    paddingLeft: "0px",
+    paddingRight: "0px",
   },
 }));
 
@@ -46,7 +49,7 @@ function getStepContent(step, props, classes) {
   switch (step) {
     case 0:
       return (
-        <Grid container spacing={4} className={classes.gridContainer}>
+        <Grid container spacing={6} className={classes.gridContainer}>
           <Grid item xs={12} sm={12} md={12}>
             <GeneralData props={props} />
           </Grid>
@@ -58,14 +61,20 @@ function getStepContent(step, props, classes) {
       );
     case 1:
       return (
-        <Grid container spacing={4} className={classes.gridContainer}>
+        <Grid container spacing={6} className={classes.gridContainer}>
           <Grid item xs={12} sm={12} md={12}>
             <Products props={props} />
           </Grid>
         </Grid>
       );
     case 2:
-      return "Step 3: Introduceti datele financiare!";
+      return (
+        <Grid container spacing={6} className={classes.gridContainer}>
+          <Grid item xs={12} sm={12} md={12}>
+            <Financial props={props} />
+          </Grid>
+        </Grid>
+      );
     case 3:
       return "Step 4: Introduceti datele clientului!";
     case 4:
@@ -255,6 +264,7 @@ const StepperComponent = (props) => {
                     variant="contained"
                     color="primary"
                     onClick={handleComplete}
+                    className={classes.button}
                   >
                     {completedSteps() === totalSteps() - 1
                       ? "Finish"

@@ -9,6 +9,8 @@ import {
   Card,
   CardActions,
   CardContent,
+  CardHeader,
+  Fab,
   Grid,
   Button,
   IconButton,
@@ -19,13 +21,16 @@ import {
   Select,
   withStyles,
 } from "@material-ui/core";
+import DirectionsCarRoundedIcon from "@material-ui/icons/DirectionsCarRounded";
+import { blue } from "@material-ui/core/colors";
 
 const styles = (theme) => ({
   root: {
     minWidth: 200,
   },
-  title: {
-    fontSize: 14,
+  cardContent: {
+    textAlign: "center",
+    marginLeft: "40px",
   },
   expand: {
     transform: "rotate(0deg)",
@@ -36,6 +41,9 @@ const styles = (theme) => ({
   },
   expandOpen: {
     transform: "rotate(180deg)",
+  },
+  fontSizeTypography: {
+    fontSize: 16,
   },
   bullet: {
     display: "inline-block",
@@ -50,6 +58,12 @@ const styles = (theme) => ({
     display: "block",
     maxWidth: "80%",
     maxHeight: "80%",
+  },
+  blue900: {
+    backgroundColor: blue[900],
+  },
+  title: {
+    fontSize: 18,
   },
 });
 
@@ -210,19 +224,23 @@ const PassengerCar = (props) => {
 
   return !isLoading ? (
     <Card className={classes.root} variant="outlined">
-      <CardContent>
-        <Typography
-          className={classes.title}
-          color="textSecondary"
-        ></Typography>
+      <CardHeader
+        avatar={
+          <Fab size="small" color="primary" className={classes.blue900}>
+            <DirectionsCarRoundedIcon></DirectionsCarRoundedIcon>
+          </Fab>
+        }
+        subheader={
+          <Typography className={classes.title} variant="body2">
+            Autoturism
+          </Typography>
+        }
+      />
 
-        <Typography variant="h6" component="h2" gutterBottom>
-          Autoturism
-        </Typography>
-
+      <CardContent className={classes.cardContent}>
         <Grid container spacing={2} alignItems="center">
           <Grid item xs={3}>
-            <Typography>
+            <Typography variant="body2" className={classes.fontSizeTypography}>
               Bunuri finantate:
               {leasingDocument !== undefined && leasingDocument.length > 0
                 ? leasingDocument[0].document.documentDetail.item.assetHierarchy
@@ -232,7 +250,7 @@ const PassengerCar = (props) => {
           </Grid>
 
           <Grid item xs={3}>
-            <Typography>
+            <Typography variant="body2" className={classes.fontSizeTypography}>
               Pret de achizitie fara TVA:
               {leasingDocument !== undefined && leasingDocument.length > 0
                 ? leasingDocument[0].document.documentDetail.price +
@@ -243,7 +261,7 @@ const PassengerCar = (props) => {
           </Grid>
 
           <Grid item xs={3}>
-            <Typography>
+            <Typography variant="body2" className={classes.fontSizeTypography}>
               Pret de achizitie cu TVA:
               {leasingDocument !== undefined && leasingDocument.length > 0
                 ? leasingDocument[0].document.documentDetail.totalValue
@@ -252,7 +270,7 @@ const PassengerCar = (props) => {
           </Grid>
 
           <Grid item xs={3}>
-            <Typography>
+            <Typography variant="body2">
               <img
                 className={classes.img}
                 alt="isn't available"
@@ -269,6 +287,7 @@ const PassengerCar = (props) => {
           </Grid>
         </Grid>
       </CardContent>
+
       <CardActions>
         <IconButton
           className={clsx(classes.expand, { [classes.expandOpen]: expanded })}
@@ -279,8 +298,8 @@ const PassengerCar = (props) => {
       </CardActions>
 
       <Collapse in={expanded} timeout="auto" unmountOnExit>
-        <CardContent>
-          <Grid container spacing={3} direction="column">
+        <CardContent className={classes.cardContent}>
+          <Grid container spacing={2} alignItems="center">
             <Grid container item xs={12} spacing={3}>
               <Grid item xs={3}>
                 <InputLabel shrink htmlFor="assetType-native-label-placeholder">
@@ -380,28 +399,13 @@ const PassengerCar = (props) => {
             </Grid>
 
             <Grid container item xs={12} spacing={3}>
-              <Grid item xs={9}>
-                {/* <Typography>
-                      <img
-                        className={classes.img}
-                        alt="isn't available"
-                        src={
-                          leasingDocument.length > 0
-                            ? process.env.PUBLIC_URL +
-                              "/images/cars/" +
-                              leasingDocument[0].document.documentDetail
-                                .item.assetHierarchy.imageUrl
-                            : ""
-                        }
-                      />
-                    </Typography> */}
-              </Grid>
+              <Grid item xs={9}></Grid>
 
               <Grid item xs={3}>
                 <Button
                   variant="contained"
                   color="primary"
-                  //onClick={() => history.goBack()}
+                  className={classes.blue900}
                 >
                   Salvare
                 </Button>

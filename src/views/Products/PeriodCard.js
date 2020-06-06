@@ -3,12 +3,16 @@ import PropTypes from "prop-types";
 import {
   Card,
   CardContent,
+  CardHeader,
+  Fab,
   Grid,
   Slider,
   Typography,
   Tooltip,
 } from "@material-ui/core";
 import { makeStyles } from "@material-ui/core/styles";
+import TimelineIcon from "@material-ui/icons/Timeline";
+import { blue } from "@material-ui/core/colors";
 
 function ValueLabelComponent(props) {
   const { children, open, value } = props;
@@ -25,13 +29,16 @@ const useStyles = makeStyles({
     minWidth: 200,
   },
   title: {
-    fontSize: 20,
-    marginBottom: 18,
+    fontSize: 19,
+    marginBottom: 0,
   },
   bullet: {
     display: "inline-block",
     margin: "0 2px",
     transform: "scale(0.8)",
+  },
+  icon: {
+    backgroundColor: blue[900],
   },
   pos: {
     marginBottom: 12,
@@ -72,11 +79,20 @@ const PeriodCard = (props) => {
 
   return (
     <Card className={classes.root} variant="outlined">
-      <CardContent>
-        <Typography className={classes.title} variant="body2" gutterBottom>
-          PERIOADA
-        </Typography>
+      <CardHeader
+        avatar={
+          <Fab size="small" color="primary" className={classes.icon}>
+            <TimelineIcon></TimelineIcon>
+          </Fab>
+        }
+        subheader={
+          <Typography className={classes.title} variant="body2">
+            PERIOADA
+          </Typography>
+        }
+      />
 
+      <CardContent>
         <Grid
           container
           spacing={5}

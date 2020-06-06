@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect } from "react";
 import { Grid, withStyles } from "@material-ui/core";
 import PeriodCard from "views/Products/PeriodCard.js";
 import FinancialLeasing from "views/Products/FinancialLeasing.js";
@@ -33,17 +33,12 @@ const styles = (theme) => ({
 });
 
 const Products = (props) => {
-  const { classes } = props;
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, []);
 
   return (
-    <Grid
-      container
-      spacing={4}
-      className={classes.gridContainer}
-      // direction="column"
-      // justify="center"
-      // alignItems="stretch"
-    >
+    <Grid container spacing={6}>
       <Grid item xs={12}>
         <PeriodCard></PeriodCard>
       </Grid>
@@ -51,11 +46,10 @@ const Products = (props) => {
       <Grid item xs={12}>
         <Grid
           container
-          spacing={10}
+          spacing={6}
           direction="row"
           justify="space-between"
           alignItems="center"
-          className={classes.gridContainer}
         >
           <Grid item xs={4}>
             <FinancialLeasing></FinancialLeasing>

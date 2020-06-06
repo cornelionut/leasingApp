@@ -1,6 +1,16 @@
 import React from "react";
-import { Button, Card, CardContent, Grid, Typography } from "@material-ui/core";
+import {
+  Button,
+  Card,
+  CardHeader,
+  CardContent,
+  Fab,
+  Grid,
+  Typography,
+} from "@material-ui/core";
 import { makeStyles } from "@material-ui/core/styles";
+import { blue } from "@material-ui/core/colors";
+import BookmarkBorderRoundedIcon from "@material-ui/icons/BookmarkBorderRounded";
 
 const useStyles = makeStyles({
   root: {
@@ -13,17 +23,7 @@ const useStyles = makeStyles({
   },
   btnSelect: {
     marginTop: "15px",
-  },
-  title: {
-    fontSize: 20,
-    textAlign: "center",
-    marginBottom: 18,
-  },
-  subtitle: {
-    fontSize: 15,
-    textAlign: "center",
-    color: "DodgerBlue",
-    marginBottom: 24,
+    backgroundColor: blue[900],
   },
   line: {
     marginTop: 12,
@@ -43,8 +43,20 @@ const useStyles = makeStyles({
   includedServices: {
     fontSize: 14,
   },
+  icon: {
+    backgroundColor: blue[900],
+  },
   pos: {
     marginBottom: 12,
+  },
+  title: {
+    fontSize: 18,
+  },
+  subtitle: {
+    fontSize: 15,
+    textAlign: "center",
+    color: blue[900],
+    marginBottom: 24,
   },
 });
 
@@ -53,18 +65,26 @@ export default function FinancialLeasing() {
 
   return (
     <Card className={classes.root} variant="outlined">
+      <CardHeader
+        avatar={
+          <Fab size="small" color="primary" className={classes.icon}>
+            <BookmarkBorderRoundedIcon></BookmarkBorderRoundedIcon>
+          </Fab>
+        }
+        subheader={
+          <Typography className={classes.title} variant="body2">
+            LEASING FINANCIAR - PF
+          </Typography>
+        }
+      />
       <CardContent>
         <Grid
           container
-          // spacing={10}
           direction="column"
           justify="center"
           alignItems="stretch"
           className={classes.gridContainer}
         >
-          <Typography className={classes.title} variant="body2" gutterBottom>
-            LEASING FINANCIAR - PF
-          </Typography>
           <Typography className={classes.subtitle} component="h2">
             LEASING FINANCIAR
           </Typography>

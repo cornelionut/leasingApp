@@ -2,10 +2,8 @@ import React, { useEffect, useState } from "react";
 import { connect } from "react-redux";
 import * as actions from "../../../actions/offerAsset";
 import EditIcon from "@material-ui/icons/Edit";
-import { green } from "@material-ui/core/colors";
 import { Link } from "react-router-dom";
 import Header from "./Header";
-//import Offer from "../edit/Offer";
 import {
   Grid,
   IconButton,
@@ -13,6 +11,7 @@ import {
   Typography,
   withStyles,
 } from "@material-ui/core";
+import { blue, green } from "@material-ui/core/colors";
 import Moment from "react-moment";
 import "moment-timezone";
 
@@ -22,22 +21,26 @@ const styles = (theme) => ({
     overflow: "hidden",
     padding: theme.spacing(0, 1),
   },
+  editButton: {
+    position: "absolute",
+    right: "70px",
+    padding: "0px",
+    color: green[500],
+  },
   img: {
     margin: "auto",
     display: "block",
     maxWidth: "47%",
     maxHeight: "47%",
   },
+  information: {
+    fontSize: 14,
+    color: blue[900],
+  },
   paper: {
     maxWidth: 3000,
     margin: `${theme.spacing(0.2)}px auto`, //latime intre "carduri"
     padding: theme.spacing(4),
-  },
-  editButton: {
-    position: "absolute",
-    right: "70px",
-    padding: "0px",
-    color: green[500],
   },
 });
 
@@ -73,13 +76,7 @@ const OfferList = ({ classes, ...props }) => {
           return (
             <Paper className={classes.paper} key={offer.leasingDocumentId}>
               <Grid container direction="column">
-                <Grid
-                  xs={12}
-                  container
-                  // spacing={0}
-                  justify="center"
-                  alignItems="center"
-                >
+                <Grid container justify="center" alignItems="center">
                   <Grid item xs={4} alignItems="center" justify="center">
                     <Typography>
                       <img
@@ -93,64 +90,59 @@ const OfferList = ({ classes, ...props }) => {
                   </Grid>
 
                   <Grid item xs={4}>
-                    <div>
-                      <div>
-                        {"Numar oferta: "}
-                        <label>{documentNumber ? documentNumber : ""}</label>
-                      </div>
-                      <div>
-                        {"Data: "}
-                        <label>
-                          <Moment format="DD.MM.YYYY">
-                            {offer.document.documentDate}
-                          </Moment>
-                        </label>
-                      </div>
-                      <div>
-                        {"Canal vanzare: "}
-                        <label>Vanzari proprii</label>
-                      </div>
-                      <div>
-                        {"Stare: "}
-                        <label> Elaborare oferta</label>
-                      </div>
-                      <div>
-                        {"Utilizator: "}
-                        <label>{administrator.concat(administrator)}</label>
-                      </div>
-                    </div>
+                    <Typography className={classes.information} variant="body2">
+                      {"Numar oferta: "}
+                      {documentNumber ? documentNumber : ""}
+                    </Typography>
+
+                    <Typography className={classes.information} variant="body2">
+                      {"Data: "}
+                      {
+                        <Moment format="DD.MM.YYYY">
+                          {offer.document.documentDate
+                            ? offer.document.documentDate
+                            : ""}
+                        </Moment>
+                      }
+                    </Typography>
+
+                    <Typography className={classes.information} variant="body2">
+                      {"Canal vanzare: "}
+                      {"Vanzari proprii" ? "Vanzari proprii" : ""}
+                    </Typography>
+
+                    <Typography className={classes.information} variant="body2">
+                      {"Stare: "}
+                      {"Elaborare oferta" ? "Elaborare oferta" : ""}
+                    </Typography>
+
+                    <Typography className={classes.information} variant="body2">
+                      {"Utilizator: "}
+                      {administrator.concat(administrator)}
+                    </Typography>
                   </Grid>
 
                   <Grid item xs={4}>
-                    <div>
-                      <div>
-                        {"Client: "}
-                        <label>
-                          {offer.partner.firstName +
-                            " " +
-                            offer.partner.lastName}
-                        </label>
-                      </div>
+                    <Typography className={classes.information} variant="body2">
+                      {"Client: "}
+                      {offer.partner.firstName + " " + offer.partner.lastName}
+                    </Typography>
 
-                      <div>
-                        {"Tip Contract: "}
-                        <label>{offer.product.productName}</label>
-                      </div>
+                    <Typography className={classes.information} variant="body2">
+                      {"Tip Contract: "}
+                      {offer.product.productName}
+                    </Typography>
 
-                      <div>
-                        {"Valoare finantata: "}
-                        <label> {offer.amount}</label> {offer.currency.symbol}
-                        {/* {new Intl.NumberFormat("en-GB", {
-                      style: "currency",
-                      currency: "GBP",
-                    }).format(offer.amount)} */}
-                      </div>
+                    <Typography className={classes.information} variant="body2">
+                      {"Valoare finantata: "}
+                      {offer.amount}
+                      {offer.currency.symbol}
+                    </Typography>
 
-                      <div>
-                        {"Comision: "}
-                        <label> {offer.commission}</label>
-                      </div>
-                    </div>
+                    <Typography className={classes.information} variant="body2">
+                      {"Comision: "}
+                      {offer.commission}
+                    </Typography>
                   </Grid>
                 </Grid>
               </Grid>
