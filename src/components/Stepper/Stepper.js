@@ -14,7 +14,10 @@ import GeneralData from "views/Assets/edit/GeneralData.js";
 import PassengerCar from "views/Assets/edit/PassengerCar.js";
 import Products from "views/Products/Products.js";
 import Financial from "views/Financial/Financial.js";
+import Client from "views/Client/Client.js";
+import Scoring from "views/Scoring/Scoring.js";
 import { blue } from "@material-ui/core/colors";
+import Decision from "views/Decision/Decision";
 
 const useStyles = makeStyles((theme) => ({
   root: {
@@ -76,11 +79,29 @@ function getStepContent(step, props, classes) {
         </Grid>
       );
     case 3:
-      return "Step 4: Introduceti datele clientului!";
+      return (
+        <Grid container spacing={6} className={classes.gridContainer}>
+          <Grid item xs={12} sm={12} md={12}>
+            <Client props={props} />
+          </Grid>
+        </Grid>
+      );
     case 4:
-      return "Step 5: Calculeaza scoring!";
+      return (
+        <Grid container spacing={6} className={classes.gridContainer}>
+          <Grid item xs={12} sm={12} md={12}>
+            <Scoring props={props} />
+          </Grid>
+        </Grid>
+      );
     case 5:
-      return "Step 6: Se va lua decizia!";
+      return (
+        <Grid container spacing={6} className={classes.gridContainer}>
+          <Grid item xs={12} sm={12} md={12}>
+            <Decision props={props} />
+          </Grid>
+        </Grid>
+      );
     default:
       return "Unknown step";
   }

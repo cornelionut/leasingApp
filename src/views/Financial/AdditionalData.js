@@ -32,7 +32,6 @@ const useStyles = makeStyles((theme) => ({
   cardContent: {
     marginLeft: "60px",
     marginRight: "10px",
-    marginBottom: "25px",
   },
   expand: {
     marginRight: "15px",
@@ -116,7 +115,7 @@ export default function AdditionalData() {
       <Collapse in={expanded} timeout="auto" unmountOnExit>
         <CardContent className={classes.cardContent}>
           <Grid container direction="column">
-            <Grid container direction="row" className={classes.marginBottom}>
+            <Grid container direction="row">
               <Grid xs={4}>
                 <FormControl className={classes.formControl} disabled>
                   <InputLabel htmlFor="name-native-disabled">
@@ -184,7 +183,7 @@ export default function AdditionalData() {
                 </Grid>
               </Grid>
 
-              <Grid container direction="row">
+              <Grid container direction="row" className={classes.marginBottom}>
                 <Grid xs={8}>
                   <FormControl style={{ minWidth: 490 }} disabled>
                     <InputLabel htmlFor="name-native-disabled">

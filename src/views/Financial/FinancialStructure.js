@@ -228,12 +228,7 @@ export default function FinancialStructure() {
               </Grid>
             </Grid>
 
-            <Grid
-              container
-              xs={12}
-              direction="row"
-              className={classes.marginBottom}
-            >
+            <Grid container xs={12} direction="row">
               <Grid xs={3}>
                 <TextField disabled label="Comision" defaultValue="20.702,00" />
               </Grid>
@@ -265,7 +260,6 @@ export default function FinancialStructure() {
               direction="row"
               alignItems="center"
               justify="space-between"
-              className={classes.marginBottom}
             >
               <Grid item xs={3} className={classes.marginTopAdvancePaymentGrid}>
                 <Typography className={classes.advancePaymentLabel}>
@@ -293,7 +287,7 @@ export default function FinancialStructure() {
                 <TextField
                   disabled
                   label="Valoare finantata"
-                  defaultValue="10,00"
+                  defaultValue="35.750,00"
                 />
               </Grid>
             </Grid>
@@ -342,7 +336,9 @@ export default function FinancialStructure() {
                 />
               </Grid>
 
-              <Grid xs={3}></Grid>
+              <Grid xs={3}>
+                <TextField disabled label="Rata lunara" defaultValue="946,19" />
+              </Grid>
             </Grid>
 
             <Grid
