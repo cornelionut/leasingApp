@@ -8,7 +8,7 @@ import Icon from "@material-ui/core/Icon";
 import Store from "@material-ui/icons/Store";
 import Warning from "@material-ui/icons/Warning";
 import DateRange from "@material-ui/icons/DateRange";
-import LocalOffer from "@material-ui/icons/LocalOffer";
+// import LocalOffer from "@material-ui/icons/LocalOffer";
 import Update from "@material-ui/icons/Update";
 import ArrowUpward from "@material-ui/icons/ArrowUpward";
 import AccessTime from "@material-ui/icons/AccessTime";
@@ -52,19 +52,15 @@ export default function Dashboard() {
               <CardIcon color="warning">
                 <Icon>content_copy</Icon>
               </CardIcon>
-              <p className={classes.cardCategory}>Used Space</p>
+              <p className={classes.cardCategory}>Oferte in asteptare</p>
               <h3 className={classes.cardTitle}>
-                49/50 <small>GB</small>
+                50 <small></small>
               </h3>
             </CardHeader>
             <CardFooter stats>
               <div className={classes.stats}>
-                <Danger>
-                  <Warning />
-                </Danger>
-                <a href="#pablo" onClick={(e) => e.preventDefault()}>
-                  Get more space
-                </a>
+                <Update />
+                Recent actualizat
               </div>
             </CardFooter>
           </Card>
@@ -75,13 +71,13 @@ export default function Dashboard() {
               <CardIcon color="success">
                 <Store />
               </CardIcon>
-              <p className={classes.cardCategory}>Revenue</p>
-              <h3 className={classes.cardTitle}>$34,245</h3>
+              <p className={classes.cardCategory}>Valoare oferta incheiate</p>
+              <h3 className={classes.cardTitle}>$134,245</h3>
             </CardHeader>
             <CardFooter stats>
               <div className={classes.stats}>
                 <DateRange />
-                Last 24 Hours
+                Ultimele 24 ore
               </div>
             </CardFooter>
           </Card>
@@ -92,13 +88,21 @@ export default function Dashboard() {
               <CardIcon color="danger">
                 <Icon>info_outline</Icon>
               </CardIcon>
-              <p className={classes.cardCategory}>Fixed Issues</p>
+              <p className={classes.cardCategory}>Oferte respinse</p>
               <h3 className={classes.cardTitle}>75</h3>
             </CardHeader>
             <CardFooter stats>
-              <div className={classes.stats}>
+              {/* <div className={classes.stats}>
                 <LocalOffer />
                 Tracked from Github
+              </div> */}
+              <div className={classes.stats}>
+                <Danger>
+                  <Warning />
+                </Danger>
+                <a href="#pablo" onClick={(e) => e.preventDefault()}>
+                  Mai multe detalii
+                </a>
               </div>
             </CardFooter>
           </Card>
@@ -109,13 +113,13 @@ export default function Dashboard() {
               <CardIcon color="info">
                 <Accessibility />
               </CardIcon>
-              <p className={classes.cardCategory}>Followers</p>
+              <p className={classes.cardCategory}>Contracte incheiate</p>
               <h3 className={classes.cardTitle}>+245</h3>
             </CardHeader>
             <CardFooter stats>
               <div className={classes.stats}>
                 <Update />
-                Just Updated
+                Recent actualizat
               </div>
             </CardFooter>
           </Card>
@@ -134,17 +138,17 @@ export default function Dashboard() {
               />
             </CardHeader>
             <CardBody>
-              <h4 className={classes.cardTitle}>Evolutie contracte active</h4>
+              <h4 className={classes.cardTitle}>Evolutie contracte aprobate</h4>
               <p className={classes.cardCategory}>
                 <span className={classes.successText}>
                   <ArrowUpward className={classes.upArrowCardCategory} /> 55%
                 </span>{" "}
-                increase in today sales.
+                crestere a ofertelor aprobate astazi.
               </p>
             </CardBody>
             <CardFooter chart>
               <div className={classes.stats}>
-                <AccessTime /> updated 4 minutes ago
+                <AccessTime /> actualizat in urma cu 4 minute
               </div>
             </CardFooter>
           </Card>
@@ -162,12 +166,12 @@ export default function Dashboard() {
               />
             </CardHeader>
             <CardBody>
-              <h4 className={classes.cardTitle}>Email Subscriptions</h4>
-              <p className={classes.cardCategory}>Last Campaign Performance</p>
+              <h4 className={classes.cardTitle}>Clienti noi</h4>
+              <p className={classes.cardCategory}>In ultimele 12 luni</p>
             </CardBody>
             <CardFooter chart>
               <div className={classes.stats}>
-                <AccessTime /> campaign sent 2 days ago
+                <AccessTime /> actualizat in in urma cu 2 zile
               </div>
             </CardFooter>
           </Card>
@@ -184,12 +188,13 @@ export default function Dashboard() {
               />
             </CardHeader>
             <CardBody>
-              <h4 className={classes.cardTitle}>Completed Tasks</h4>
-              <p className={classes.cardCategory}>Last Campaign Performance</p>
+              <h4 className={classes.cardTitle}>Oferte in asteptare</h4>
+              <p className={classes.cardCategory}>Astazi</p>
             </CardBody>
             <CardFooter chart>
               <div className={classes.stats}>
-                <AccessTime /> campaign sent 2 days ago
+                <AccessTime />
+                actualizat in in urma cu 2 zile
               </div>
             </CardFooter>
           </Card>
@@ -240,9 +245,9 @@ export default function Dashboard() {
         <GridItem xs={12} sm={12} md={6}>
           <Card>
             <CardHeader color="warning">
-              <h4 className={classes.cardTitleWhite}>Employees Stats</h4>
+              <h4 className={classes.cardTitleWhite}>Status Angajati</h4>
               <p className={classes.cardCategoryWhite}>
-                New employees on 15th September, 2016
+                Angajati noi la data de 2 Iulie, 2020
               </p>
             </CardHeader>
             <CardBody>
@@ -250,10 +255,10 @@ export default function Dashboard() {
                 tableHeaderColor="warning"
                 tableHead={["ID", "Name", "Salary", "Country"]}
                 tableData={[
-                  ["1", "Dakota Rice", "$36,738", "Niger"],
-                  ["2", "Minerva Hooper", "$23,789", "Curaçao"],
-                  ["3", "Sage Rodriguez", "$56,142", "Netherlands"],
-                  ["4", "Philip Chaney", "$38,735", "Korea, South"],
+                  ["1", "Cornel Baciu", "$36,738", "Niger"],
+                  ["2", "Gorkem Gaba", "$23,789", "Olanda"],
+                  ["3", "Leontie Fusa", "$56,142", "Franta"],
+                  ["4", "Irina Hobeanu", "$38,735", "Japonia"],
                 ]}
               />
             </CardBody>

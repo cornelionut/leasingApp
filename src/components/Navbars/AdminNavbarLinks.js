@@ -191,6 +191,8 @@ export default function AdminNavbarLinks() {
                 <ClickAwayListener onClickAway={handleCloseProfile}>
                   <MenuList role="menu">
                     <MenuItem
+                      component={Link}
+                      to="/admin/user"
                       onClick={handleCloseProfile}
                       className={classes.dropdownItem}
                     >
@@ -204,10 +206,12 @@ export default function AdminNavbarLinks() {
                     </MenuItem>
                     <Divider light />
                     <MenuItem
+                      component={Link}
+                      to="/Login"
                       onClick={handleCloseProfile}
                       className={classes.dropdownItem}
                     >
-                      <Link to={"/Login"}>Logout</Link>
+                      Logout
                     </MenuItem>
                   </MenuList>
                 </ClickAwayListener>

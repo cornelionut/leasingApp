@@ -97,8 +97,8 @@ const sidebarStyle = (theme) => ({
     width: "30px",
     display: "inline-block",
     maxHeight: "30px",
-    marginLeft: "10px",
-    marginRight: "15px",
+    marginLeft: "5px",
+    marginRight: "5px",
   },
   img: {
     width: "35px",

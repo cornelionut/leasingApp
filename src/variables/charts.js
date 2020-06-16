@@ -14,10 +14,47 @@ var delays2 = 80,
 // ##############################
 // // // Daily Sales
 // #############################
+var offerEvolutionByMonth = {
+  data: {
+    labels: ["Week1", "Week2", "Week3", "Week4", "Week5", "Week6"],
+    series: [[5, 4, 3, 7, 5, 10], [3, 2, 9, 5, 4, 6], [2, 1, -3, -4, -2, 0]],
+  },
+  options: {
+    // Don't draw the line chart points
+    showPoint: false,
+    // Disable line smoothing
+    lineSmooth: false,
+    // X-Axis specific configuration
+    axisX: {
+      // We can disable the grid for this axis
+      showGrid: false,
+      // and also don't show the label
+      showLabel: false,
+    },
+    // Y-Axis specific configuration
+    axisY: {
+      // Lets offset the chart a bit from the labels
+      offset: 60,
+      // The label interpolation function enables you to modify the values
+      // used for the labels on each axis. Here we are converting the
+      // values into million pound.
+      labelInterpolationFnc: function(value) {
+        return "$" + value + "m";
+      },
+    },
+  },
+};
+
+var cornelChart = {
+  data: {
+    labels: ["Mon", "Tue", "Wed", "Thu", "Fri"], // A labels array that can contain any sort of values
+    series: [[5, 2, 4, 2, 0]], // Our series array that contains series objects or in this case series data arrays
+  },
+};
 
 const dailySalesChart = {
   data: {
-    labels: ["M", "T", "W", "T", "F", "S", "S"],
+    labels: ["L", "M", "M", "J", "V", "S", "D"],
     series: [[12, 17, 7, 17, 23, 18, 38]],
   },
   options: {
@@ -72,17 +109,17 @@ const dailySalesChart = {
 const emailsSubscriptionChart = {
   data: {
     labels: [
-      "Jan",
+      "Ian",
       "Feb",
       "Mar",
       "Apr",
       "Mai",
-      "Jun",
-      "Jul",
+      "Iun",
+      "Iul",
       "Aug",
       "Sep",
       "Oct",
-      "Nov",
+      "Noi",
       "Dec",
     ],
     series: [[542, 443, 320, 780, 553, 453, 326, 434, 568, 610, 756, 895]],
@@ -183,8 +220,25 @@ const completedTasksChart = {
   },
 };
 
+const offersByLocation = {
+  type: "bar", // bar, horizontalBar, pie, line, doughnut, radar, polarArea
+  data: {
+    labels: ["Cluj", "Bucuresti", "Iasi", "Brasov"],
+    datasets: [
+      {
+        label: "Oferte",
+        data: [64, 125, 42, 80],
+      },
+    ],
+  },
+  options: {},
+};
+
 module.exports = {
   dailySalesChart,
   emailsSubscriptionChart,
   completedTasksChart,
+  offersByLocation,
+  cornelChart,
+  offerEvolutionByMonth,
 };

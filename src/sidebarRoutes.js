@@ -15,8 +15,9 @@ import Icons from "views/Icons/Icons.js";
 import NotificationsPage from "views/Notifications/Notifications.js";
 import OfferList from "views/Assets/list/OfferList.js";
 import OfferAssetList from "views/Offer/OfferAssetList.js";
-import UserProfile from "views/UserProfile/UserProfile.js";
+import Partners from "views/Partners/Partners.js";
 import TableList from "views/TableList/TableList.js";
+import UpgradeToPro from "views/UpgradeToPro/UpgradeToPro.js";
 
 const dashboardRoutes = [
   {
@@ -48,14 +49,14 @@ const dashboardRoutes = [
     layout: "/admin",
   },
   {
-    path: "/user",
-    name: "Partneri",
+    path: "/partners",
+    name: "Parteneri",
     icon: Person,
-    component: UserProfile,
+    component: Partners,
     layout: "/admin",
   },
   {
-    path: "/typography",
+    path: "/reports",
     name: "Rapoarte",
     icon: LibraryBooks,
     component: FlexDashboard,
@@ -79,7 +80,7 @@ const dashboardRoutes = [
     path: "/rtl-page",
     name: "Setari",
     icon: SettingsIcon,
-    //component: UpgradeToPro,
+    component: UpgradeToPro,
     layout: "/settings",
   },
 ];

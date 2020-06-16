@@ -11,7 +11,7 @@ import {
   Typography,
   withStyles,
 } from "@material-ui/core";
-import { blue, green } from "@material-ui/core/colors";
+import { green, lightBlue } from "@material-ui/core/colors";
 import Moment from "react-moment";
 import "moment-timezone";
 
@@ -30,12 +30,13 @@ const styles = (theme) => ({
   img: {
     margin: "auto",
     display: "block",
-    maxWidth: "47%",
-    maxHeight: "47%",
+    maxWidth: "37%",
+    maxHeight: "37%",
   },
   information: {
     fontSize: 14,
-    color: blue[900],
+    color: lightBlue[900],
+    margin: `${theme.spacing(0.5)}px auto`,
   },
   paper: {
     maxWidth: 3000,

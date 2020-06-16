@@ -77,6 +77,9 @@ const dashboardStyle = {
       lineHeight: "1",
     },
   },
+  marginTop: {
+    marginTop: "50px",
+  },
 };
 
 export default dashboardStyle;

@@ -111,7 +111,7 @@ export default function Admin({ ...rest }) {
       <div className={classes.wrapper}>
         <Sidebar
           routes={sidebarRoutes}
-          logoText={"LEASING APP"}
+          logoText={"FINANCIAL SERVICES"}
           logo={logo}
           image={image}
           handleDrawerToggle={handleDrawerToggle}

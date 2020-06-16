@@ -51,16 +51,16 @@ const OfferAssetList = ({ classes, ...props }) => {
             <Table>
               <TableHead className={classes.root}>
                 <TableRow>
-                  {/* <TableCell>IsSH</TableCell>
-                                    <TableCell>KmParcursi</TableCell>
-                                    <TableCell>Marca</TableCell>
-                                    <TableCell>Model</TableCell>
-                                    <TableCell>Caroserie</TableCell>
-                                    <TableCell>Versiune</TableCell> */}
-
-                  <TableCell>TipAsset(PassengerCar or Commercial)</TableCell>
-                  <TableCell>An/Luna Fabricatie</TableCell>
+                  <TableCell>Tip activ</TableCell>
+                  <TableCell>Data Fabricatie De la:</TableCell>
                   <TableCell>Pana la: An/Luna Fabricatie</TableCell>
+
+                  <TableCell>IsSH</TableCell>
+                  <TableCell>Km Parcursi</TableCell>
+                  <TableCell>Marca</TableCell>
+                  <TableCell>Model</TableCell>
+                  <TableCell>Caroserie</TableCell>
+                  <TableCell>Versiune</TableCell>
                 </TableRow>
               </TableHead>
               <TableBody>
@@ -72,7 +72,12 @@ const OfferAssetList = ({ classes, ...props }) => {
                       <TableCell>{record.name}</TableCell>
                       <TableCell>{record.validFrom}</TableCell>
                       <TableCell>{record.validTo}</TableCell>
-                      <TableCell>{record.imageUrl}</TableCell>
+                      <TableCell></TableCell>
+                      <TableCell></TableCell>
+                      <TableCell></TableCell>
+                      <TableCell></TableCell>
+                      <TableCell></TableCell>
+                      <TableCell></TableCell>
                     </TableRow>
                   );
                 })}

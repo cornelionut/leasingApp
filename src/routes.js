@@ -17,6 +17,7 @@ import Assets from "views/Assets/edit/Assets.js";
 import OfferList from "views/Assets/list/OfferList.js";
 import OfferAssetList from "views/Offer/OfferAssetList.js";
 import Products from "views/Products/Products.js";
+import Partners from "views/Partners/Partners.js";
 import UserProfile from "views/UserProfile/UserProfile.js";
 import TableList from "views/TableList/TableList.js";
 
@@ -50,14 +51,21 @@ const dashboardRoutes = [
     layout: "/admin",
   },
   {
+    path: "/partners",
+    name: "Parteneri",
+    icon: Person,
+    component: Partners,
+    layout: "/admin",
+  },
+  {
     path: "/user",
-    name: "Partneri",
+    name: "Utilizator",
     icon: Person,
     component: UserProfile,
     layout: "/admin",
   },
   {
-    path: "/typography",
+    path: "/reports",
     name: "Rapoarte",
     icon: LibraryBooks,
     component: FlexDashboard,

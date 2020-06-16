@@ -1,27 +1,29 @@
 import React from "react";
-import "flexmonster/flexmonster.css";
-// import * as FlexmonsterReact from "react-flexmonster";
+import GridItem from "components/Grid/GridItem.js";
+import GridContainer from "components/Grid/GridContainer.js";
+import BarChart from "./BarChart.js";
+import DoughnutChart from "./DoughnutChart.js";
+import LineChart from "./LineChart.js";
+import MixedChart from "./MixedChart.js";
 
-// @material-ui/core components
-// import { makeStyles } from "@material-ui/core/styles";
-
-// core components
-
-// const styles = {};
-
-// const useStyles = makeStyles(styles);
-
-export default function TypographyPage() {
-  // const classes = useStyles();
+export default function FlexDahboard() {
   return (
-    <div></div>
-    // <FlexmonsterReact.Pivot
-    //   toolbar={true}
-    //   componentFolder="https://cdn.flexmonster.com/"
-    //   width="100%"
-    //   report="https://cdn.flexmonster.com/reports/report.json"
-    // />
+    <GridContainer>
+      <GridItem xs={6} sm={6} md={6}>
+        <BarChart />
+      </GridItem>
 
-    // <FlexmonsterReact.Pivot toolbar={true} />
+      <GridItem xs={6} sm={6} md={6}>
+        <DoughnutChart />
+      </GridItem>
+
+      <GridItem xs={6} sm={6} md={6} style={{ marginTop: 80 }}>
+        <LineChart />
+      </GridItem>
+
+      <GridItem xs={6} sm={6} md={6} style={{ marginTop: 80 }}>
+        <MixedChart />
+      </GridItem>
+    </GridContainer>
   );
 }
