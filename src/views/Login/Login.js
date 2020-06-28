@@ -57,7 +57,7 @@ function Copyright() {
   return (
     <Typography variant="body2" color="textSecondary" align="center">
       {"Copyright © "}
-      <Link className="link" href="https://material-ui.com/">
+      <Link to="" className="link" href="https://material-ui.com/">
         Financial Services Leasing
       </Link>{" "}
       {new Date().getFullYear()}
@@ -125,7 +125,7 @@ export default function Login() {
               passwordError: "",
             },
           });
-        console.log(values.errors.passwordError);
+        // console.log(values.errors.passwordError);
         break;
       default:
         setValues({
@@ -202,7 +202,6 @@ export default function Login() {
             open={isLoggedOut}
             autoHideDuration={4000}
             onClose={handleCloseSnackbar}
-            close
           >
             {<Alert severity="success">You are succesfully logged out!</Alert>}
           </Snackbar>
@@ -237,6 +236,7 @@ export default function Login() {
           <OutlinedInput
             id="outlined-adornment-password"
             fullWidth
+            autoComplete="password"
             type={values.showPassword ? "text" : "password"}
             value={values.password}
             onChange={handleChange("password")}
@@ -254,7 +254,7 @@ export default function Login() {
             }
             labelWidth={70}
             error={Boolean(values.errors.passwordError)}
-            helperText={values.errors.passwordError}
+            //   helperText={values.errors.passwordError}
           />
 
           <FormControlLabel
@@ -263,12 +263,11 @@ export default function Login() {
           />
 
           <LoaderButton
-            block
             fullWidth
             variant="contained"
             color="primary"
             type="submit"
-            bsSize="large"
+            bssize="large"
             isLoading={isLoading}
             disabled={!validateForm()}
           >

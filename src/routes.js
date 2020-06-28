@@ -11,7 +11,7 @@ import SettingsIcon from "@material-ui/icons/Settings";
 
 // core components/views for Admin layout
 import DashboardPage from "views/Dashboard/Dashboard.js";
-import DealerCharts from "views/FlexDashboard/DealerCharts.js";
+import DealerCharts from "views/Dashboard/Charts/DealerCharts.js";
 import Icons from "views/Icons/Icons.js";
 import NotificationsPage from "views/Notifications/Notifications.js";
 import Assets from "views/Assets/edit/Assets.js";

@@ -49,7 +49,7 @@ const styles = (theme) => ({
 const administrator = "Administrator ";
 
 const OfferList = ({ classes, ...props }) => {
-  const { userIsAdmin } = useAppContext();
+  const { isAdmin } = useAppContext();
   const [localState, setLocalState] = useState({
     imageUrl: "",
     isLoading: true,
@@ -80,12 +80,12 @@ const OfferList = ({ classes, ...props }) => {
             <Paper className={classes.paper} key={offer.leasingDocumentId}>
               <Grid container direction="column">
                 <Grid container justify="center" alignItems="center">
-                  <Grid item xs={4} alignItems="center" justify="center">
+                  <Grid item xs={4}>
                     <Typography>
                       <img
                         className={classes.img}
                         alt="isn't available"
-                        srcset={
+                        srcSet={
                           process.env.PUBLIC_URL + "/images/cars/" + imageUrl
                         }
                       />
@@ -150,12 +150,12 @@ const OfferList = ({ classes, ...props }) => {
                 </Grid>
               </Grid>
 
-              <Grid container xs={12}>
+              <Grid container>
                 <Grid item xs={9}></Grid>
                 <Grid item xs={3}>
                   <Link
                     to={{
-                      pathname: userIsAdmin
+                      pathname: isAdmin
                         ? "/admin/editOffer/assets"
                         : "/dealer/editOffer/assets",
                       search:

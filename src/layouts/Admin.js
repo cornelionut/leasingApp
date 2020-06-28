@@ -16,12 +16,11 @@ import styles from "assets/jss/material-dashboard-react/layouts/adminStyle.js";
 import bgImage from "assets/img/sidebar-2.jpg";
 import { store } from "../actions/store";
 import { Provider } from "react-redux";
-import { Container } from "@material-ui/core";
+// import { Container } from "@material-ui/core";
 import { useAppContext } from "../libs/contextLib";
 import Snackbar from "@material-ui/core/Snackbar";
 import AddAlert from "@material-ui/icons/AddAlert";
 import MuiAlert from "@material-ui/lab/Alert";
-
 import Sidebar from "components/Sidebar/Sidebar.js";
 import adminSidebarRoutes from "adminSidebarRoutes.js";
 import logo from "assets/img/reactlogo.png";
@@ -121,7 +120,7 @@ export default function Admin({ ...rest }) {
 
   return (
     <Provider store={store}>
-      <Container maxWidth="lg"></Container>
+      {/* <Container maxWidth="lg"></Container> */}
       <div className={classes.wrapper}>
         <Sidebar
           routes={adminSidebarRoutes}

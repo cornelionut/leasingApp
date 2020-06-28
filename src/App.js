@@ -4,13 +4,8 @@ import { useHistory } from "react-router-dom"; //Link
 import ErrorBoundary from "./components/ErrorBoundary/ErrorBoundary";
 import { AppContext } from "./libs/contextLib";
 import { onError } from "./libs/errorLib";
-import Routes from "./Routes1";
+import Routes from "./AURoutes";
 import Navbar from "components/Navbars/Navbar.js";
-// import Sidebar from "components/Sidebar/Sidebar.js";
-// import dealerSidebarRoutes from "dealerSidebarRoutes.js";
-// import adminSidebarRoutes from "adminSidebarRoutes.js";
-// import bgImage from "assets/img/sidebar-2.jpg";
-// import logo from "assets/img/reactlogo.png";
 import routes from "routes.js";
 import "./App.css";
 
@@ -18,9 +13,6 @@ function App({ ...rest }) {
   const history = useHistory();
 
   const [mobileOpen, setMobileOpen] = useState(false);
-  // const [image] = useState(bgImage);
-  // const [color] = useState("blue");
-
   const [isAuthenticating, setIsAuthenticating] = useState(true);
   const [isAuthenticated, userHasAuthenticated] = useState(false);
   const [isLoggedOut, userHasLoggedOut] = useState(false);

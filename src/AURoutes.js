@@ -72,6 +72,9 @@ export default function Routes() {
       <AuthenticatedRoute exact path="/dealer/offer">
         <Dealer />
       </AuthenticatedRoute>
+      <AuthenticatedRoute exact path="/dealer/editOffer/assets">
+        <Dealer />
+      </AuthenticatedRoute>
       <AuthenticatedRoute exact path="/dealer/GetOffer">
         <Dealer />
       </AuthenticatedRoute>
@@ -85,6 +88,9 @@ export default function Routes() {
         <Dealer />
       </AuthenticatedRoute>
       <AuthenticatedRoute exact path="/dealer/changePassword">
+        <Dealer />
+      </AuthenticatedRoute>
+      <AuthenticatedRoute exact path="/dealer/table">
         <Dealer />
       </AuthenticatedRoute>
       Finally, catch all unmatched routes

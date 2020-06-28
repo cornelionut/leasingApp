@@ -238,14 +238,14 @@ const StepperComponent = (props) => {
       <div>
         {allStepsCompleted() ? (
           <div>
-            <Typography className={classes.instructions}>
+            <Typography component={"span"} className={classes.instructions}>
               All steps completed - you&apos;re finished
             </Typography>
             <Button onClick={handleReset}>Reset</Button>
           </div>
         ) : (
           <div>
-            <Typography className={classes.instructions}>
+            <Typography component={"span"} className={classes.instructions}>
               {getStepContent(activeStep, props, classes)}
             </Typography>
             <div>
@@ -277,7 +277,11 @@ const StepperComponent = (props) => {
 
               {activeStep !== steps.length &&
                 (completed.has(activeStep) ? (
-                  <Typography variant="caption" className={classes.completed}>
+                  <Typography
+                    component={"span"}
+                    variant="caption"
+                    className={classes.completed}
+                  >
                     Step {activeStep + 1} already completed
                   </Typography>
                 ) : (

@@ -14,7 +14,7 @@ function Header() {
   const classes = useStyle();
   return (
     <header>
-      <Grid container xs={12}>
+      <Grid container>
         <Grid item xs={11}></Grid>
         <Grid item xs={1}>
           <Fab size="small" color="primary" className={classes.icon}>

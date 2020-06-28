@@ -1,16 +1,9 @@
-// @material-ui/icons
-// import Dashboard from "@material-ui/icons/Dashboard";
-// import LibraryBooks from "@material-ui/icons/LibraryBooks";
 import Person from "@material-ui/icons/Person";
 import BubbleChart from "@material-ui/icons/BubbleChart";
 import Notifications from "@material-ui/icons/Notifications";
 import AssignmentIcon from "@material-ui/icons/Assignment";
 import NotesIcon from "@material-ui/icons/Notes";
 import SettingsIcon from "@material-ui/icons/Settings";
-
-// core components/views for Admin layout
-// import DashboardPage from "views/Dashboard/Dashboard.js";
-// import DealerCharts from "views/FlexDashboard/DealerCharts.js";
 import Icons from "views/Icons/Icons.js";
 import NotificationsPage from "views/Notifications/Notifications.js";
 import OfferList from "views/Assets/list/OfferList.js";
