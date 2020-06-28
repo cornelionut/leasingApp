@@ -16,14 +16,14 @@ import styles from "assets/jss/material-dashboard-react/layouts/adminStyle.js";
 import bgImage from "assets/img/sidebar-2.jpg";
 import { store } from "../actions/store";
 import { Provider } from "react-redux";
-import { Container } from "@material-ui/core";
 import { useAppContext } from "../libs/contextLib";
+import { Container } from "@material-ui/core";
 import Snackbar from "@material-ui/core/Snackbar";
 import AddAlert from "@material-ui/icons/AddAlert";
 import MuiAlert from "@material-ui/lab/Alert";
 
 import Sidebar from "components/Sidebar/Sidebar.js";
-import adminSidebarRoutes from "adminSidebarRoutes.js";
+import dealerSidebarRoutes from "dealerSidebarRoutes.js";
 import logo from "assets/img/reactlogo.png";
 
 let ps;
@@ -31,7 +31,7 @@ let ps;
 const switchRoutes = (
   <Switch>
     {routes.map((prop, key) => {
-      if (prop.layout === "/admin") {
+      if (prop.layout === "/dealer") {
         return (
           <Route
             path={prop.layout + prop.path}
@@ -43,32 +43,37 @@ const switchRoutes = (
 
       return null;
     })}
-    <Redirect from="/" to="/admin/dashboard" />
+    <Redirect from="/" to="/dealer/offer" />
   </Switch>
 );
-
-const useStyles = makeStyles(styles);
 
 function Alert(props) {
   return <MuiAlert elevation={6} variant="filled" {...props} />;
 }
 
-export default function Admin({ ...rest }) {
+const useStyles = makeStyles(styles);
+
+export default function Dealer({ ...rest }) {
+  // styles
   const classes = useStyles();
 
   // ref to help us initialize PerfectScrollbar on windows devices
   const mainPanel = React.createRef();
 
   // states and functions
+  const { openSnackbar, setOpenSnackbar } = useAppContext();
   const [image, setImage] = useState(bgImage);
   const [color, setColor] = useState("blue");
   const [fixedClasses, setFixedClasses] = useState("dropdown");
-  const { openSnackbar, setOpenSnackbar } = useAppContext();
   const [mobileOpen, setMobileOpen] = useState(false);
 
   const handleDrawerToggle = () => {
     setMobileOpen(!mobileOpen);
   };
+
+  const [localState, setLocalState] = useState({
+    loggedIn: true,
+  });
 
   const handleImageClick = (image) => {
     setImage(image);
@@ -92,7 +97,7 @@ export default function Admin({ ...rest }) {
 
   const resizeFunction = () => {
     if (window.innerWidth >= 960) {
-      //  setMobileOpen(false);
+      setMobileOpen(false);
     }
   };
 
@@ -113,10 +118,16 @@ export default function Admin({ ...rest }) {
       }
       window.removeEventListener("resize", resizeFunction);
     };
+
+    // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [mainPanel]);
 
   const handleCloseSnackbar = () => {
     setOpenSnackbar(false);
+    setLocalState({
+      ...localState,
+      loggedIn: false,
+    });
   };
 
   return (
@@ -124,7 +135,7 @@ export default function Admin({ ...rest }) {
       <Container maxWidth="lg"></Container>
       <div className={classes.wrapper}>
         <Sidebar
-          routes={adminSidebarRoutes}
+          routes={dealerSidebarRoutes}
           logoText={"FINANCIAL SERVICES"}
           logo={logo}
           image={image}
@@ -134,16 +145,19 @@ export default function Admin({ ...rest }) {
           {...rest}
         />
         <div className={classes.mainPanel} ref={mainPanel}>
-          <Snackbar
-            place="tr"
-            color="info"
-            icon={AddAlert}
-            open={openSnackbar}
-            autoHideDuration={4000}
-            onClose={handleCloseSnackbar}
-          >
-            {<Alert severity="success">You are succesfully logged in!</Alert>}
-          </Snackbar>
+          {
+            <Snackbar
+              place="tr"
+              color="info"
+              icon={AddAlert}
+              open={openSnackbar}
+              autoHideDuration={4000}
+              onClose={handleCloseSnackbar}
+            >
+              {<Alert severity="success">You are succesfully logged in!</Alert>}
+            </Snackbar>
+          }
+
           {/* <Navbar
             routes={routes}
             handleDrawerToggle={handleDrawerToggle}

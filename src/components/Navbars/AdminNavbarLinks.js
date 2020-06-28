@@ -12,6 +12,7 @@ import ClickAwayListener from "@material-ui/core/ClickAwayListener";
 import Hidden from "@material-ui/core/Hidden";
 import Poppers from "@material-ui/core/Popper";
 import Divider from "@material-ui/core/Divider";
+import PropTypes from "prop-types";
 
 // @material-ui/icons
 import Person from "@material-ui/icons/Person";
@@ -26,10 +27,11 @@ import styles from "assets/jss/material-dashboard-react/components/headerLinksSt
 
 const useStyles = makeStyles(styles);
 
-export default function AdminNavbarLinks() {
+const AdminNavbarLinks = (props) => {
   const classes = useStyles();
   const [openNotification, setOpenNotification] = React.useState(null);
   const [openProfile, setOpenProfile] = React.useState(null);
+
   const handleClickNotification = (event) => {
     if (openNotification && openNotification.contains(event.target)) {
       setOpenNotification(null);
@@ -37,9 +39,11 @@ export default function AdminNavbarLinks() {
       setOpenNotification(event.currentTarget);
     }
   };
+
   const handleCloseNotification = () => {
     setOpenNotification(null);
   };
+
   const handleClickProfile = (event) => {
     if (openProfile && openProfile.contains(event.target)) {
       setOpenProfile(null);
@@ -47,9 +51,19 @@ export default function AdminNavbarLinks() {
       setOpenProfile(event.currentTarget);
     }
   };
+
   const handleCloseProfile = () => {
     setOpenProfile(null);
   };
+
+  const handleLinkSettings = () => {
+    if (props.isAdmin) {
+      return "/admin/settings";
+    } else {
+      return "/dealer/settings";
+    }
+  };
+
   return (
     <div>
       <div className={classes.searchWrapper}>
@@ -190,15 +204,19 @@ export default function AdminNavbarLinks() {
               <Paper>
                 <ClickAwayListener onClickAway={handleCloseProfile}>
                   <MenuList role="menu">
+                    {props.isAdmin && (
+                      <MenuItem
+                        component={Link}
+                        to="/admin/user"
+                        onClick={handleCloseProfile}
+                        className={classes.dropdownItem}
+                      >
+                        Profile
+                      </MenuItem>
+                    )}
                     <MenuItem
                       component={Link}
-                      to="/admin/user"
-                      onClick={handleCloseProfile}
-                      className={classes.dropdownItem}
-                    >
-                      Profile
-                    </MenuItem>
-                    <MenuItem
+                      to={handleLinkSettings}
                       onClick={handleCloseProfile}
                       className={classes.dropdownItem}
                     >
@@ -206,9 +224,9 @@ export default function AdminNavbarLinks() {
                     </MenuItem>
                     <Divider light />
                     <MenuItem
-                      component={Link}
-                      to="/Login"
-                      onClick={handleCloseProfile}
+                      // component={Link}
+                      // to="/login"
+                      onClick={props.handleLogout}
                       className={classes.dropdownItem}
                     >
                       Logout
@@ -222,4 +240,10 @@ export default function AdminNavbarLinks() {
       </div>
     </div>
   );
-}
+};
+
+AdminNavbarLinks.propTypes = {
+  handleLogout: PropTypes.func,
+};
+
+export default AdminNavbarLinks;

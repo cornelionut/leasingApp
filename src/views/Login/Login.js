@@ -1,224 +1,297 @@
-import React, { Component } from "react";
+import React, { useState } from "react";
+import { Auth } from "aws-amplify";
 import { Link } from "react-router-dom";
-import loginImg from "./login.svg";
-import "../../Main.scss";
-import "./style.scss";
+import {
+  Avatar,
+  Box,
+  Container,
+  Checkbox,
+  CssBaseline,
+  FormControlLabel,
+  Grid,
+  IconButton,
+  InputLabel,
+  InputAdornment,
+  OutlinedInput,
+  TextField,
+  Typography,
+  makeStyles,
+} from "@material-ui/core";
+import LoaderButton from "../../components/LoaderButton/LoaderButton";
+import { useAppContext } from "../../libs/contextLib";
+import { onError } from "../../libs/errorLib";
+import LockOutlinedIcon from "@material-ui/icons/LockOutlined";
+import Visibility from "@material-ui/icons/Visibility";
+import VisibilityOff from "@material-ui/icons/VisibilityOff";
+import Snackbar from "@material-ui/core/Snackbar";
+import MuiAlert from "@material-ui/lab/Alert";
+import AddAlert from "@material-ui/icons/AddAlert";
+// import SnackbarContent from "../../components/Snackbar/SnackbarContent.js";
+import "./Login.css";
 
-// import {
-//   Button,
-//   Card,
-//   CardBody,
-//   CardGroup,
-//   Col,
-//   Container,
-//   Form,
-//   Input,
-//   InputGroup,
-//   InputGroupAddon,
-//   InputGroupText,
-//   Row,
-// } from "reactstrap";
-
-export class Login extends Component {
-  constructor(props) {
-    super(props);
-
-    this.state = {
-      Username: "",
-      Password: "",
-      UsernameErrors: "",
-      PasswordErrors: "",
-      isLogginActive: true,
-    };
-
-    this.Password = this.Password.bind(this);
-    this.Username = this.Username.bind(this);
-    this.login = this.login.bind(this);
-  }
-
-  validateForm() {
-    return this.Username.length > 0 && this.Password.length > 0;
-  }
-
-  Username(event) {
-    this.setState({ Username: event.target.value });
-  }
-
-  Password(event) {
-    this.setState({ Password: event.target.value });
-  }
-
-  login(event) {
-    fetch("http://localhost:51044/api/Login/Login", {
-      method: "post",
-
-      headers: {
-        Accept: "application/json",
-        "Content-Type": "application/json",
-      },
-
-      body: JSON.stringify({
-        Username: this.state.Username,
-        Password: this.state.Password,
-      }),
-    })
-      .then((Response) => Response.json())
-      .then((result) => {
-        console.log(result);
-
-        if (result.status === "Invalid") alert("Invalid User");
-        else this.props.history.push("/admin/dashboard");
-      });
-  }
-
-  componentDidMount() {
-    //Add .right by default
-    this.rightSide.classList.add("right");
-  }
-
-  changeState() {
-    const { isLogginActive } = this.state;
-
-    if (isLogginActive) {
-      this.rightSide.classList.remove("right");
-      this.rightSide.classList.add("left");
-    } else {
-      this.rightSide.classList.remove("left");
-      this.rightSide.classList.add("right");
-    }
-    this.setState((prevState) => ({
-      isLogginActive: !prevState.isLogginActive,
-    }));
-  }
-
-  render() {
-    const { isLogginActive } = this.state;
-    const current = isLogginActive ? "Admin" : "Dealer";
-    const currentActive = isLogginActive ? "login" : "register";
-    return (
-      <div className="App">
-        <div className="login">
-          <div className="container" ref={(ref) => (this.container = ref)}>
-            {isLogginActive && (
-              <div className="base-container" ref={this.props.containerRef}>
-                <div className="header">Login</div>
-                <div className="content">
-                  <div className="image">
-                    <img src={loginImg} alt="isn't available" />
-                  </div>
-
-                  <div className="form">
-                    <div className="form-group">
-                      <label className="usernameText" htmlFor="username">
-                        Username
-                      </label>
-                      <input
-                        onChange={this.Username}
-                        type="text"
-                        name="username"
-                        placeholder="username"
-                      />
-                    </div>
-
-                    <div className="form-group">
-                      <label htmlFor="password">Password</label>
-                      <input
-                        onChange={this.Password}
-                        type="password"
-                        name="password"
-                        placeholder="password"
-                      />
-                    </div>
-
-                    <div>
-                      <Link className="forgotPassword" to="/login/reset">
-                        Forgot password?
-                      </Link>
-                    </div>
-                  </div>
-                </div>
-
-                <div className="footer">
-                  <button
-                    onClick={this.login}
-                    disabled={!this.validateForm}
-                    type="button"
-                    className="btn"
-                  >
-                    Login
-                  </button>
-                </div>
-              </div>
-            )}
-          </div>
-
-          <RightSide
-            current={current}
-            currentActive={currentActive}
-            containerRef={(ref) => (this.rightSide = ref)}
-            onClick={this.changeState.bind(this)}
-          />
-        </div>
-      </div>
-      //   <div className="app flex-row align-items-center">
-      //     <Container>
-      //       <Row className="justify-content-center">
-      //         <Col md="9" lg="7" xl="6">
-      //           <CardGroup>
-      //             <Card className="p-2">
-      //               <CardBody>
-      //                 <Form>
-      //                   <div class="row" className="mb-2 pageheading">
-      //                     <div class="col-sm-12 btn btn-primary">Login</div>
-      //                   </div>
-
-      //                   <InputGroup className="mb-3">
-      //                     <Input
-      //                       type="text"
-      //                       onChange={this.Username}
-      //                       placeholder="Enter Username"
-      //                     />
-      //                   </InputGroup>
-
-      //                   <InputGroup className="mb-4">
-      //                     <Input
-      //                       type="password"
-      //                       onChange={this.Password}
-      //                       placeholder="Enter Password"
-      //                     />
-      //                   </InputGroup>
-
-      //                   <Button onClick={this.login} color="success" block>
-      //                     Login
-      //                   </Button>
-
-      //                   <Link to={"/Signup"} className="nav-link">
-      //                     <Button onClick={this.signup} color="success" block>
-      //                       Signup
-      //                     </Button>
-      //                   </Link>
-      //                 </Form>
-      //               </CardBody>
-      //             </Card>
-      //           </CardGroup>
-      //         </Col>
-      //       </Row>
-      //     </Container>
-      //   </div>
-    );
-  }
+function Alert(props) {
+  return <MuiAlert elevation={6} variant="filled" {...props} />;
 }
 
-const RightSide = (props) => {
+const useStyles = makeStyles((theme) => ({
+  avatar: {
+    margin: theme.spacing(1),
+    backgroundColor: "#115293",
+  },
+  form: {
+    width: "100%", // Fix IE 11 issue.
+    marginTop: theme.spacing(1),
+  },
+  submit: {
+    margin: theme.spacing(3, 0, 2),
+  },
+  paper: {
+    marginTop: theme.spacing(8),
+    display: "flex",
+    flexDirection: "column",
+    alignItems: "center",
+  },
+}));
+
+function Copyright() {
   return (
-    <div
-      className="right-side"
-      ref={props.containerRef}
-      onClick={props.onClick}
-    >
-      <div className="inner-container">
-        <div className="text">{props.current}</div>
-      </div>
-    </div>
+    <Typography variant="body2" color="textSecondary" align="center">
+      {"Copyright © "}
+      <Link className="link" href="https://material-ui.com/">
+        Financial Services Leasing
+      </Link>{" "}
+      {new Date().getFullYear()}
+    </Typography>
   );
-};
+}
+
+export default function Login() {
+  const { userHasAuthenticated, userIsAdmin } = useAppContext();
+  const { isLoggedOut, userHasLoggedOut } = useAppContext();
+  const { setOpenSnackbar } = useAppContext();
+  const [isLoading, setIsLoading] = useState(false);
+  const [values, setValues] = useState({
+    amount: "",
+    email: "",
+    password: "",
+    errors: { emailError: "", passwordError: "" },
+    showPassword: false,
+    openSnackbar: false,
+  });
+
+  const classes = useStyles();
+
+  function validateForm() {
+    return values.email.length > 0 && values.password.length > 0;
+  }
+
+  const handleChange = (prop) => (event) => {
+    let typedValue = event.target.value;
+    let re = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+    switch (prop) {
+      case "email":
+        if (re.test(typedValue)) {
+          setValues({
+            ...values,
+            [prop]: event.target.value,
+            errors: {
+              emailError: "",
+            },
+          });
+        } else {
+          setValues({
+            ...values,
+            [prop]: event.target.value,
+            errors: {
+              emailError: "Adresa de email nu este valida",
+            },
+          });
+        }
+        break;
+      case "password":
+        if (typedValue.length < 8) {
+          setValues({
+            ...values,
+            [prop]: event.target.value,
+            errors: {
+              passwordError: "Parola trebuie sa aiba minim 8 caractere",
+            },
+          });
+        } else
+          setValues({
+            ...values,
+            [prop]: event.target.value,
+            errors: {
+              passwordError: "",
+            },
+          });
+        console.log(values.errors.passwordError);
+        break;
+      default:
+        setValues({
+          ...values,
+          [prop]: event.target.value,
+        });
+        break;
+    }
+  };
+
+  const handleClickShowPassword = () => {
+    setValues({ ...values, showPassword: !values.showPassword });
+  };
+
+  const handleMouseDownPassword = (event) => {
+    event.preventDefault();
+  };
+
+  async function handleSubmit(event) {
+    event.preventDefault();
+
+    setIsLoading(true);
+
+    try {
+      await Auth.signIn(values.email, values.password);
+
+      fetch("http://localhost:51044/api/Login/Authenticate", {
+        method: "post",
+
+        headers: {
+          Accept: "application/json",
+          "Content-Type": "application/json",
+        },
+
+        body: JSON.stringify({
+          Email: values.email,
+          Password: values.password,
+        }),
+      })
+        .then((Response) => Response.json())
+        .then((result) => {
+          console.log(result);
+
+          if (result.isAdmin === true) {
+            userIsAdmin(true);
+            userHasAuthenticated(true);
+            setOpenSnackbar(true);
+          } else if (result.isAdmin === false) {
+            userIsAdmin(false);
+            userHasAuthenticated(true);
+            setOpenSnackbar(true);
+          }
+        });
+    } catch (e) {
+      onError(e);
+      setIsLoading(false);
+    }
+  }
+
+  const handleCloseSnackbar = () => {
+    userHasLoggedOut(false);
+  };
+
+  return (
+    <Container component="main" maxWidth="xs">
+      <CssBaseline />
+      <div className={classes.paper}>
+        {
+          <Snackbar
+            place="tr"
+            color="info"
+            icon={AddAlert}
+            //  message="Welcome to MATERIAL DASHBOARD React - a beautiful freebie for every web developer."
+            open={isLoggedOut}
+            autoHideDuration={4000}
+            onClose={handleCloseSnackbar}
+            close
+          >
+            {<Alert severity="success">You are succesfully logged out!</Alert>}
+          </Snackbar>
+        }
+
+        <Avatar className={classes.avatar}>
+          <LockOutlinedIcon />
+        </Avatar>
+        <Typography component="h1" variant="h5">
+          Sign in
+        </Typography>
+        <form className={classes.form} onSubmit={handleSubmit} noValidate>
+          <TextField
+            autoFocus
+            required
+            fullWidth
+            variant="outlined"
+            margin="normal"
+            id="email"
+            label="Email Address"
+            name="email"
+            autoComplete="email"
+            value={values.email}
+            onChange={handleChange("email")}
+            helperText={values.errors.emailError}
+            error={Boolean(values.errors.emailError)}
+          />
+
+          <InputLabel htmlFor="outlined-adornment-password">
+            Password
+          </InputLabel>
+          <OutlinedInput
+            id="outlined-adornment-password"
+            fullWidth
+            type={values.showPassword ? "text" : "password"}
+            value={values.password}
+            onChange={handleChange("password")}
+            endAdornment={
+              <InputAdornment position="end">
+                <IconButton
+                  aria-label="toggle password visibility"
+                  onClick={handleClickShowPassword}
+                  onMouseDown={handleMouseDownPassword}
+                  edge="end"
+                >
+                  {values.showPassword ? <Visibility /> : <VisibilityOff />}
+                </IconButton>
+              </InputAdornment>
+            }
+            labelWidth={70}
+            error={Boolean(values.errors.passwordError)}
+            helperText={values.errors.passwordError}
+          />
+
+          <FormControlLabel
+            control={<Checkbox value="remember" color="primary" />}
+            label="Remember me"
+          />
+
+          <LoaderButton
+            block
+            fullWidth
+            variant="contained"
+            color="primary"
+            type="submit"
+            bsSize="large"
+            isLoading={isLoading}
+            disabled={!validateForm()}
+          >
+            Sign in
+          </LoaderButton>
+
+          <Grid container>
+            <Grid item xs>
+              <Link to="/login/reset" className="link">
+                Forgot password?
+              </Link>
+            </Grid>
+            <Grid item>
+              <Link to="/signup" className="link" variant="body2">
+                "Don't have an account? Sign Up"
+              </Link>
+            </Grid>
+          </Grid>
+        </form>
+      </div>
+      <Box mt={8}>
+        <Copyright />
+      </Box>
+    </Container>
+  );
+}

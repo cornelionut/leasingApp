@@ -1,20 +1,5 @@
 import React, { Component } from "react";
 import loginImg from "./login.svg";
-// import {
-//   Button,
-//   Card,
-//   //   CardFooter,
-//   CardBody,
-//   //   CardGroup,
-//   Col,
-//   Container,
-//   Form,
-//   Input,
-//   InputGroup,
-//   //   InputGroupAddon,
-//   //   InputGroupText,
-//   Row,
-// } from "reactstrap";
 
 export class Register extends Component {
   constructor(props) {

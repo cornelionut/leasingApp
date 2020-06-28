@@ -3,6 +3,7 @@ import { connect } from "react-redux";
 import * as actions from "../../../actions/offerAsset";
 import EditIcon from "@material-ui/icons/Edit";
 import { Link } from "react-router-dom";
+import { useAppContext } from "../../../libs/contextLib";
 import Header from "./Header";
 import {
   Grid,
@@ -48,6 +49,7 @@ const styles = (theme) => ({
 const administrator = "Administrator ";
 
 const OfferList = ({ classes, ...props }) => {
+  const { userIsAdmin } = useAppContext();
   const [localState, setLocalState] = useState({
     imageUrl: "",
     isLoading: true,
@@ -153,7 +155,9 @@ const OfferList = ({ classes, ...props }) => {
                 <Grid item xs={3}>
                   <Link
                     to={{
-                      pathname: "/admin/editOffer/assets",
+                      pathname: userIsAdmin
+                        ? "/admin/editOffer/assets"
+                        : "/dealer/editOffer/assets",
                       search:
                         "leasingDocumentId=" +
                         offer.leasingDocumentId.toString(),

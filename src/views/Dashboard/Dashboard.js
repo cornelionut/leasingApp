@@ -207,7 +207,7 @@ export default function Dashboard() {
             headerColor="primary"
             tabs={[
               {
-                tabName: "Bugs",
+                tabName: "DE REZOLVAT",
                 tabIcon: BugReport,
                 tabContent: (
                   <Tasks
@@ -218,7 +218,7 @@ export default function Dashboard() {
                 ),
               },
               {
-                tabName: "Website",
+                tabName: "Oferte",
                 tabIcon: Code,
                 tabContent: (
                   <Tasks
@@ -229,7 +229,7 @@ export default function Dashboard() {
                 ),
               },
               {
-                tabName: "Server",
+                tabName: "Contracte",
                 tabIcon: Cloud,
                 tabContent: (
                   <Tasks

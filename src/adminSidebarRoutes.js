@@ -10,7 +10,7 @@ import SettingsIcon from "@material-ui/icons/Settings";
 
 // core components/views for Admin layout
 import DashboardPage from "views/Dashboard/Dashboard.js";
-import FlexDashboard from "views/FlexDashboard/FlexDashboard.js";
+import DealerCharts from "views/FlexDashboard/DealerCharts.js";
 import Icons from "views/Icons/Icons.js";
 import NotificationsPage from "views/Notifications/Notifications.js";
 import OfferList from "views/Assets/list/OfferList.js";
@@ -59,7 +59,7 @@ const dashboardRoutes = [
     path: "/reports",
     name: "Rapoarte",
     icon: LibraryBooks,
-    component: FlexDashboard,
+    component: DealerCharts,
     layout: "/admin",
   },
   {

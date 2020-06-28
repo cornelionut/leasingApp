@@ -6,7 +6,7 @@ import DoughnutChart from "./DoughnutChart.js";
 import LineChart from "./LineChart.js";
 import MixedChart from "./MixedChart.js";
 
-export default function FlexDahboard() {
+export default function DealerCharts() {
   return (
     <GridContainer>
       <GridItem xs={6} sm={6} md={6}>
