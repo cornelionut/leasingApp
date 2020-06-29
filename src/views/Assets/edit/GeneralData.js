@@ -86,7 +86,11 @@ const GeneralData = (props) => {
           </Fab>
         }
         subheader={
-          <Typography className={classes.title} variant="body2">
+          <Typography
+            component={"span"}
+            className={classes.title}
+            variant="body2"
+          >
             DATE GENERALE
           </Typography>
         }
@@ -95,13 +99,21 @@ const GeneralData = (props) => {
       <CardContent className={classes.cardContent}>
         <Grid container spacing={2} alignItems="center">
           <Grid item xs={3}>
-            <Typography variant="body2" className={classes.fontSizeTypography}>
+            <Typography
+              component={"span"}
+              variant="body2"
+              className={classes.fontSizeTypography}
+            >
               Responsabil: {"Admin Administrator"}
             </Typography>
           </Grid>
 
           <Grid item xs={3}>
-            <Typography variant="body2" className={classes.fontSizeTypography}>
+            <Typography
+              component={"span"}
+              variant="body2"
+              className={classes.fontSizeTypography}
+            >
               Partener:
               {offerToEdit && offerToEdit !== undefined
                 ? offerToEdit.partner.firstName +
@@ -112,7 +124,11 @@ const GeneralData = (props) => {
           </Grid>
 
           <Grid item xs={3}>
-            <Typography variant="body2" className={classes.fontSizeTypography}>
+            <Typography
+              component={"span"}
+              variant="body2"
+              className={classes.fontSizeTypography}
+            >
               Sales Channel: {"Vanzari proprii"}
             </Typography>
           </Grid>

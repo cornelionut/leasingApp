@@ -81,12 +81,12 @@ export default function FinancialStructure() {
     return (
       <React.Fragment>
         <Grid item xs={6}>
-          <Typography variant="body2">
+          <Typography component={"span"} variant="body2">
             Produs financiar: {"LEASING FINANCIAR - PF"}
           </Typography>
         </Grid>
         <Grid item xs={6}>
-          <Typography variant="body2">
+          <Typography component={"span"} variant="body2">
             Tip contract: {"Leasing Financiar"}
           </Typography>
         </Grid>
@@ -98,10 +98,14 @@ export default function FinancialStructure() {
     return (
       <React.Fragment>
         <Grid item xs={6}>
-          <Typography variant="body2">Avans (35%) {"19.250,00 RON"}</Typography>
+          <Typography component={"span"} variant="body2">
+            Avans (35%) {"19.250,00 RON"}
+          </Typography>
         </Grid>
         <Grid item xs={6}>
-          <Typography variant="body2">Procent dobanda: {"10%"}</Typography>
+          <Typography component={"span"} variant="body2">
+            Procent dobanda: {"10%"}
+          </Typography>
         </Grid>
       </React.Fragment>
     );

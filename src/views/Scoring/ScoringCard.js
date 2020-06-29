@@ -83,7 +83,11 @@ export default function ScoringData() {
             </Fab>
           }
           subheader={
-            <Typography className={classes.title} variant="body2">
+            <Typography
+              component={"span"}
+              className={classes.title}
+              variant="body2"
+            >
               RASPUNS SCORING
             </Typography>
           }

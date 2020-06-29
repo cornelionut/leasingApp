@@ -94,7 +94,11 @@ export default function AdditionalData() {
         <CardHeader
           avatar={<Avatar className={classes.blue900}>{"€"}</Avatar>}
           subheader={
-            <Typography className={classes.title} variant="body2">
+            <Typography
+              component={"span"}
+              className={classes.title}
+              variant="body2"
+            >
               DATE SUPLIMENTARE
             </Typography>
           }
