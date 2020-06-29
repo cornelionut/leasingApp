@@ -253,12 +253,12 @@ export default function Dashboard() {
             <CardBody>
               <Table
                 tableHeaderColor="warning"
-                tableHead={["ID", "Name", "Salary", "Country"]}
+                tableHead={["ID", "Nume", "Valoare oferte incheiate", "Sediu"]}
                 tableData={[
-                  ["1", "Cornel Baciu", "$36,738", "Niger"],
-                  ["2", "Gorkem Gaba", "$23,789", "Olanda"],
-                  ["3", "Leontie Fusa", "$56,142", "Franta"],
-                  ["4", "Irina Hobeanu", "$38,735", "Japonia"],
+                  ["1", "Cornel Baciu", "$936,738", "Iasi"],
+                  ["2", "Irina Hobeanu", "$723,789", "Bucuresti"],
+                  ["3", "Leontie Fusa", "$356,142", "Brasov"],
+                  ["4", "Elena Mache", "$238,735", "Cluj"],
                 ]}
               />
             </CardBody>

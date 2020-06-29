@@ -34,7 +34,7 @@ class LineChart extends React.Component {
         datasets: [
           {
             label: "Total oferte lunar",
-            data: [12, 19, 3, 5, 2, 3, 6, 12, 22, 17, 12],
+            data: [120, 190, 300, 550, 201, 350, 625, 120, 222, 172, 125],
             backgroundColor: [
               "rgba(255, 99, 132, 0.6)",
               "rgba(54, 162, 235, 0.6)",

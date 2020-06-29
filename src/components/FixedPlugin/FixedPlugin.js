@@ -1,7 +1,9 @@
 /*eslint-disable*/
 import React, { Component, useState } from "react";
+
 // nodejs library to set properties for components
 import PropTypes from "prop-types";
+
 // nodejs library that concatenates classes
 import classnames from "classnames";
 import imagine1 from "assets/img/sidebar-1.jpg";

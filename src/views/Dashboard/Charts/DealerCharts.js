@@ -5,6 +5,7 @@ import BarChart from "./BarChart.js";
 import DoughnutChart from "./DoughnutChart.js";
 import LineChart from "./LineChart.js";
 import MixedChart from "./MixedChart.js";
+import Pivot from "./Pivot.js";
 
 import PropTypes from "prop-types";
 import { makeStyles } from "@material-ui/core/styles";
@@ -103,7 +104,9 @@ export default function DealerCharts() {
           </GridItem>
         </GridContainer>
       </TabPanel>
-      <TabPanel value={value} index={1}></TabPanel>
+      <TabPanel value={value} index={1}>
+        <Pivot />
+      </TabPanel>
       <TabPanel value={value} index={2}>
         Item Three
       </TabPanel>

@@ -151,13 +151,13 @@ const AdminNavbarLinks = (props) => {
                       onClick={handleCloseNotification}
                       className={classes.dropdownItem}
                     >
-                      Alta notificare!
+                      Scadentar negenerat!
                     </MenuItem>
                     <MenuItem
                       onClick={handleCloseNotification}
                       className={classes.dropdownItem}
                     >
-                      Notificare noua!
+                      Eroare scoring!
                     </MenuItem>
                   </MenuList>
                 </ClickAwayListener>
