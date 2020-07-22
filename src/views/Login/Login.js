@@ -198,7 +198,6 @@ export default function Login() {
             place="tr"
             color="info"
             icon={AddAlert}
-            //  message="Welcome to MATERIAL DASHBOARD React - a beautiful freebie for every web developer."
             open={isLoggedOut}
             autoHideDuration={4000}
             onClose={handleCloseSnackbar}

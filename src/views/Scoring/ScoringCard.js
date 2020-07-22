@@ -68,6 +68,16 @@ const useStyles = makeStyles((theme) => ({
 export default function ScoringData() {
   const classes = useStyles();
   const [expanded, setExpanded] = useState(true);
+  const [localState, setLocalState] = useState({
+    raspunsScoring: "",
+  });
+
+  const calculateScoring = () => {
+    setLocalState({
+      ...localState,
+      raspunsScoring: "OK",
+    });
+  };
 
   const handleExpandClick = () => {
     setExpanded(!expanded);
@@ -109,16 +119,16 @@ export default function ScoringData() {
         <CardContent className={classes.cardContent}>
           <Grid container direction="column">
             <Grid container direction="row">
-              <Grid xs={4}>
+              <Grid item xs={4}>
                 <TextField
                   disabled
                   label="Raspuns Scoring"
-                  defaultValue=""
+                  value={localState.raspunsScoring}
                   style={{ width: 260 }}
                 />
               </Grid>
 
-              <Grid xs={4}>
+              <Grid item xs={4}>
                 <TextField
                   disabled
                   label="Rating client"
@@ -127,7 +137,7 @@ export default function ScoringData() {
                 />
               </Grid>
 
-              <Grid xs={4}>
+              <Grid item xs={4}>
                 <TextField
                   disabled
                   label="Tip rating client"
@@ -138,7 +148,7 @@ export default function ScoringData() {
             </Grid>
 
             <Grid container direction="row" style={{ marginTop: 20 }}>
-              <Grid xs={4}>
+              <Grid item xs={4}>
                 <TextField
                   disabled
                   label="Rating bun finantat"
@@ -147,7 +157,7 @@ export default function ScoringData() {
                 />
               </Grid>
 
-              <Grid xs={4}>
+              <Grid item xs={4}>
                 <TextField
                   disabled
                   label="Criteriu dat indatorare"
@@ -156,7 +166,7 @@ export default function ScoringData() {
                 />
               </Grid>
 
-              <Grid xs={4}>
+              <Grid item xs={4}>
                 <TextField
                   disabled
                   label="Criterii Knock Out"
@@ -167,7 +177,7 @@ export default function ScoringData() {
             </Grid>
 
             <Grid container direction="row" style={{ marginTop: 20 }}>
-              <Grid xs={4}>
+              <Grid item xs={4}>
                 <TextField
                   disabled
                   label="Criteriu avans minim"
@@ -176,9 +186,9 @@ export default function ScoringData() {
                 />
               </Grid>
 
-              <Grid xs={3}></Grid>
+              <Grid item xs={3}></Grid>
 
-              <Grid xs={3}></Grid>
+              <Grid item xs={3}></Grid>
             </Grid>
 
             <Grid
@@ -190,6 +200,9 @@ export default function ScoringData() {
             >
               <Grid item xs={3}>
                 <Button
+                  onClick={() => {
+                    calculateScoring();
+                  }}
                   color="primary"
                   variant="contained"
                   className={classes.btnSave}

@@ -93,6 +93,9 @@ export default function Routes() {
       <AuthenticatedRoute exact path="/dealer/table">
         <Dealer />
       </AuthenticatedRoute>
+      <AuthenticatedRoute exact path="/dealer/scoring">
+        <Dealer />
+      </AuthenticatedRoute>
       Finally, catch all unmatched routes
       <Route>
         <NotFound />

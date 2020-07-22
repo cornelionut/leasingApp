@@ -61,7 +61,7 @@ class LineChart extends React.Component {
       options: {
         title: {
           display: true,
-          text: "Oferte dealeri in functie de marca",
+          text: "Oferte dealeri in functie de luna",
           fontSize: 22,
         },
         legend: {

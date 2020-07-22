@@ -8,6 +8,9 @@ import { useFormFields } from "../../../libs/hooksLib";
 import { onError } from "../../../libs/errorLib";
 import { makeStyles } from "@material-ui/core/styles";
 import { NotificationManager } from "react-notifications";
+import Snackbar from "@material-ui/core/Snackbar";
+import AddAlert from "@material-ui/icons/AddAlert";
+import MuiAlert from "@material-ui/lab/Alert";
 import "./Signup.css";
 
 const useStyles = makeStyles((theme) => ({
@@ -23,6 +26,10 @@ const useStyles = makeStyles((theme) => ({
   },
 }));
 
+function Alert(props) {
+  return <MuiAlert elevation={6} variant="filled" {...props} />;
+}
+
 export default function Signup() {
   const classes = useStyles();
 
@@ -36,6 +43,11 @@ export default function Signup() {
   const [newUser, setNewUser] = useState(null);
   const { userHasAuthenticated } = useAppContext();
   const [isLoading, setIsLoading] = useState(false);
+  const { userAdded, userIsAdded } = useState(false);
+
+  const handleCloseSnackbar = () => {
+    userIsAdded(true);
+  };
 
   function validateForm() {
     return (
@@ -106,6 +118,19 @@ export default function Signup() {
           value={fields.confirmationCode}
           onChange={handleFieldChange}
         />
+
+        {
+          <Snackbar
+            place="tr"
+            color="info"
+            icon={AddAlert}
+            open={userAdded}
+            autoHideDuration={4000}
+            onClose={handleCloseSnackbar}
+          >
+            {<Alert severity="success">User added succesfully!</Alert>}
+          </Snackbar>
+        }
 
         <LoaderButton
           block

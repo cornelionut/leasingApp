@@ -72,7 +72,7 @@ export default function Dashboard() {
                 <Store />
               </CardIcon>
               <p className={classes.cardCategory}>Valoare oferta incheiate</p>
-              <h3 className={classes.cardTitle}>$134,245</h3>
+              <h3 className={classes.cardTitle}>$134,200,245</h3>
             </CardHeader>
             <CardFooter stats>
               <div className={classes.stats}>
@@ -247,7 +247,7 @@ export default function Dashboard() {
             <CardHeader color="warning">
               <h4 className={classes.cardTitleWhite}>Status Angajati</h4>
               <p className={classes.cardCategoryWhite}>
-                Angajati noi la data de 2 Iulie, 2020
+                Angajati noi la data de 1 Iulie, 2020
               </p>
             </CardHeader>
             <CardBody>

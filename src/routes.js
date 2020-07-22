@@ -26,6 +26,7 @@ import ResetPassword from "views/Login/ResetPassword/ResetPassword";
 import Settings from "./views/Settings/Settings";
 import ChangeEmail from "./views/Login/ChangeEmail/ChangeEmail";
 import ChangePassword from "./views/Login/ChangePassword/ChangePassword";
+import Scoring from "./views/Scoring/Scoring";
 import App from "./App";
 
 const dashboardRoutes = [
@@ -265,6 +266,12 @@ const dashboardRoutes = [
     path: "/changePassword",
     name: "Actualizeaza parola",
     component: ChangePassword,
+    layout: "/dealer",
+  },
+  {
+    path: "/scoring",
+    name: "Scoring",
+    component: Scoring,
     layout: "/dealer",
   },
 ];

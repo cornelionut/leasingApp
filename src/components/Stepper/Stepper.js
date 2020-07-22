@@ -37,6 +37,9 @@ const useStyles = makeStyles((theme) => ({
     marginTop: theme.spacing(1),
     marginBottom: theme.spacing(1),
   },
+  marginTop: {
+    marginTop: "50px",
+  },
   gridContainer: {
     marginTop: "50px",
     paddingLeft: "0px",
@@ -248,7 +251,7 @@ const StepperComponent = (props) => {
             <Typography component={"span"} className={classes.instructions}>
               {getStepContent(activeStep, props, classes)}
             </Typography>
-            <div>
+            <div className={classes.marginTop}>
               <Button
                 disabled={activeStep === 0}
                 onClick={handleBack}

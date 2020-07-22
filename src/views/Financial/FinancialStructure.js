@@ -167,23 +167,23 @@ export default function FinancialStructure() {
 
       <CardContent className={classes.cardContent}>
         <Grid container spacing={1}>
-          <Grid container item xs={12}>
+          <Grid container>
             <FormRow1></FormRow1>
           </Grid>
 
-          <Grid container item xs={12}>
+          <Grid container>
             <FormRow2></FormRow2>
           </Grid>
 
-          <Grid container item xs={12}>
+          <Grid container>
             <FormRow3></FormRow3>
           </Grid>
 
-          <Grid container item xs={12}>
+          <Grid container>
             <FormRow4></FormRow4>
           </Grid>
 
-          <Grid container item xs={12}>
+          <Grid container>
             <Grid item xs={9}></Grid>
             <Grid item xs={3}>
               <CardActions disableSpacing>
@@ -232,7 +232,7 @@ export default function FinancialStructure() {
               </Grid>
             </Grid>
 
-            <Grid container xs={12} direction="row">
+            <Grid container direction="row">
               <Grid xs={3}>
                 <TextField disabled label="Comision" defaultValue="20.702,00" />
               </Grid>

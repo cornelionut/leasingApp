@@ -2,6 +2,7 @@ import React, { useState } from "react";
 import clsx from "clsx";
 import ExpandMoreIcon from "@material-ui/icons/ExpandMore";
 import {
+  Button,
   Card,
   CardActions,
   CardContent,
@@ -22,13 +23,16 @@ const styles = (theme) => ({
   root: {
     minWidth: 200,
   },
+  blue900: {
+    backgroundColor: blue[900],
+  },
   bullet: {
     display: "inline-block",
     margin: "0 2px",
     transform: "scale(0.8)",
   },
   cardContent: {
-    marginLeft: "25px",
+    marginLeft: "30px",
   },
   expand: {
     transform: "rotate(0deg)",
@@ -43,8 +47,14 @@ const styles = (theme) => ({
   fontSizeTypography: {
     fontSize: 16,
   },
+  gdcontainer: {
+    marginBottom: "30px",
+  },
   icon: {
     backgroundColor: blue[900],
+  },
+  marginBottom: {
+    marginBottom: "30px",
   },
   pos: {
     marginBottom: 12,
@@ -61,6 +71,7 @@ const GeneralData = (props) => {
 
   const [state, setState] = useState({
     responsible: "",
+    partner: "",
     name: "Giulia <3",
   });
 
@@ -97,7 +108,7 @@ const GeneralData = (props) => {
       />
 
       <CardContent className={classes.cardContent}>
-        <Grid container spacing={2} alignItems="center">
+        <Grid container item direction="row" className={classes.marginBottom}>
           <Grid item xs={3}>
             <Typography
               component={"span"}
@@ -152,29 +163,77 @@ const GeneralData = (props) => {
 
       <Collapse in={expanded} timeout="auto" unmountOnExit>
         <CardContent className={classes.cardContent}>
-          <Grid container>
-            <Grid item xs={12}>
-              <InputLabel shrink htmlFor="responsible-native-label-placeholder">
-                Responsabil
-              </InputLabel>
-              <NativeSelect
-                value={state.age}
-                onChange={handleChange}
-                inputProps={{
-                  name: "responsible",
-                  id: "responsible-native-label-placeholder",
-                }}
-              >
-                <option value="">None</option>
-                <option value={10}>Cornel Baciu</option>
-                <option value={11}>Irina Hobeanu</option>
-                <option value={20}>Admin Admin</option>
-                <option value={30}>Leontie Fusa</option>
-                <option value={40}>Tony Robbins</option>
-                <option value={50}>Napoleon Hill</option>
-                <option value={60}>Giulia Giulia</option>
-                <option value={70}>Gol</option>
-              </NativeSelect>
+          <Grid container direction="column">
+            <Grid container direction="row" className={classes.gdcontainer}>
+              <Grid item xs={6}>
+                <InputLabel
+                  shrink
+                  htmlFor="responsible-native-label-placeholder"
+                >
+                  Responsabil
+                </InputLabel>
+                <NativeSelect
+                  value={state.age}
+                  onChange={handleChange}
+                  inputProps={{
+                    name: "responsible",
+                    id: "responsible-native-label-placeholder",
+                  }}
+                >
+                  <option value="">None</option>
+                  <option value={10}>Cornel Baciu</option>
+                  <option value={11}>Irina Hobeanu</option>
+                  <option value={20}>Admin Admin</option>
+                  <option value={30}>Leontie Fusa</option>
+                  <option value={40}>Tony Robbins</option>
+                  <option value={50}>Napoleon Hill</option>
+                  <option value={60}>Giulia Giulia</option>
+                  <option value={70}>Gol</option>
+                </NativeSelect>
+              </Grid>
+
+              <Grid item xs={6}>
+                <InputLabel shrink htmlFor="partner-native-label-placeholder">
+                  Partener
+                </InputLabel>
+                <NativeSelect
+                  value={state.age}
+                  onChange={handleChange}
+                  inputProps={{
+                    name: "partner",
+                    id: "partner-native-label-placeholder",
+                  }}
+                >
+                  <option value="">None</option>
+                  <option value={10}>Partener110770</option>
+                  <option value={11}>Partener110822</option>
+                  <option value={20}>Partener110902</option>
+                  <option value={30}>Partener11916</option>
+                  <option value={40}>Partener111216</option>
+                  <option value={50}>Partener111217</option>
+                  <option value={60}>Partener102201</option>
+                  <option value={70}>Partener120520</option>
+                </NativeSelect>
+              </Grid>
+            </Grid>
+
+            <Grid
+              container
+              spacing={5}
+              direction="row"
+              //  alignItems="center"
+              //   justify="space-between"
+              style={{ margintTop: "50px" }}
+            >
+              <Grid item xs={3}>
+                <Button
+                  color="primary"
+                  variant="contained"
+                  className={classes.blue900}
+                >
+                  SALVEAZA
+                </Button>
+              </Grid>
             </Grid>
           </Grid>
         </CardContent>

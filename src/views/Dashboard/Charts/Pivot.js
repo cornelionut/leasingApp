@@ -178,8 +178,7 @@ class Pivot extends React.Component {
 //     },
 //     pieHole: 0.35,
 //     chartArea: { height: "85%" },
-//     pieSliceBorderColor: "none",
-//     colors: ["#A5D8DD", "#EA6A47", "#0091D5"],
+//     pieSliceBor     colors: ["#A5D8DD", "#EA6A47", "#0091D5"],
 //   };
 //   var chart = new google.visualization.PieChart(
 //     document.getElementById("pie-chart-container")
@@ -243,9 +242,6 @@ function getData() {
         hierarchy: "Product Information",
         parent: "Business Type",
       },
-      Color: {
-        type: "string",
-      },
       Destination: {
         type: "string",
       },
@@ -268,7 +264,6 @@ function getData() {
     },
     {
       Category: "Passenger Cars",
-      Color: "red",
       Destination: "Iasi",
       "Business Type": "Specialty Bike Shop",
       City: "Iasi",
@@ -278,7 +273,6 @@ function getData() {
     },
     {
       Category: "Passenger Cars",
-      Color: "yellow",
       Destination: "Cluj",
       "Business Type": "Specialty Bike Shop",
       City: "Cluj",
@@ -288,7 +282,6 @@ function getData() {
     },
     {
       Category: "Passenger Cars",
-      Color: "white",
       Destination: "Timisoara",
       "Business Type": "Specialty Bike Shop",
       City: "Timisoara",
@@ -298,7 +291,6 @@ function getData() {
     },
     {
       Category: "Passenger Cars",
-      Color: "yellow",
       Destination: "Constanta",
       "Business Type": "Specialty Bike Shop",
       City: "Constanta",
@@ -308,7 +300,6 @@ function getData() {
     },
     {
       Category: "Passenger Cars",
-      Color: "red",
       Destination: "Craiova",
       "Business Type": "Specialty Bike Shop",
       City: "Craiova",
@@ -318,7 +309,6 @@ function getData() {
     },
     {
       Category: "Passenger Cars",
-      Color: "yellow",
       Destination: "Brasov",
       "Business Type": "Specialty Bike Shop",
       City: "Brasov",
@@ -328,7 +318,6 @@ function getData() {
     },
     {
       Category: "Passenger Cars",
-      Color: "green",
       Destination: "Iasi",
       "Business Type": "Value Added Reseller",
       City: "Iasi",
@@ -338,7 +327,6 @@ function getData() {
     },
     {
       Category: "Passenger Cars",
-      Color: "yellow",
       Destination: "Cluj",
       "Business Type": "Value Added Reseller",
       City: "Cluj",
@@ -348,7 +336,6 @@ function getData() {
     },
     {
       Category: "Passenger Cars",
-      Color: "yellow",
       Destination: "Cluj",
       "Business Type": "Value Added Reseller",
       City: "Cluj",
@@ -358,7 +345,6 @@ function getData() {
     },
     {
       Category: "Passenger Cars",
-      Color: "yellow",
       Destination: "Timisoara",
       "Business Type": "Value Added Reseller",
       City: "Timisoara",
@@ -368,7 +354,6 @@ function getData() {
     },
     {
       Category: "Passenger Cars",
-      Color: "red",
       Destination: "Constanta",
       "Business Type": "Value Added Reseller",
       City: "Constanta",
@@ -378,7 +363,6 @@ function getData() {
     },
     {
       Category: "Passenger Cars",
-      Color: "yellow",
       Destination: "Craiova",
       "Business Type": "Value Added Reseller",
       City: "Craiova",
@@ -388,7 +372,6 @@ function getData() {
     },
     {
       Category: "Passenger Cars",
-      Color: "red",
       Destination: "Brasov",
       "Business Type": "Value Added Reseller",
       City: "Brasov",
@@ -398,7 +381,6 @@ function getData() {
     },
     {
       Category: "Passenger Cars",
-      Color: "yellow",
       Destination: "Iasi",
       "Business Type": "Warehouse",
       City: "Iasi",
@@ -408,7 +390,6 @@ function getData() {
     },
     {
       Category: "Passenger Cars",
-      Color: "red",
       Destination: "Cluj",
       "Business Type": "Warehouse",
       City: "Cluj",
@@ -418,7 +399,6 @@ function getData() {
     },
     {
       Category: "Passenger Cars",
-      Color: "green",
       Destination: "Timisoara",
       "Business Type": "Warehouse",
       City: "Timisoara",
@@ -428,7 +408,6 @@ function getData() {
     },
     {
       Category: "Passenger Cars",
-      Color: "yellow",
       Destination: "Constanta",
       "Business Type": "Warehouse",
       City: "Constanta",
@@ -438,7 +417,6 @@ function getData() {
     },
     {
       Category: "Passenger Cars",
-      Color: "red",
       Destination: "Craiova",
       "Business Type": "Warehouse",
       City: "Craiova",
@@ -448,7 +426,6 @@ function getData() {
     },
     {
       Category: "Passenger Cars",
-      Color: "white",
       Destination: "Brasov",
       "Business Type": "Warehouse",
       City: "Brasov",
@@ -458,7 +435,6 @@ function getData() {
     },
     {
       Category: "Bikes",
-      Color: "white",
       Destination: "Iasi",
       "Business Type": "Specialty Bike Shop",
       City: "Iasi",
@@ -468,7 +444,6 @@ function getData() {
     },
     {
       Category: "Bikes",
-      Color: "red",
       Destination: "Cluj",
       "Business Type": "Specialty Bike Shop",
       City: "Cluj",
@@ -478,7 +453,6 @@ function getData() {
     },
     {
       Category: "Bikes",
-      Color: "red",
       Destination: "Timisoara",
       "Business Type": "Specialty Bike Shop",
       City: "Timisoara",
@@ -488,7 +462,6 @@ function getData() {
     },
     {
       Category: "Bikes",
-      Color: "green",
       Destination: "Constanta",
       "Business Type": "Specialty Bike Shop",
       City: "Constanta",
@@ -498,7 +471,6 @@ function getData() {
     },
     {
       Category: "Bikes",
-      Color: "green",
       Destination: "Craiova",
       "Business Type": "Specialty Bike Shop",
       City: "Craiova",
@@ -508,7 +480,6 @@ function getData() {
     },
     {
       Category: "Bikes",
-      Color: "green",
       Destination: "Brasov",
       "Business Type": "Specialty Bike Shop",
       City: "Brasov",
@@ -518,7 +489,6 @@ function getData() {
     },
     {
       Category: "Bikes",
-      Color: "green",
       Destination: "Iasi",
       "Business Type": "Value Added Reseller",
       City: "Iasi",
@@ -528,7 +498,6 @@ function getData() {
     },
     {
       Category: "Bikes",
-      Color: "red",
       Destination: "Cluj",
       "Business Type": "Value Added Reseller",
       City: "Cluj",
@@ -538,7 +507,6 @@ function getData() {
     },
     {
       Category: "Bikes",
-      Color: "yellow",
       Destination: "Timisoara",
       "Business Type": "Value Added Reseller",
       City: "Timisoara",
@@ -548,7 +516,6 @@ function getData() {
     },
     {
       Category: "Bikes",
-      Color: "red",
       Destination: "Constanta",
       "Business Type": "Value Added Reseller",
       City: "Constanta",
@@ -558,7 +525,6 @@ function getData() {
     },
     {
       Category: "Bikes",
-      Color: "blue",
       Destination: "Craiova",
       "Business Type": "Value Added Reseller",
       City: "Craiova",
@@ -568,7 +534,6 @@ function getData() {
     },
     {
       Category: "Bikes",
-      Color: "red",
       Destination: "Iasi",
       "Business Type": "Value Added Reseller",
       City: "Brasov",
@@ -578,7 +543,6 @@ function getData() {
     },
     {
       Category: "Bikes",
-      Color: "blue",
       Destination: "Cluj",
       "Business Type": "Warehouse",
       City: "Iasi",
@@ -588,7 +552,6 @@ function getData() {
     },
     {
       Category: "Bikes",
-      Color: "blue",
       Destination: "Timisoara",
       "Business Type": "Warehouse",
       City: "Cluj",
@@ -598,7 +561,6 @@ function getData() {
     },
     {
       Category: "Bikes",
-      Color: "purple",
       Destination: "Constanta",
       "Business Type": "Warehouse",
       City: "Timisoara",
@@ -608,7 +570,6 @@ function getData() {
     },
     {
       Category: "Bikes",
-      Color: "red",
       Destination: "Craiova",
       "Business Type": "Warehouse",
       City: "Constanta",
@@ -618,7 +579,6 @@ function getData() {
     },
     {
       Category: "Bikes",
-      Color: "blue",
       Destination: "Brasov",
       "Business Type": "Warehouse",
       City: "Craiova",
@@ -628,7 +588,6 @@ function getData() {
     },
     {
       Category: "Bikes",
-      Color: "blue",
       Destination: "Iasi",
       "Business Type": "Warehouse",
       City: "Brasov",
@@ -638,7 +597,6 @@ function getData() {
     },
     {
       Category: "Clothing",
-      Color: "yellow",
       Destination: "Cluj",
       "Business Type": "Specialty Bike Shop",
       City: "Iasi",
@@ -648,7 +606,6 @@ function getData() {
     },
     {
       Category: "Clothing",
-      Color: "blue",
       Destination: "Timisoara",
       "Business Type": "Specialty Bike Shop",
       City: "Cluj",
@@ -658,7 +615,6 @@ function getData() {
     },
     {
       Category: "Clothing",
-      Color: "blue",
       Destination: "Constanta",
       "Business Type": "Specialty Bike Shop",
       City: "Timisoara",
@@ -668,7 +624,6 @@ function getData() {
     },
     {
       Category: "Clothing",
-      Color: "blue",
       Destination: "Craiova",
       "Business Type": "Specialty Bike Shop",
       City: "Constanta",
@@ -678,7 +633,6 @@ function getData() {
     },
     {
       Category: "Clothing",
-      Color: "white",
       Destination: "Brasov",
       "Business Type": "Specialty Bike Shop",
       City: "Craiova",
@@ -688,7 +642,6 @@ function getData() {
     },
     {
       Category: "Clothing",
-      Color: "purple",
       Destination: "Iasi",
       "Business Type": "Specialty Bike Shop",
       City: "Brasov",
@@ -698,7 +651,6 @@ function getData() {
     },
     {
       Category: "Clothing",
-      Color: "red",
       Destination: "Cluj",
       "Business Type": "Value Added Reseller",
       City: "Iasi",
@@ -708,7 +660,6 @@ function getData() {
     },
     {
       Category: "Clothing",
-      Color: "purple",
       Destination: "Timisoara",
       "Business Type": "Value Added Reseller",
       City: "Cluj",
@@ -718,7 +669,6 @@ function getData() {
     },
     {
       Category: "Clothing",
-      Color: "green",
       Destination: "Constanta",
       "Business Type": "Value Added Reseller",
       City: "Timisoara",
@@ -728,7 +678,6 @@ function getData() {
     },
     {
       Category: "Clothing",
-      Color: "red",
       Destination: "Craiova",
       "Business Type": "Value Added Reseller",
       City: "Constanta",
@@ -738,7 +687,6 @@ function getData() {
     },
     {
       Category: "Clothing",
-      Color: "white",
       Destination: "Brasov",
       "Business Type": "Value Added Reseller",
       City: "Craiova",
@@ -748,7 +696,6 @@ function getData() {
     },
     {
       Category: "Clothing",
-      Color: "white",
       Destination: "Iasi",
       "Business Type": "Value Added Reseller",
       City: "Brasov",
@@ -758,7 +705,6 @@ function getData() {
     },
     {
       Category: "Clothing",
-      Color: "red",
       Destination: "Craiova",
       "Business Type": "Warehouse",
       City: "Iasi",
@@ -768,7 +714,6 @@ function getData() {
     },
     {
       Category: "Clothing",
-      Color: "blue",
       Destination: "Brasov",
       "Business Type": "Warehouse",
       City: "Cluj",
@@ -778,7 +723,6 @@ function getData() {
     },
     {
       Category: "Clothing",
-      Color: "green",
       Destination: "Iasi",
       "Business Type": "Warehouse",
       City: "Timisoara",
@@ -788,7 +732,6 @@ function getData() {
     },
     {
       Category: "Clothing",
-      Color: "blue",
       Destination: "Cluj",
       "Business Type": "Warehouse",
       City: "Constanta",
@@ -798,7 +741,6 @@ function getData() {
     },
     {
       Category: "Clothing",
-      Color: "green",
       Destination: "Timisoara",
       "Business Type": "Warehouse",
       City: "Craiova",
@@ -808,7 +750,6 @@ function getData() {
     },
     {
       Category: "Clothing",
-      Color: "green",
       Destination: "Constanta",
       "Business Type": "Warehouse",
       City: "Brasov",
@@ -818,7 +759,6 @@ function getData() {
     },
     {
       Category: "Light Commercial(<3.5t)",
-      Color: "red",
       Destination: "Craiova",
       "Business Type": "Specialty Bike Shop",
       City: "Iasi",
@@ -828,7 +768,6 @@ function getData() {
     },
     {
       Category: "Light Commercial(<3.5t)",
-      Color: "green",
       Destination: "Brasov",
       "Business Type": "Specialty Bike Shop",
       City: "Cluj",
@@ -838,7 +777,6 @@ function getData() {
     },
     {
       Category: "Light Commercial(<3.5t)",
-      Color: "red",
       Destination: "Iasi",
       "Business Type": "Specialty Bike Shop",
       City: "Timisoara",
@@ -848,7 +786,6 @@ function getData() {
     },
     {
       Category: "Light Commercial(<3.5t)",
-      Color: "blue",
       Destination: "Craiova",
       "Business Type": "Specialty Bike Shop",
       City: "Constanta",
@@ -858,7 +795,6 @@ function getData() {
     },
     {
       Category: "Light Commercial(<3.5t)",
-      Color: "blue",
       Destination: "Brasov",
       "Business Type": "Specialty Bike Shop",
       City: "Craiova",
@@ -868,7 +804,6 @@ function getData() {
     },
     {
       Category: "Light Commercial(<3.5t)",
-      Color: "red",
       Destination: "Iasi",
       "Business Type": "Specialty Bike Shop",
       City: "Brasov",
@@ -878,7 +813,6 @@ function getData() {
     },
     {
       Category: "Light Commercial(<3.5t)",
-      Color: "blue",
       Destination: "Cluj",
       "Business Type": "Value Added Reseller",
       City: "Iasi",
@@ -888,7 +822,6 @@ function getData() {
     },
     {
       Category: "Light Commercial(<3.5t)",
-      Color: "red",
       Destination: "Timisoara",
       "Business Type": "Value Added Reseller",
       City: "Cluj",
@@ -898,7 +831,6 @@ function getData() {
     },
     {
       Category: "Light Commercial(<3.5t)",
-      Color: "blue",
       Destination: "Constanta",
       "Business Type": "Value Added Reseller",
       City: "Timisoara",
@@ -908,7 +840,6 @@ function getData() {
     },
     {
       Category: "Light Commercial(<3.5t)",
-      Color: "red",
       Destination: "Timisoara",
       "Business Type": "Value Added Reseller",
       City: "Constanta",
@@ -918,7 +849,6 @@ function getData() {
     },
     {
       Category: "Light Commercial(<3.5t)",
-      Color: "blue",
       Destination: "Constanta",
       "Business Type": "Value Added Reseller",
       City: "Craiova",
@@ -928,7 +858,6 @@ function getData() {
     },
     {
       Category: "Light Commercial(<3.5t)",
-      Color: "blue",
       Destination: "Craiova",
       "Business Type": "Value Added Reseller",
       City: "Brasov",
@@ -938,7 +867,6 @@ function getData() {
     },
     {
       Category: "Light Commercial(<3.5t)",
-      Color: "green",
       Destination: "Brasov",
       "Business Type": "Warehouse",
       City: "Iasi",
@@ -948,7 +876,6 @@ function getData() {
     },
     {
       Category: "Light Commercial(<3.5t)",
-      Color: "white",
       Destination: "Iasi",
       "Business Type": "Warehouse",
       City: "Cluj",
@@ -958,7 +885,6 @@ function getData() {
     },
     {
       Category: "Light Commercial(<3.5t)",
-      Color: "blue",
       Destination: "Cluj",
       "Business Type": "Value Added Reseller",
       City: "Iasi",
@@ -968,7 +894,6 @@ function getData() {
     },
     {
       Category: "Light Commercial(<3.5t)",
-      Color: "red",
       Destination: "Iasi",
       "Business Type": "Value Added Reseller",
       City: "Cluj",
@@ -978,7 +903,6 @@ function getData() {
     },
     {
       Category: "Light Commercial(<3.5t)",
-      Color: "blue",
       Destination: "Cluj",
       "Business Type": "Value Added Reseller",
       City: "Timisoara",
@@ -988,7 +912,6 @@ function getData() {
     },
     {
       Category: "Light Commercial(<3.5t)",
-      Color: "red",
       Destination: "Timisoara",
       "Business Type": "Value Added Reseller",
       City: "Constanta",
@@ -998,7 +921,6 @@ function getData() {
     },
     {
       Category: "Light Commercial(<3.5t)",
-      Color: "blue",
       Destination: "Constanta",
       "Business Type": "Value Added Reseller",
       City: "Craiova",
@@ -1008,7 +930,6 @@ function getData() {
     },
     {
       Category: "Light Commercial(<3.5t)",
-      Color: "blue",
       Destination: "Craiova",
       "Business Type": "Value Added Reseller",
       City: "Brasov",
@@ -1018,7 +939,6 @@ function getData() {
     },
     {
       Category: "Light Commercial(<3.5t)",
-      Color: "green",
       Destination: "Brasov",
       "Business Type": "Warehouse",
       City: "Iasi",
@@ -1028,7 +948,6 @@ function getData() {
     },
     {
       Category: "Light Commercial(<3.5t)",
-      Color: "white",
       Destination: "Constanta",
       "Business Type": "Warehouse",
       City: "Cluj",
@@ -1038,7 +957,6 @@ function getData() {
     },
     {
       Category: "Light Commercial(<3.5t)",
-      Color: "green",
       Destination: "Craiova",
       "Business Type": "Warehouse",
       City: "Iasi",
@@ -1048,7 +966,6 @@ function getData() {
     },
     {
       Category: "Light Commercial(<3.5t)",
-      Color: "white",
       Destination: "Brasov",
       "Business Type": "Warehouse",
       City: "Cluj",
@@ -1058,7 +975,6 @@ function getData() {
     },
     {
       Category: "Light Commercial(<3.5t)",
-      Color: "white",
       Destination: "Iasi",
       "Business Type": "Warehouse",
       City: "Timisoara",
@@ -1068,7 +984,6 @@ function getData() {
     },
     {
       Category: "Light Commercial(<3.5t)",
-      Color: "blue",
       Destination: "Cluj",
       "Business Type": "Warehouse",
       City: "Constanta",
@@ -1078,7 +993,6 @@ function getData() {
     },
     {
       Category: "Light Commercial(<3.5t)",
-      Color: "white",
       Destination: "Iasi",
       "Business Type": "Warehouse",
       City: "Craiova",
@@ -1088,7 +1002,6 @@ function getData() {
     },
     {
       Category: "Light Commercial(<3.5t)",
-      Color: "blue",
       Destination: "Cluj",
       "Business Type": "Warehouse",
       City: "Brasov",
@@ -1098,7 +1011,6 @@ function getData() {
     },
     {
       Category: "Light Commercial(<3.5t)",
-      Color: "red",
       Destination: "Timisoara",
       "Business Type": "Specialty Bike Shop",
       City: "Iasi",
@@ -1108,7 +1020,6 @@ function getData() {
     },
     {
       Category: "Light Commercial(<3.5t)",
-      Color: "green",
       Destination: "Constanta",
       "Business Type": "Specialty Bike Shop",
       City: "Cluj",
@@ -1118,7 +1029,6 @@ function getData() {
     },
     {
       Category: "Light Commercial(<3.5t)",
-      Color: "red",
       Destination: "Craiova",
       "Business Type": "Specialty Bike Shop",
       City: "Timisoara",
@@ -1128,7 +1038,6 @@ function getData() {
     },
     {
       Category: "Light Commercial(<3.5t)",
-      Color: "blue",
       Destination: "Brasov",
       "Business Type": "Specialty Bike Shop",
       City: "Constanta",
@@ -1138,7 +1047,6 @@ function getData() {
     },
     {
       Category: "Light Commercial(<3.5t)",
-      Color: "blue",
       Destination: "Iasi",
       "Business Type": "Specialty Bike Shop",
       City: "Craiova",
@@ -1148,7 +1056,6 @@ function getData() {
     },
     {
       Category: "Light Commercial(<3.5t)",
-      Color: "red",
       Destination: "Cluj",
       "Business Type": "Specialty Bike Shop",
       City: "Brasov",
@@ -1158,7 +1065,6 @@ function getData() {
     },
     {
       Category: "Light Commercial(<3.5t)",
-      Color: "blue",
       Destination: "Timisoara",
       "Business Type": "Value Added Reseller",
       City: "Iasi",
@@ -1168,7 +1074,6 @@ function getData() {
     },
     {
       Category: "Light Commercial(<3.5t)",
-      Color: "red",
       Destination: "Constanta",
       "Business Type": "Value Added Reseller",
       City: "Cluj",
@@ -1178,7 +1083,6 @@ function getData() {
     },
     {
       Category: "Light Commercial(<3.5t)",
-      Color: "blue",
       Destination: "Craiova",
       "Business Type": "Value Added Reseller",
       City: "Timisoara",
@@ -1188,7 +1092,6 @@ function getData() {
     },
     {
       Category: "Light Commercial(<3.5t)",
-      Color: "red",
       Destination: "Brasov",
       "Business Type": "Value Added Reseller",
       City: "Constanta",
@@ -1198,7 +1101,6 @@ function getData() {
     },
     {
       Category: "Light Commercial(<3.5t)",
-      Color: "blue",
       Destination: "Iasi",
       "Business Type": "Value Added Reseller",
       City: "Craiova",
@@ -1208,7 +1110,6 @@ function getData() {
     },
     {
       Category: "Light Commercial(<3.5t)",
-      Color: "blue",
       Destination: "Cluj",
       "Business Type": "Value Added Reseller",
       City: "Brasov",
@@ -1218,7 +1119,6 @@ function getData() {
     },
     {
       Category: "Light Commercial(<3.5t)",
-      Color: "green",
       Destination: "Constanta",
       "Business Type": "Warehouse",
       City: "Iasi",
@@ -1228,7 +1128,6 @@ function getData() {
     },
     {
       Category: "Light Commercial(<3.5t)",
-      Color: "white",
       Destination: "Craiova",
       "Business Type": "Warehouse",
       City: "Cluj",
@@ -1238,7 +1137,6 @@ function getData() {
     },
     {
       Category: "Light Commercial(<3.5t)",
-      Color: "blue",
       Destination: "Brasov",
       "Business Type": "Value Added Reseller",
       City: "Iasi",
@@ -1248,7 +1146,6 @@ function getData() {
     },
     {
       Category: "Light Commercial(<3.5t)",
-      Color: "red",
       Destination: "Iasi",
       "Business Type": "Value Added Reseller",
       City: "Cluj",
@@ -1258,7 +1155,6 @@ function getData() {
     },
     {
       Category: "Light Commercial(<3.5t)",
-      Color: "blue",
       Destination: "Cluj",
       "Business Type": "Value Added Reseller",
       City: "Timisoara",
@@ -1268,7 +1164,6 @@ function getData() {
     },
     {
       Category: "Light Commercial(<3.5t)",
-      Color: "red",
       Destination: "Iasi",
       "Business Type": "Value Added Reseller",
       City: "Constanta",
@@ -1278,7 +1173,6 @@ function getData() {
     },
     {
       Category: "Light Commercial(<3.5t)",
-      Color: "blue",
       Destination: "Cluj",
       "Business Type": "Value Added Reseller",
       City: "Craiova",
@@ -1288,7 +1182,6 @@ function getData() {
     },
     {
       Category: "Light Commercial(<3.5t)",
-      Color: "blue",
       Destination: "Timisoara",
       "Business Type": "Value Added Reseller",
       City: "Brasov",
@@ -1298,7 +1191,6 @@ function getData() {
     },
     {
       Category: "Light Commercial(<3.5t)",
-      Color: "green",
       Destination: "Constanta",
       "Business Type": "Warehouse",
       City: "Iasi",
@@ -1308,7 +1200,6 @@ function getData() {
     },
     {
       Category: "Light Commercial(<3.5t)",
-      Color: "white",
       Destination: "Craiova",
       "Business Type": "Warehouse",
       City: "Cluj",
@@ -1318,7 +1209,6 @@ function getData() {
     },
     {
       Category: "Light Commercial(<3.5t)",
-      Color: "green",
       Destination: "Brasov",
       "Business Type": "Warehouse",
       City: "Iasi",
@@ -1328,7 +1218,6 @@ function getData() {
     },
     {
       Category: "Light Commercial(<3.5t)",
-      Color: "white",
       Destination: "Iasi",
       "Business Type": "Warehouse",
       City: "Cluj",
@@ -1338,7 +1227,6 @@ function getData() {
     },
     {
       Category: "Light Commercial(<3.5t)",
-      Color: "white",
       Destination: "Cluj",
       "Business Type": "Warehouse",
       City: "Timisoara",
@@ -1348,7 +1236,6 @@ function getData() {
     },
     {
       Category: "Light Commercial(<3.5t)",
-      Color: "blue",
       Destination: "Timisoara",
       "Business Type": "Warehouse",
       City: "Constanta",
@@ -1358,7 +1245,6 @@ function getData() {
     },
     {
       Category: "Light Commercial(<3.5t)",
-      Color: "white",
       Destination: "Constanta",
       "Business Type": "Warehouse",
       City: "Craiova",
@@ -1368,7 +1254,6 @@ function getData() {
     },
     {
       Category: "Light Commercial(<3.5t)",
-      Color: "blue",
       Destination: "Craiova",
       "Business Type": "Warehouse",
       City: "Brasov",
@@ -1378,7 +1263,6 @@ function getData() {
     },
     {
       Category: "Light Commercial(<3.5t)",
-      Color: "red",
       Destination: "Brasov",
       "Business Type": "Specialty Bike Shop",
       City: "Iasi",
@@ -1388,7 +1272,6 @@ function getData() {
     },
     {
       Category: "Light Commercial(<3.5t)",
-      Color: "green",
       Destination: "Iasi",
       "Business Type": "Specialty Bike Shop",
       City: "Cluj",
@@ -1398,7 +1281,6 @@ function getData() {
     },
     {
       Category: "Light Commercial(<3.5t)",
-      Color: "red",
       Destination: "Cluj",
       "Business Type": "Specialty Bike Shop",
       City: "Timisoara",
@@ -1408,7 +1290,6 @@ function getData() {
     },
     {
       Category: "Light Commercial(<3.5t)",
-      Color: "blue",
       Destination: "Craiova",
       "Business Type": "Specialty Bike Shop",
       City: "Constanta",
@@ -1418,7 +1299,6 @@ function getData() {
     },
     {
       Category: "Light Commercial(<3.5t)",
-      Color: "blue",
       Destination: "Brasov",
       "Business Type": "Specialty Bike Shop",
       City: "Craiova",
@@ -1428,7 +1308,6 @@ function getData() {
     },
     {
       Category: "Light Commercial(<3.5t)",
-      Color: "red",
       Destination: "Iasi",
       "Business Type": "Specialty Bike Shop",
       City: "Brasov",
@@ -1438,7 +1317,6 @@ function getData() {
     },
     {
       Category: "Light Commercial(<3.5t)",
-      Color: "blue",
       Destination: "Cluj",
       "Business Type": "Value Added Reseller",
       City: "Iasi",
@@ -1448,7 +1326,6 @@ function getData() {
     },
     {
       Category: "Light Commercial(<3.5t)",
-      Color: "red",
       Destination: "Timisoara",
       "Business Type": "Value Added Reseller",
       City: "Cluj",
@@ -1458,7 +1335,6 @@ function getData() {
     },
     {
       Category: "Light Commercial(<3.5t)",
-      Color: "blue",
       Destination: "Constanta",
       "Business Type": "Value Added Reseller",
       City: "Timisoara",
@@ -1468,7 +1344,6 @@ function getData() {
     },
     {
       Category: "Light Commercial(<3.5t)",
-      Color: "red",
       Destination: "Craiova",
       "Business Type": "Value Added Reseller",
       City: "Constanta",
@@ -1478,7 +1353,6 @@ function getData() {
     },
     {
       Category: "Light Commercial(<3.5t)",
-      Color: "blue",
       Destination: "Brasov",
       "Business Type": "Value Added Reseller",
       City: "Craiova",
@@ -1488,7 +1362,6 @@ function getData() {
     },
     {
       Category: "Light Commercial(<3.5t)",
-      Color: "blue",
       Destination: "Iasi",
       "Business Type": "Value Added Reseller",
       City: "Brasov",
@@ -1498,7 +1371,6 @@ function getData() {
     },
     {
       Category: "Light Commercial(<3.5t)",
-      Color: "green",
       Destination: "Craiova",
       "Business Type": "Warehouse",
       City: "Iasi",
@@ -1508,7 +1380,6 @@ function getData() {
     },
     {
       Category: "Light Commercial(<3.5t)",
-      Color: "white",
       Destination: "Brasov",
       "Business Type": "Warehouse",
       City: "Cluj",
@@ -1518,7 +1389,6 @@ function getData() {
     },
     {
       Category: "Light Commercial(<3.5t)",
-      Color: "blue",
       Destination: "Iasi",
       "Business Type": "Value Added Reseller",
       City: "Iasi",
@@ -1528,7 +1398,6 @@ function getData() {
     },
     {
       Category: "Light Commercial(<3.5t)",
-      Color: "red",
       Destination: "Cluj",
       "Business Type": "Value Added Reseller",
       City: "Cluj",
@@ -1538,7 +1407,6 @@ function getData() {
     },
     {
       Category: "Light Commercial(<3.5t)",
-      Color: "blue",
       Destination: "Timisoara",
       "Business Type": "Value Added Reseller",
       City: "Timisoara",
@@ -1548,7 +1416,6 @@ function getData() {
     },
     {
       Category: "Light Commercial(<3.5t)",
-      Color: "red",
       Destination: "Constanta",
       "Business Type": "Value Added Reseller",
       City: "Constanta",
@@ -1558,7 +1425,6 @@ function getData() {
     },
     {
       Category: "Light Commercial(<3.5t)",
-      Color: "blue",
       Destination: "Craiova",
       "Business Type": "Value Added Reseller",
       City: "Craiova",
@@ -1568,7 +1434,6 @@ function getData() {
     },
     {
       Category: "Light Commercial(<3.5t)",
-      Color: "blue",
       Destination: "Brasov",
       "Business Type": "Value Added Reseller",
       City: "Brasov",
@@ -1578,7 +1443,6 @@ function getData() {
     },
     {
       Category: "Light Commercial(<3.5t)",
-      Color: "green",
       Destination: "Iasi",
       "Business Type": "Warehouse",
       City: "Iasi",
@@ -1588,7 +1452,6 @@ function getData() {
     },
     {
       Category: "Light Commercial(<3.5t)",
-      Color: "white",
       Destination: "Craiova",
       "Business Type": "Warehouse",
       City: "Cluj",
@@ -1598,7 +1461,6 @@ function getData() {
     },
     {
       Category: "Light Commercial(<3.5t)",
-      Color: "green",
       Destination: "Brasov",
       "Business Type": "Warehouse",
       City: "Iasi",
@@ -1608,7 +1470,6 @@ function getData() {
     },
     {
       Category: "Light Commercial(<3.5t)",
-      Color: "white",
       Destination: "Iasi",
       "Business Type": "Warehouse",
       City: "Cluj",
@@ -1618,7 +1479,6 @@ function getData() {
     },
     {
       Category: "Light Commercial(<3.5t)",
-      Color: "white",
       Destination: "Cluj",
       "Business Type": "Warehouse",
       City: "Timisoara",
@@ -1628,7 +1488,6 @@ function getData() {
     },
     {
       Category: "Light Commercial(<3.5t)",
-      Color: "blue",
       Destination: "Timisoara",
       "Business Type": "Warehouse",
       City: "Constanta",
@@ -1638,7 +1497,6 @@ function getData() {
     },
     {
       Category: "Light Commercial(<3.5t)",
-      Color: "white",
       Destination: "Constanta",
       "Business Type": "Warehouse",
       City: "Craiova",
@@ -1648,7 +1506,6 @@ function getData() {
     },
     {
       Category: "Light Commercial(<3.5t)",
-      Color: "blue",
       Destination: "Craiova",
       "Business Type": "Warehouse",
       City: "Brasov",
@@ -1658,7 +1515,6 @@ function getData() {
     },
     {
       Category: "Light Commercial(<3.5t)",
-      Color: "red",
       Destination: "Brasov",
       "Business Type": "Specialty Bike Shop",
       City: "Iasi",
@@ -1668,7 +1524,6 @@ function getData() {
     },
     {
       Category: "Light Commercial(<3.5t)",
-      Color: "green",
       Destination: "Iasi",
       "Business Type": "Specialty Bike Shop",
       City: "Cluj",
@@ -1678,7 +1533,6 @@ function getData() {
     },
     {
       Category: "Light Commercial(<3.5t)",
-      Color: "red",
       Destination: "Iasi",
       "Business Type": "Specialty Bike Shop",
       City: "Timisoara",
@@ -1688,7 +1542,6 @@ function getData() {
     },
     {
       Category: "Light Commercial(<3.5t)",
-      Color: "blue",
       Destination: "Cluj",
       "Business Type": "Specialty Bike Shop",
       City: "Constanta",
@@ -1698,7 +1551,6 @@ function getData() {
     },
     {
       Category: "Light Commercial(<3.5t)",
-      Color: "blue",
       Destination: "Timisoara",
       "Business Type": "Specialty Bike Shop",
       City: "Craiova",
@@ -1708,7 +1560,6 @@ function getData() {
     },
     {
       Category: "Light Commercial(<3.5t)",
-      Color: "red",
       Destination: "Constanta",
       "Business Type": "Specialty Bike Shop",
       City: "Brasov",
@@ -1718,7 +1569,6 @@ function getData() {
     },
     {
       Category: "Light Commercial(<3.5t)",
-      Color: "blue",
       Destination: "Craiova",
       "Business Type": "Value Added Reseller",
       City: "Iasi",
@@ -1728,7 +1578,6 @@ function getData() {
     },
     {
       Category: "Light Commercial(<3.5t)",
-      Color: "red",
       Destination: "Brasov",
       "Business Type": "Value Added Reseller",
       City: "Cluj",
@@ -1738,7 +1587,6 @@ function getData() {
     },
     {
       Category: "Light Commercial(<3.5t)",
-      Color: "blue",
       Destination: "Iasi",
       "Business Type": "Value Added Reseller",
       City: "Timisoara",
@@ -1748,7 +1596,6 @@ function getData() {
     },
     {
       Category: "Light Commercial(<3.5t)",
-      Color: "red",
       Destination: "Cluj",
       "Business Type": "Value Added Reseller",
       City: "Constanta",
@@ -1758,7 +1605,6 @@ function getData() {
     },
     {
       Category: "Light Commercial(<3.5t)",
-      Color: "blue",
       Destination: "Timisoara",
       "Business Type": "Value Added Reseller",
       City: "Craiova",
@@ -1768,7 +1614,6 @@ function getData() {
     },
     {
       Category: "Light Commercial(<3.5t)",
-      Color: "blue",
       Destination: "Constanta",
       "Business Type": "Value Added Reseller",
       City: "Brasov",
@@ -1778,7 +1623,6 @@ function getData() {
     },
     {
       Category: "Light Commercial(<3.5t)",
-      Color: "green",
       Destination: "Craiova",
       "Business Type": "Warehouse",
       City: "Iasi",
@@ -1788,7 +1632,6 @@ function getData() {
     },
     {
       Category: "Light Commercial(<3.5t)",
-      Color: "white",
       Destination: "Brasov",
       "Business Type": "Warehouse",
       City: "Cluj",
@@ -1798,7 +1641,6 @@ function getData() {
     },
     {
       Category: "Light Commercial(<3.5t)",
-      Color: "blue",
       Destination: "Iasi",
       "Business Type": "Value Added Reseller",
       City: "Iasi",
@@ -1808,7 +1650,6 @@ function getData() {
     },
     {
       Category: "Light Commercial(<3.5t)",
-      Color: "red",
       Destination: "Cluj",
       "Business Type": "Value Added Reseller",
       City: "Cluj",
@@ -1818,7 +1659,6 @@ function getData() {
     },
     {
       Category: "Light Commercial(<3.5t)",
-      Color: "blue",
       Destination: "Iasi",
       "Business Type": "Value Added Reseller",
       City: "Timisoara",
@@ -1828,7 +1668,6 @@ function getData() {
     },
     {
       Category: "Light Commercial(<3.5t)",
-      Color: "red",
       Destination: "Cluj",
       "Business Type": "Value Added Reseller",
       City: "Constanta",
@@ -1838,7 +1677,6 @@ function getData() {
     },
     {
       Category: "Light Commercial(<3.5t)",
-      Color: "blue",
       Destination: "Timisoara",
       "Business Type": "Value Added Reseller",
       City: "Craiova",
@@ -1848,7 +1686,6 @@ function getData() {
     },
     {
       Category: "Light Commercial(<3.5t)",
-      Color: "blue",
       Destination: "Constanta",
       "Business Type": "Value Added Reseller",
       City: "Brasov",
@@ -1858,7 +1695,6 @@ function getData() {
     },
     {
       Category: "Light Commercial(<3.5t)",
-      Color: "green",
       Destination: "Iasi",
       "Business Type": "Warehouse",
       City: "Iasi",
@@ -1868,7 +1704,6 @@ function getData() {
     },
     {
       Category: "Light Commercial(<3.5t)",
-      Color: "white",
       Destination: "Cluj",
       "Business Type": "Warehouse",
       City: "Cluj",
@@ -1878,7 +1713,6 @@ function getData() {
     },
     {
       Category: "Light Commercial(<3.5t)",
-      Color: "green",
       Destination: "Timisoara",
       "Business Type": "Warehouse",
       City: "Iasi",
@@ -1888,7 +1722,6 @@ function getData() {
     },
     {
       Category: "Light Commercial(<3.5t)",
-      Color: "white",
       Destination: "Constanta",
       "Business Type": "Warehouse",
       City: "Cluj",
@@ -1898,7 +1731,6 @@ function getData() {
     },
     {
       Category: "Light Commercial(<3.5t)",
-      Color: "white",
       Destination: "Craiova",
       "Business Type": "Warehouse",
       City: "Timisoara",
@@ -1908,7 +1740,6 @@ function getData() {
     },
     {
       Category: "Light Commercial(<3.5t)",
-      Color: "blue",
       Destination: "Brasov",
       "Business Type": "Warehouse",
       City: "Constanta",
@@ -1918,7 +1749,6 @@ function getData() {
     },
     {
       Category: "Light Commercial(<3.5t)",
-      Color: "white",
       Destination: "Iasi",
       "Business Type": "Warehouse",
       City: "Craiova",
@@ -1928,7 +1758,6 @@ function getData() {
     },
     {
       Category: "Light Commercial(<3.5t)",
-      Color: "blue",
       Destination: "Cluj",
       "Business Type": "Warehouse",
       City: "Brasov",
@@ -1938,7 +1767,6 @@ function getData() {
     },
     {
       Category: "Light Commercial(<3.5t)",
-      Color: "red",
       Destination: "Timisoara",
       "Business Type": "Specialty Bike Shop",
       City: "Iasi",
@@ -1948,7 +1776,6 @@ function getData() {
     },
     {
       Category: "Light Commercial(<3.5t)",
-      Color: "green",
       Destination: "Constanta",
       "Business Type": "Specialty Bike Shop",
       City: "Cluj",
@@ -1958,7 +1785,6 @@ function getData() {
     },
     {
       Category: "Light Commercial(<3.5t)",
-      Color: "red",
       Destination: "Craiova",
       "Business Type": "Specialty Bike Shop",
       City: "Timisoara",
@@ -1968,7 +1794,6 @@ function getData() {
     },
     {
       Category: "Light Commercial(<3.5t)",
-      Color: "blue",
       Destination: "Brasov",
       "Business Type": "Specialty Bike Shop",
       City: "Constanta",
@@ -1978,7 +1803,6 @@ function getData() {
     },
     {
       Category: "Light Commercial(<3.5t)",
-      Color: "blue",
       Destination: "Iasi",
       "Business Type": "Specialty Bike Shop",
       City: "Craiova",
@@ -1988,7 +1812,6 @@ function getData() {
     },
     {
       Category: "Light Commercial(<3.5t)",
-      Color: "red",
       Destination: "Cluj",
       "Business Type": "Specialty Bike Shop",
       City: "Brasov",
@@ -1998,7 +1821,6 @@ function getData() {
     },
     {
       Category: "Light Commercial(<3.5t)",
-      Color: "blue",
       Destination: "Iasi",
       "Business Type": "Value Added Reseller",
       City: "Iasi",
@@ -2008,7 +1830,6 @@ function getData() {
     },
     {
       Category: "Light Commercial(<3.5t)",
-      Color: "red",
       Destination: "Cluj",
       "Business Type": "Value Added Reseller",
       City: "Cluj",
@@ -2018,7 +1839,6 @@ function getData() {
     },
     {
       Category: "Light Commercial(<3.5t)",
-      Color: "blue",
       Destination: "Timisoara",
       "Business Type": "Value Added Reseller",
       City: "Timisoara",
@@ -2028,7 +1848,6 @@ function getData() {
     },
     {
       Category: "Light Commercial(<3.5t)",
-      Color: "red",
       Destination: "Constanta",
       "Business Type": "Value Added Reseller",
       City: "Constanta",
@@ -2038,7 +1857,6 @@ function getData() {
     },
     {
       Category: "Light Commercial(<3.5t)",
-      Color: "blue",
       Destination: "Timisoara",
       "Business Type": "Value Added Reseller",
       City: "Craiova",
@@ -2048,7 +1866,6 @@ function getData() {
     },
     {
       Category: "Light Commercial(<3.5t)",
-      Color: "blue",
       Destination: "Constanta",
       "Business Type": "Value Added Reseller",
       City: "Brasov",
@@ -2058,7 +1875,6 @@ function getData() {
     },
     {
       Category: "Light Commercial(<3.5t)",
-      Color: "green",
       Destination: "Craiova",
       "Business Type": "Warehouse",
       City: "Iasi",
@@ -2068,7 +1884,6 @@ function getData() {
     },
     {
       Category: "Light Commercial(<3.5t)",
-      Color: "white",
       Destination: "Brasov",
       "Business Type": "Warehouse",
       City: "Cluj",
@@ -2078,7 +1893,6 @@ function getData() {
     },
     {
       Category: "Light Commercial(<3.5t)",
-      Color: "blue",
       Destination: "Iasi",
       "Business Type": "Value Added Reseller",
       City: "Iasi",
@@ -2088,7 +1902,6 @@ function getData() {
     },
     {
       Category: "Light Commercial(<3.5t)",
-      Color: "red",
       Destination: "Cluj",
       "Business Type": "Value Added Reseller",
       City: "Cluj",
@@ -2098,7 +1911,6 @@ function getData() {
     },
     {
       Category: "Light Commercial(<3.5t)",
-      Color: "blue",
       Destination: "Iasi",
       "Business Type": "Value Added Reseller",
       City: "Timisoara",
@@ -2108,7 +1920,6 @@ function getData() {
     },
     {
       Category: "Light Commercial(<3.5t)",
-      Color: "red",
       Destination: "Cluj",
       "Business Type": "Value Added Reseller",
       City: "Constanta",
@@ -2118,7 +1929,6 @@ function getData() {
     },
     {
       Category: "Light Commercial(<3.5t)",
-      Color: "blue",
       Destination: "Timisoara",
       "Business Type": "Value Added Reseller",
       City: "Craiova",
@@ -2128,7 +1938,6 @@ function getData() {
     },
     {
       Category: "Light Commercial(<3.5t)",
-      Color: "blue",
       Destination: "Constanta",
       "Business Type": "Value Added Reseller",
       City: "Brasov",
@@ -2138,7 +1947,6 @@ function getData() {
     },
     {
       Category: "Light Commercial(<3.5t)",
-      Color: "green",
       Destination: "Craiova",
       "Business Type": "Warehouse",
       City: "Iasi",
@@ -2148,7 +1956,6 @@ function getData() {
     },
     {
       Category: "Light Commercial(<3.5t)",
-      Color: "white",
       Destination: "Brasov",
       "Business Type": "Warehouse",
       City: "Cluj",
@@ -2158,7 +1965,6 @@ function getData() {
     },
     {
       Category: "Light Commercial(<3.5t)",
-      Color: "green",
       Destination: "Iasi",
       "Business Type": "Warehouse",
       City: "Iasi",
@@ -2168,7 +1974,6 @@ function getData() {
     },
     {
       Category: "Light Commercial(<3.5t)",
-      Color: "white",
       Destination: "Cluj",
       "Business Type": "Warehouse",
       City: "Cluj",
@@ -2178,7 +1983,6 @@ function getData() {
     },
     {
       Category: "Light Commercial(<3.5t)",
-      Color: "white",
       Destination: "Timisoara",
       "Business Type": "Warehouse",
       City: "Timisoara",
@@ -2188,7 +1992,6 @@ function getData() {
     },
     {
       Category: "Light Commercial(<3.5t)",
-      Color: "blue",
       Destination: "Constanta",
       "Business Type": "Warehouse",
       City: "Constanta",
@@ -2198,7 +2001,6 @@ function getData() {
     },
     {
       Category: "Light Commercial(<3.5t)",
-      Color: "white",
       Destination: "Timisoara",
       "Business Type": "Warehouse",
       City: "Craiova",
@@ -2208,7 +2010,6 @@ function getData() {
     },
     {
       Category: "Light Commercial(<3.5t)",
-      Color: "blue",
       Destination: "Constanta",
       "Business Type": "Warehouse",
       City: "Brasov",
@@ -2218,7 +2019,6 @@ function getData() {
     },
     {
       Category: "Light Commercial(<3.5t)",
-      Color: "red",
       Destination: "Craiova",
       "Business Type": "Specialty Bike Shop",
       City: "Iasi",
@@ -2228,7 +2028,6 @@ function getData() {
     },
     {
       Category: "Light Commercial(<3.5t)",
-      Color: "green",
       Destination: "Brasov",
       "Business Type": "Specialty Bike Shop",
       City: "Cluj",
@@ -2238,7 +2037,6 @@ function getData() {
     },
     {
       Category: "Light Commercial(<3.5t)",
-      Color: "red",
       Destination: "Iasi",
       "Business Type": "Specialty Bike Shop",
       City: "Timisoara",
@@ -2248,7 +2046,6 @@ function getData() {
     },
     {
       Category: "Light Commercial(<3.5t)",
-      Color: "blue",
       Destination: "Cluj",
       "Business Type": "Specialty Bike Shop",
       City: "Constanta",
@@ -2258,7 +2055,6 @@ function getData() {
     },
     {
       Category: "Light Commercial(<3.5t)",
-      Color: "blue",
       Destination: "Iasi",
       "Business Type": "Specialty Bike Shop",
       City: "Craiova",
@@ -2268,7 +2064,6 @@ function getData() {
     },
     {
       Category: "Light Commercial(<3.5t)",
-      Color: "red",
       Destination: "Cluj",
       "Business Type": "Specialty Bike Shop",
       City: "Brasov",
@@ -2278,7 +2073,6 @@ function getData() {
     },
     {
       Category: "Light Commercial(<3.5t)",
-      Color: "blue",
       Destination: "Timisoara",
       "Business Type": "Value Added Reseller",
       City: "Iasi",
@@ -2288,7 +2082,6 @@ function getData() {
     },
     {
       Category: "Light Commercial(<3.5t)",
-      Color: "red",
       Destination: "Constanta",
       "Business Type": "Value Added Reseller",
       City: "Cluj",
@@ -2298,7 +2091,6 @@ function getData() {
     },
     {
       Category: "Light Commercial(<3.5t)",
-      Color: "blue",
       Destination: "Craiova",
       "Business Type": "Value Added Reseller",
       City: "Timisoara",
@@ -2308,7 +2100,6 @@ function getData() {
     },
     {
       Category: "Light Commercial(<3.5t)",
-      Color: "red",
       Destination: "Brasov",
       "Business Type": "Value Added Reseller",
       City: "Constanta",
@@ -2318,7 +2109,6 @@ function getData() {
     },
     {
       Category: "Light Commercial(<3.5t)",
-      Color: "blue",
       Destination: "Iasi",
       "Business Type": "Value Added Reseller",
       City: "Craiova",
@@ -2328,7 +2118,6 @@ function getData() {
     },
     {
       Category: "Light Commercial(<3.5t)",
-      Color: "blue",
       Destination: "Cluj",
       "Business Type": "Value Added Reseller",
       City: "Brasov",
@@ -2338,7 +2127,6 @@ function getData() {
     },
     {
       Category: "Light Commercial(<3.5t)",
-      Color: "green",
       Destination: "Timisoara",
       "Business Type": "Warehouse",
       City: "Iasi",
@@ -2348,7 +2136,6 @@ function getData() {
     },
     {
       Category: "Light Commercial(<3.5t)",
-      Color: "white",
       Destination: "Constanta",
       "Business Type": "Warehouse",
       City: "Cluj",
@@ -2358,7 +2145,6 @@ function getData() {
     },
     {
       Category: "Light Commercial(<3.5t)",
-      Color: "blue",
       Destination: "Constanta",
       "Business Type": "Value Added Reseller",
       City: "Iasi",
@@ -2368,7 +2154,6 @@ function getData() {
     },
     {
       Category: "Light Commercial(<3.5t)",
-      Color: "red",
       Destination: "Craiova",
       "Business Type": "Value Added Reseller",
       City: "Cluj",
@@ -2378,7 +2163,6 @@ function getData() {
     },
     {
       Category: "Light Commercial(<3.5t)",
-      Color: "blue",
       Destination: "Brasov",
       "Business Type": "Value Added Reseller",
       City: "Timisoara",
@@ -2388,7 +2172,6 @@ function getData() {
     },
     {
       Category: "Light Commercial(<3.5t)",
-      Color: "red",
       Destination: "Iasi",
       "Business Type": "Value Added Reseller",
       City: "Constanta",
@@ -2398,7 +2181,6 @@ function getData() {
     },
     {
       Category: "Light Commercial(<3.5t)",
-      Color: "blue",
       Destination: "Cluj",
       "Business Type": "Value Added Reseller",
       City: "Craiova",
@@ -2408,7 +2190,6 @@ function getData() {
     },
     {
       Category: "Light Commercial(<3.5t)",
-      Color: "blue",
       Destination: "Iasi",
       "Business Type": "Value Added Reseller",
       City: "Brasov",
@@ -2418,7 +2199,6 @@ function getData() {
     },
     {
       Category: "Light Commercial(<3.5t)",
-      Color: "green",
       Destination: "Cluj",
       "Business Type": "Warehouse",
       City: "Iasi",
@@ -2428,7 +2208,6 @@ function getData() {
     },
     {
       Category: "Light Commercial(<3.5t)",
-      Color: "white",
       Destination: "Timisoara",
       "Business Type": "Warehouse",
       City: "Cluj",
@@ -2438,7 +2217,6 @@ function getData() {
     },
     {
       Category: "Light Commercial(<3.5t)",
-      Color: "green",
       Destination: "Constanta",
       "Business Type": "Warehouse",
       City: "Iasi",
@@ -2448,7 +2226,6 @@ function getData() {
     },
     {
       Category: "Light Commercial(<3.5t)",
-      Color: "white",
       Destination: "Craiova",
       "Business Type": "Warehouse",
       City: "Cluj",
@@ -2458,7 +2235,6 @@ function getData() {
     },
     {
       Category: "Light Commercial(<3.5t)",
-      Color: "white",
       Destination: "Brasov",
       "Business Type": "Warehouse",
       City: "Timisoara",
@@ -2468,7 +2244,6 @@ function getData() {
     },
     {
       Category: "Light Commercial(<3.5t)",
-      Color: "blue",
       Destination: "Iasi",
       "Business Type": "Warehouse",
       City: "Constanta",
@@ -2478,7 +2253,6 @@ function getData() {
     },
     {
       Category: "Light Commercial(<3.5t)",
-      Color: "white",
       Destination: "Cluj",
       "Business Type": "Warehouse",
       City: "Craiova",
@@ -2488,7 +2262,6 @@ function getData() {
     },
     {
       Category: "Light Commercial(<3.5t)",
-      Color: "blue",
       Destination: "Timisoara",
       "Business Type": "Warehouse",
       City: "Brasov",
@@ -2498,7 +2271,6 @@ function getData() {
     },
     {
       Category: "Light Commercial(<3.5t)",
-      Color: "red",
       Destination: "Constanta",
       "Business Type": "Specialty Bike Shop",
       City: "Iasi",
@@ -2508,7 +2280,6 @@ function getData() {
     },
     {
       Category: "Light Commercial(<3.5t)",
-      Color: "green",
       Destination: "Craiova",
       "Business Type": "Specialty Bike Shop",
       City: "Cluj",
@@ -2518,7 +2289,6 @@ function getData() {
     },
     {
       Category: "Light Commercial(<3.5t)",
-      Color: "red",
       Destination: "Brasov",
       "Business Type": "Specialty Bike Shop",
       City: "Timisoara",
@@ -2528,7 +2298,6 @@ function getData() {
     },
     {
       Category: "Light Commercial(<3.5t)",
-      Color: "blue",
       Destination: "Iasi",
       "Business Type": "Specialty Bike Shop",
       City: "Constanta",
@@ -2538,7 +2307,6 @@ function getData() {
     },
     {
       Category: "Light Commercial(<3.5t)",
-      Color: "blue",
       Destination: "Cluj",
       "Business Type": "Specialty Bike Shop",
       City: "Craiova",
@@ -2548,7 +2316,6 @@ function getData() {
     },
     {
       Category: "Light Commercial(<3.5t)",
-      Color: "red",
       Destination: "Timisoara",
       "Business Type": "Specialty Bike Shop",
       City: "Brasov",
@@ -2558,7 +2325,6 @@ function getData() {
     },
     {
       Category: "Light Commercial(<3.5t)",
-      Color: "blue",
       Destination: "Constanta",
       "Business Type": "Value Added Reseller",
       City: "Iasi",
@@ -2568,7 +2334,6 @@ function getData() {
     },
     {
       Category: "Light Commercial(<3.5t)",
-      Color: "red",
       Destination: "Craiova",
       "Business Type": "Value Added Reseller",
       City: "Cluj",
@@ -2578,7 +2343,6 @@ function getData() {
     },
     {
       Category: "Light Commercial(<3.5t)",
-      Color: "blue",
       Destination: "Constanta",
       "Business Type": "Value Added Reseller",
       City: "Timisoara",
@@ -2588,7 +2352,6 @@ function getData() {
     },
     {
       Category: "Light Commercial(<3.5t)",
-      Color: "red",
       Destination: "Craiova",
       "Business Type": "Value Added Reseller",
       City: "Constanta",
@@ -2598,7 +2361,6 @@ function getData() {
     },
     {
       Category: "Light Commercial(<3.5t)",
-      Color: "blue",
       Destination: "Brasov",
       "Business Type": "Value Added Reseller",
       City: "Craiova",
@@ -2608,7 +2370,6 @@ function getData() {
     },
     {
       Category: "Light Commercial(<3.5t)",
-      Color: "blue",
       Destination: "Iasi",
       "Business Type": "Value Added Reseller",
       City: "Brasov",
@@ -2618,7 +2379,6 @@ function getData() {
     },
     {
       Category: "Light Commercial(<3.5t)",
-      Color: "green",
       Destination: "Cluj",
       "Business Type": "Warehouse",
       City: "Iasi",
@@ -2628,7 +2388,6 @@ function getData() {
     },
     {
       Category: "Light Commercial(<3.5t)",
-      Color: "white",
       Destination: "Iasi",
       "Business Type": "Warehouse",
       City: "Cluj",
@@ -2638,7 +2397,6 @@ function getData() {
     },
     {
       Category: "Light Commercial(<3.5t)",
-      Color: "blue",
       Destination: "Cluj",
       "Business Type": "Value Added Reseller",
       City: "Iasi",
@@ -2648,7 +2406,6 @@ function getData() {
     },
     {
       Category: "Light Commercial(<3.5t)",
-      Color: "red",
       Destination: "Timisoara",
       "Business Type": "Value Added Reseller",
       City: "Cluj",
@@ -2658,7 +2415,6 @@ function getData() {
     },
     {
       Category: "Light Commercial(<3.5t)",
-      Color: "blue",
       Destination: "Constanta",
       "Business Type": "Value Added Reseller",
       City: "Timisoara",
@@ -2668,7 +2424,6 @@ function getData() {
     },
     {
       Category: "Light Commercial(<3.5t)",
-      Color: "red",
       Destination: "Craiova",
       "Business Type": "Value Added Reseller",
       City: "Constanta",
@@ -2678,7 +2433,6 @@ function getData() {
     },
     {
       Category: "Light Commercial(<3.5t)",
-      Color: "blue",
       Destination: "Brasov",
       "Business Type": "Value Added Reseller",
       City: "Craiova",
@@ -2688,7 +2442,6 @@ function getData() {
     },
     {
       Category: "Light Commercial(<3.5t)",
-      Color: "blue",
       Destination: "Iasi",
       "Business Type": "Value Added Reseller",
       City: "Brasov",
@@ -2698,7 +2451,6 @@ function getData() {
     },
     {
       Category: "Light Commercial(<3.5t)",
-      Color: "green",
       Destination: "Cluj",
       "Business Type": "Warehouse",
       City: "Iasi",
@@ -2708,7 +2460,6 @@ function getData() {
     },
     {
       Category: "Light Commercial(<3.5t)",
-      Color: "white",
       Destination: "Timisoara",
       "Business Type": "Warehouse",
       City: "Cluj",
@@ -2718,7 +2469,6 @@ function getData() {
     },
     {
       Category: "Light Commercial(<3.5t)",
-      Color: "green",
       Destination: "Constanta",
       "Business Type": "Warehouse",
       City: "Iasi",
@@ -2728,7 +2478,6 @@ function getData() {
     },
     {
       Category: "Light Commercial(<3.5t)",
-      Color: "white",
       Destination: "Craiova",
       "Business Type": "Warehouse",
       City: "Cluj",
@@ -2738,7 +2487,6 @@ function getData() {
     },
     {
       Category: "Light Commercial(<3.5t)",
-      Color: "white",
       Destination: "Brasov",
       "Business Type": "Warehouse",
       City: "Timisoara",
@@ -2748,7 +2496,6 @@ function getData() {
     },
     {
       Category: "Light Commercial(<3.5t)",
-      Color: "blue",
       Destination: "Iasi",
       "Business Type": "Warehouse",
       City: "Constanta",
@@ -2758,7 +2505,6 @@ function getData() {
     },
     {
       Category: "Light Commercial(<3.5t)",
-      Color: "white",
       Destination: "Cluj",
       "Business Type": "Warehouse",
       City: "Craiova",
@@ -2768,7 +2514,6 @@ function getData() {
     },
     {
       Category: "Light Commercial(<3.5t)",
-      Color: "blue",
       Destination: "Timisoara",
       "Business Type": "Warehouse",
       City: "Brasov",
@@ -2778,7 +2523,6 @@ function getData() {
     },
     {
       Category: "Light Commercial(<3.5t)",
-      Color: "red",
       Destination: "Constanta",
       "Business Type": "Specialty Bike Shop",
       City: "Iasi",
@@ -2788,7 +2532,6 @@ function getData() {
     },
     {
       Category: "Light Commercial(<3.5t)",
-      Color: "green",
       Destination: "Craiova",
       "Business Type": "Specialty Bike Shop",
       City: "Cluj",
@@ -2798,7 +2541,6 @@ function getData() {
     },
     {
       Category: "Light Commercial(<3.5t)",
-      Color: "red",
       Destination: "Iasi",
       "Business Type": "Specialty Bike Shop",
       City: "Timisoara",
@@ -2808,7 +2550,6 @@ function getData() {
     },
     {
       Category: "Light Commercial(<3.5t)",
-      Color: "blue",
       Destination: "Cluj",
       "Business Type": "Specialty Bike Shop",
       City: "Constanta",
@@ -2818,7 +2559,6 @@ function getData() {
     },
     {
       Category: "Light Commercial(<3.5t)",
-      Color: "blue",
       Destination: "Timisoara",
       "Business Type": "Specialty Bike Shop",
       City: "Craiova",
@@ -2828,7 +2568,6 @@ function getData() {
     },
     {
       Category: "Light Commercial(<3.5t)",
-      Color: "red",
       Destination: "Constanta",
       "Business Type": "Specialty Bike Shop",
       City: "Brasov",
@@ -2838,7 +2577,6 @@ function getData() {
     },
     {
       Category: "Light Commercial(<3.5t)",
-      Color: "blue",
       Destination: "Craiova",
       "Business Type": "Value Added Reseller",
       City: "Iasi",
@@ -2848,7 +2586,6 @@ function getData() {
     },
     {
       Category: "Light Commercial(<3.5t)",
-      Color: "red",
       Destination: "Brasov",
       "Business Type": "Value Added Reseller",
       City: "Cluj",
@@ -2858,7 +2595,6 @@ function getData() {
     },
     {
       Category: "Light Commercial(<3.5t)",
-      Color: "blue",
       Destination: "Iasi",
       "Business Type": "Value Added Reseller",
       City: "Timisoara",
@@ -2868,7 +2604,6 @@ function getData() {
     },
     {
       Category: "Light Commercial(<3.5t)",
-      Color: "red",
       Destination: "Cluj",
       "Business Type": "Value Added Reseller",
       City: "Constanta",
@@ -2878,7 +2613,6 @@ function getData() {
     },
     {
       Category: "Light Commercial(<3.5t)",
-      Color: "blue",
       Destination: "Timisoara",
       "Business Type": "Value Added Reseller",
       City: "Craiova",
@@ -2888,7 +2622,6 @@ function getData() {
     },
     {
       Category: "Light Commercial(<3.5t)",
-      Color: "blue",
       Destination: "Constanta",
       "Business Type": "Value Added Reseller",
       City: "Brasov",
@@ -2898,7 +2631,6 @@ function getData() {
     },
     {
       Category: "Light Commercial(<3.5t)",
-      Color: "green",
       Destination: "Craiova",
       "Business Type": "Warehouse",
       City: "Iasi",
@@ -2908,7 +2640,6 @@ function getData() {
     },
     {
       Category: "Light Commercial(<3.5t)",
-      Color: "white",
       Destination: "Brasov",
       "Business Type": "Warehouse",
       City: "Cluj",
@@ -2918,7 +2649,6 @@ function getData() {
     },
     {
       Category: "Light Commercial(<3.5t)",
-      Color: "blue",
       Destination: "Iasi",
       "Business Type": "Value Added Reseller",
       City: "Iasi",
@@ -2928,7 +2658,6 @@ function getData() {
     },
     {
       Category: "Light Commercial(<3.5t)",
-      Color: "red",
       Destination: "Cluj",
       "Business Type": "Value Added Reseller",
       City: "Cluj",
@@ -2938,7 +2667,6 @@ function getData() {
     },
     {
       Category: "Light Commercial(<3.5t)",
-      Color: "blue",
       Destination: "Timisoara",
       "Business Type": "Value Added Reseller",
       City: "Timisoara",
@@ -2948,7 +2676,6 @@ function getData() {
     },
     {
       Category: "Light Commercial(<3.5t)",
-      Color: "red",
       Destination: "Constanta",
       "Business Type": "Value Added Reseller",
       City: "Constanta",
@@ -2958,7 +2685,6 @@ function getData() {
     },
     {
       Category: "Light Commercial(<3.5t)",
-      Color: "blue",
       Destination: "Craiova",
       "Business Type": "Value Added Reseller",
       City: "Craiova",
@@ -2968,7 +2694,6 @@ function getData() {
     },
     {
       Category: "Light Commercial(<3.5t)",
-      Color: "blue",
       Destination: "Brasov",
       "Business Type": "Value Added Reseller",
       City: "Brasov",
@@ -2978,7 +2703,6 @@ function getData() {
     },
     {
       Category: "Light Commercial(<3.5t)",
-      Color: "green",
       Destination: "Cluj",
       "Business Type": "Warehouse",
       City: "Iasi",
@@ -2988,7 +2712,6 @@ function getData() {
     },
     {
       Category: "Light Commercial(<3.5t)",
-      Color: "white",
       Destination: "Timisoara",
       "Business Type": "Warehouse",
       City: "Cluj",
@@ -2998,7 +2721,6 @@ function getData() {
     },
     {
       Category: "Light Commercial(<3.5t)",
-      Color: "green",
       Destination: "Constanta",
       "Business Type": "Warehouse",
       City: "Iasi",
@@ -3008,7 +2730,6 @@ function getData() {
     },
     {
       Category: "Light Commercial(<3.5t)",
-      Color: "white",
       Destination: "Craiova",
       "Business Type": "Warehouse",
       City: "Cluj",
@@ -3018,7 +2739,6 @@ function getData() {
     },
     {
       Category: "Light Commercial(<3.5t)",
-      Color: "white",
       Destination: "Brasov",
       "Business Type": "Warehouse",
       City: "Timisoara",
@@ -3028,7 +2748,6 @@ function getData() {
     },
     {
       Category: "Light Commercial(<3.5t)",
-      Color: "blue",
       Destination: "Iasi",
       "Business Type": "Warehouse",
       City: "Constanta",
@@ -3038,7 +2757,6 @@ function getData() {
     },
     {
       Category: "Light Commercial(<3.5t)",
-      Color: "white",
       Destination: "Cluj",
       "Business Type": "Warehouse",
       City: "Craiova",
@@ -3048,7 +2766,6 @@ function getData() {
     },
     {
       Category: "Light Commercial(<3.5t)",
-      Color: "blue",
       Destination: "Timisoara",
       "Business Type": "Warehouse",
       City: "Brasov",
@@ -3058,7 +2775,6 @@ function getData() {
     },
     {
       Category: "Cars",
-      Color: "green",
       Destination: "Constanta",
       "Business Type": "Specialty Bike Shop",
       City: "Iasi",
@@ -3068,7 +2784,6 @@ function getData() {
     },
     {
       Category: "Cars",
-      Color: "white",
       Destination: "Craiova",
       "Business Type": "Specialty Bike Shop",
       City: "Cluj",
@@ -3078,7 +2793,6 @@ function getData() {
     },
     {
       Category: "Cars",
-      Color: "green",
       Destination: "Brasov",
       "Business Type": "Specialty Bike Shop",
       City: "Timisoara",
@@ -3088,7 +2802,6 @@ function getData() {
     },
     {
       Category: "Cars",
-      Color: "red",
       Destination: "Iasi",
       "Business Type": "Specialty Bike Shop",
       City: "Constanta",
@@ -3098,7 +2811,6 @@ function getData() {
     },
     {
       Category: "Cars",
-      Color: "blue",
       Destination: "Cluj",
       "Business Type": "Specialty Bike Shop",
       City: "Craiova",
@@ -3108,7 +2820,6 @@ function getData() {
     },
     {
       Category: "Cars",
-      Color: "white",
       Destination: "Timisoara",
       "Business Type": "Specialty Bike Shop",
       City: "Brasov",
@@ -3118,7 +2829,6 @@ function getData() {
     },
     {
       Category: "Cars",
-      Color: "red",
       Destination: "Constanta",
       "Business Type": "Value Added Reseller",
       City: "Iasi",
@@ -3128,7 +2838,6 @@ function getData() {
     },
     {
       Category: "Cars",
-      Color: "green",
       Destination: "Craiova",
       "Business Type": "Value Added Reseller",
       City: "Cluj",
@@ -3138,7 +2847,6 @@ function getData() {
     },
     {
       Category: "Cars",
-      Color: "red",
       Destination: "Brasov",
       "Business Type": "Value Added Reseller",
       City: "Timisoara",
@@ -3148,7 +2856,6 @@ function getData() {
     },
     {
       Category: "Cars",
-      Color: "blue",
       Destination: "Iasi",
       "Business Type": "Value Added Reseller",
       City: "Constanta",
@@ -3158,7 +2865,6 @@ function getData() {
     },
     {
       Category: "Cars",
-      Color: "white",
       Destination: "Cluj",
       "Business Type": "Value Added Reseller",
       City: "Craiova",
@@ -3168,7 +2874,6 @@ function getData() {
     },
     {
       Category: "Cars",
-      Color: "white",
       Destination: "Timisoara",
       "Business Type": "Value Added Reseller",
       City: "Brasov",
@@ -3178,7 +2883,6 @@ function getData() {
     },
     {
       Category: "Cars",
-      Color: "red",
       Destination: "Constanta",
       "Business Type": "Warehouse",
       City: "Iasi",
@@ -3188,7 +2892,6 @@ function getData() {
     },
     {
       Category: "Cars",
-      Color: "blue",
       Destination: "Craiova",
       "Business Type": "Warehouse",
       City: "Cluj",
@@ -3198,7 +2901,6 @@ function getData() {
     },
     {
       Category: "Cars",
-      Color: "white",
       Destination: "Brasov",
       "Business Type": "Warehouse",
       City: "Timisoara",
@@ -3208,7 +2910,6 @@ function getData() {
     },
     {
       Category: "Cars",
-      Color: "red",
       Destination: "Iasi",
       "Business Type": "Warehouse",
       City: "Constanta",
@@ -3218,7 +2919,6 @@ function getData() {
     },
     {
       Category: "Cars",
-      Color: "white",
       Destination: "Cluj",
       "Business Type": "Warehouse",
       City: "Craiova",
@@ -3228,7 +2928,6 @@ function getData() {
     },
     {
       Category: "Cars",
-      Color: "white",
       Destination: "Timisoara",
       "Business Type": "Warehouse",
       City: "Brasov",
@@ -3238,7 +2937,6 @@ function getData() {
     },
     {
       Category: "Cars",
-      Color: "green",
       Destination: "Constanta",
       "Business Type": "Specialty Bike Shop",
       City: "Iasi",
@@ -3248,7 +2946,6 @@ function getData() {
     },
     {
       Category: "Cars",
-      Color: "white",
       Destination: "Craiova",
       "Business Type": "Specialty Bike Shop",
       City: "Cluj",
@@ -3258,7 +2955,6 @@ function getData() {
     },
     {
       Category: "Cars",
-      Color: "green",
       Destination: "Brasov",
       "Business Type": "Specialty Bike Shop",
       City: "Timisoara",
@@ -3268,7 +2964,6 @@ function getData() {
     },
     {
       Category: "Cars",
-      Color: "red",
       Destination: "Iasi",
       "Business Type": "Specialty Bike Shop",
       City: "Constanta",
@@ -3278,7 +2973,6 @@ function getData() {
     },
     {
       Category: "Cars",
-      Color: "blue",
       Destination: "Cluj",
       "Business Type": "Specialty Bike Shop",
       City: "Craiova",
@@ -3288,7 +2982,6 @@ function getData() {
     },
     {
       Category: "Cars",
-      Color: "white",
       Destination: "Timisoara",
       "Business Type": "Specialty Bike Shop",
       City: "Brasov",
@@ -3298,7 +2991,6 @@ function getData() {
     },
     {
       Category: "Cars",
-      Color: "red",
       Destination: "Constanta",
       "Business Type": "Value Added Reseller",
       City: "Iasi",
@@ -3308,7 +3000,6 @@ function getData() {
     },
     {
       Category: "Cars",
-      Color: "green",
       Destination: "Craiova",
       "Business Type": "Value Added Reseller",
       City: "Cluj",
@@ -3318,7 +3009,6 @@ function getData() {
     },
     {
       Category: "Cars",
-      Color: "red",
       Destination: "Brasov",
       "Business Type": "Value Added Reseller",
       City: "Timisoara",
@@ -3328,7 +3018,6 @@ function getData() {
     },
     {
       Category: "Cars",
-      Color: "blue",
       Destination: "Iasi",
       "Business Type": "Value Added Reseller",
       City: "Constanta",
@@ -3338,7 +3027,6 @@ function getData() {
     },
     {
       Category: "Cars",
-      Color: "white",
       Destination: "Cluj",
       "Business Type": "Value Added Reseller",
       City: "Craiova",
@@ -3348,7 +3036,6 @@ function getData() {
     },
     {
       Category: "Cars",
-      Color: "white",
       Destination: "Timisoara",
       "Business Type": "Value Added Reseller",
       City: "Brasov",
@@ -3358,7 +3045,6 @@ function getData() {
     },
     {
       Category: "Cars",
-      Color: "red",
       Destination: "Constanta",
       "Business Type": "Warehouse",
       City: "Iasi",
@@ -3368,7 +3054,6 @@ function getData() {
     },
     {
       Category: "Cars",
-      Color: "blue",
       Destination: "Craiova",
       "Business Type": "Warehouse",
       City: "Cluj",
@@ -3378,7 +3063,6 @@ function getData() {
     },
     {
       Category: "Cars",
-      Color: "white",
       Destination: "Brasov",
       "Business Type": "Warehouse",
       City: "Timisoara",
@@ -3388,7 +3072,6 @@ function getData() {
     },
     {
       Category: "Cars",
-      Color: "red",
       Destination: "Iasi",
       "Business Type": "Warehouse",
       City: "Constanta",
@@ -3398,7 +3081,6 @@ function getData() {
     },
     {
       Category: "Cars",
-      Color: "white",
       Destination: "Cluj",
       "Business Type": "Warehouse",
       City: "Craiova",
@@ -3408,7 +3090,6 @@ function getData() {
     },
     {
       Category: "Cars",
-      Color: "white",
       Destination: "Timisoara",
       "Business Type": "Warehouse",
       City: "Brasov",
@@ -3418,7 +3099,6 @@ function getData() {
     },
     {
       Category: "Cars",
-      Color: "green",
       Destination: "Constanta",
       "Business Type": "Specialty Bike Shop",
       City: "Iasi",
@@ -3428,7 +3108,6 @@ function getData() {
     },
     {
       Category: "Cars",
-      Color: "white",
       Destination: "Craiova",
       "Business Type": "Specialty Bike Shop",
       City: "Cluj",
@@ -3438,7 +3117,6 @@ function getData() {
     },
     {
       Category: "Cars",
-      Color: "green",
       Destination: "Brasov",
       "Business Type": "Specialty Bike Shop",
       City: "Timisoara",
@@ -3448,7 +3126,6 @@ function getData() {
     },
     {
       Category: "Cars",
-      Color: "red",
       Destination: "Iasi",
       "Business Type": "Specialty Bike Shop",
       City: "Constanta",
@@ -3458,7 +3135,6 @@ function getData() {
     },
     {
       Category: "Cars",
-      Color: "blue",
       Destination: "Cluj",
       "Business Type": "Specialty Bike Shop",
       City: "Craiova",
@@ -3468,7 +3144,6 @@ function getData() {
     },
     {
       Category: "Cars",
-      Color: "white",
       Destination: "Timisoara",
       "Business Type": "Specialty Bike Shop",
       City: "Brasov",
@@ -3478,7 +3153,6 @@ function getData() {
     },
     {
       Category: "Cars",
-      Color: "red",
       Destination: "Constanta",
       "Business Type": "Value Added Reseller",
       City: "Iasi",
@@ -3488,7 +3162,6 @@ function getData() {
     },
     {
       Category: "Cars",
-      Color: "green",
       Destination: "Craiova",
       "Business Type": "Value Added Reseller",
       City: "Cluj",
@@ -3498,7 +3171,6 @@ function getData() {
     },
     {
       Category: "Cars",
-      Color: "red",
       Destination: "Brasov",
       "Business Type": "Value Added Reseller",
       City: "Timisoara",
@@ -3508,7 +3180,6 @@ function getData() {
     },
     {
       Category: "Cars",
-      Color: "blue",
       Destination: "Iasi",
       "Business Type": "Value Added Reseller",
       City: "Constanta",
@@ -3518,7 +3189,6 @@ function getData() {
     },
     {
       Category: "Cars",
-      Color: "white",
       Destination: "Timisoara",
       "Business Type": "Value Added Reseller",
       City: "Craiova",
@@ -3528,7 +3198,6 @@ function getData() {
     },
     {
       Category: "Cars",
-      Color: "white",
       Destination: "Constanta",
       "Business Type": "Value Added Reseller",
       City: "Brasov",
@@ -3538,7 +3207,6 @@ function getData() {
     },
     {
       Category: "Cars",
-      Color: "red",
       Destination: "Craiova",
       "Business Type": "Warehouse",
       City: "Iasi",
@@ -3548,7 +3216,6 @@ function getData() {
     },
     {
       Category: "Cars",
-      Color: "blue",
       Destination: "Brasov",
       "Business Type": "Warehouse",
       City: "Cluj",
@@ -3558,7 +3225,6 @@ function getData() {
     },
     {
       Category: "Cars",
-      Color: "white",
       Destination: "Iasi",
       "Business Type": "Warehouse",
       City: "Timisoara",
@@ -3568,7 +3234,6 @@ function getData() {
     },
     {
       Category: "Cars",
-      Color: "red",
       Destination: "Cluj",
       "Business Type": "Warehouse",
       City: "Constanta",
@@ -3578,7 +3243,6 @@ function getData() {
     },
     {
       Category: "Cars",
-      Color: "white",
       Destination: "Timisoara",
       "Business Type": "Warehouse",
       City: "Craiova",
@@ -3588,7 +3252,6 @@ function getData() {
     },
     {
       Category: "Cars",
-      Color: "white",
       Destination: "Constanta",
       "Business Type": "Warehouse",
       City: "Brasov",
@@ -3598,7 +3261,6 @@ function getData() {
     },
     {
       Category: "Passenger Cars",
-      Color: "red",
       Destination: "Craiova",
       "Business Type": "Specialty Bike Shop",
       City: "Iasi",
@@ -3608,7 +3270,6 @@ function getData() {
     },
     {
       Category: "Passenger Cars",
-      Color: "yellow",
       Destination: "Brasov",
       "Business Type": "Specialty Bike Shop",
       City: "Cluj",
@@ -3618,7 +3279,6 @@ function getData() {
     },
     {
       Category: "Passenger Cars",
-      Color: "white",
       Destination: "Iasi",
       "Business Type": "Specialty Bike Shop",
       City: "Timisoara",
@@ -3628,7 +3288,6 @@ function getData() {
     },
     {
       Category: "Passenger Cars",
-      Color: "yellow",
       Destination: "Cluj",
       "Business Type": "Specialty Bike Shop",
       City: "Constanta",
@@ -3638,7 +3297,6 @@ function getData() {
     },
     {
       Category: "Passenger Cars",
-      Color: "red",
       Destination: "Timisoara",
       "Business Type": "Specialty Bike Shop",
       City: "Craiova",
@@ -3648,7 +3306,6 @@ function getData() {
     },
     {
       Category: "Passenger Cars",
-      Color: "yellow",
       Destination: "Constanta",
       "Business Type": "Specialty Bike Shop",
       City: "Brasov",
@@ -3658,7 +3315,6 @@ function getData() {
     },
     {
       Category: "Passenger Cars",
-      Color: "green",
       Destination: "Craiova",
       "Business Type": "Value Added Reseller",
       City: "Iasi",
@@ -3668,7 +3324,6 @@ function getData() {
     },
     {
       Category: "Passenger Cars",
-      Color: "yellow",
       Destination: "Timisoara",
       "Business Type": "Value Added Reseller",
       City: "Cluj",
@@ -3678,7 +3333,6 @@ function getData() {
     },
     {
       Category: "Passenger Cars",
-      Color: "yellow",
       Destination: "Constanta",
       "Business Type": "Value Added Reseller",
       City: "Timisoara",
@@ -3688,7 +3342,6 @@ function getData() {
     },
     {
       Category: "Passenger Cars",
-      Color: "red",
       Destination: "Craiova",
       "Business Type": "Value Added Reseller",
       City: "Constanta",
@@ -3698,7 +3351,6 @@ function getData() {
     },
     {
       Category: "Passenger Cars",
-      Color: "yellow",
       Destination: "Brasov",
       "Business Type": "Value Added Reseller",
       City: "Craiova",
@@ -3708,7 +3360,6 @@ function getData() {
     },
     {
       Category: "Passenger Cars",
-      Color: "red",
       Destination: "Iasi",
       "Business Type": "Value Added Reseller",
       City: "Brasov",
@@ -3718,7 +3369,6 @@ function getData() {
     },
     {
       Category: "Passenger Cars",
-      Color: "yellow",
       Destination: "Cluj",
       "Business Type": "Warehouse",
       City: "Iasi",
@@ -3728,7 +3378,6 @@ function getData() {
     },
     {
       Category: "Passenger Cars",
-      Color: "red",
       Destination: "Timisoara",
       "Business Type": "Warehouse",
       City: "Cluj",
@@ -3738,7 +3387,6 @@ function getData() {
     },
     {
       Category: "Passenger Cars",
-      Color: "green",
       Destination: "Constanta",
       "Business Type": "Warehouse",
       City: "Timisoara",
@@ -3748,7 +3396,6 @@ function getData() {
     },
     {
       Category: "Passenger Cars",
-      Color: "yellow",
       Destination: "Craiova",
       "Business Type": "Warehouse",
       City: "Constanta",
@@ -3758,7 +3405,6 @@ function getData() {
     },
     {
       Category: "Passenger Cars",
-      Color: "red",
       Destination: "Brasov",
       "Business Type": "Warehouse",
       City: "Craiova",
@@ -3768,7 +3414,6 @@ function getData() {
     },
     {
       Category: "Passenger Cars",
-      Color: "white",
       Destination: "Iasi",
       "Business Type": "Warehouse",
       City: "Brasov",
@@ -3778,7 +3423,6 @@ function getData() {
     },
     {
       Category: "Bikes",
-      Color: "white",
       Destination: "Cluj",
       "Business Type": "Specialty Bike Shop",
       City: "Iasi",
@@ -3788,7 +3432,6 @@ function getData() {
     },
     {
       Category: "Bikes",
-      Color: "red",
       Destination: "Timisoara",
       "Business Type": "Specialty Bike Shop",
       City: "Cluj",
@@ -3798,7 +3441,6 @@ function getData() {
     },
     {
       Category: "Bikes",
-      Color: "red",
       Destination: "Constanta",
       "Business Type": "Specialty Bike Shop",
       City: "Timisoara",
@@ -3808,7 +3450,6 @@ function getData() {
     },
     {
       Category: "Bikes",
-      Color: "green",
       Destination: "Craiova",
       "Business Type": "Specialty Bike Shop",
       City: "Constanta",
@@ -3818,7 +3459,6 @@ function getData() {
     },
     {
       Category: "Bikes",
-      Color: "green",
       Destination: "Timisoara",
       "Business Type": "Specialty Bike Shop",
       City: "Craiova",
@@ -3828,7 +3468,6 @@ function getData() {
     },
     {
       Category: "Bikes",
-      Color: "green",
       Destination: "Constanta",
       "Business Type": "Specialty Bike Shop",
       City: "Brasov",
@@ -3838,7 +3477,6 @@ function getData() {
     },
     {
       Category: "Bikes",
-      Color: "green",
       Destination: "Craiova",
       "Business Type": "Value Added Reseller",
       City: "Iasi",
@@ -3848,7 +3486,6 @@ function getData() {
     },
     {
       Category: "Bikes",
-      Color: "red",
       Destination: "Brasov",
       "Business Type": "Value Added Reseller",
       City: "Cluj",
@@ -3858,7 +3495,6 @@ function getData() {
     },
     {
       Category: "Bikes",
-      Color: "yellow",
       Destination: "Iasi",
       "Business Type": "Value Added Reseller",
       City: "Timisoara",
@@ -3868,7 +3504,6 @@ function getData() {
     },
     {
       Category: "Bikes",
-      Color: "red",
       Destination: "Cluj",
       "Business Type": "Value Added Reseller",
       City: "Constanta",
@@ -3878,7 +3513,6 @@ function getData() {
     },
     {
       Category: "Bikes",
-      Color: "blue",
       Destination: "Timisoara",
       "Business Type": "Value Added Reseller",
       City: "Craiova",
@@ -3888,7 +3522,6 @@ function getData() {
     },
     {
       Category: "Bikes",
-      Color: "red",
       Destination: "Constanta",
       "Business Type": "Value Added Reseller",
       City: "Brasov",
@@ -3898,7 +3531,6 @@ function getData() {
     },
     {
       Category: "Bikes",
-      Color: "blue",
       Destination: "Craiova",
       "Business Type": "Warehouse",
       City: "Iasi",
@@ -3908,7 +3540,6 @@ function getData() {
     },
     {
       Category: "Bikes",
-      Color: "blue",
       Destination: "Brasov",
       "Business Type": "Warehouse",
       City: "Cluj",
@@ -3918,7 +3549,6 @@ function getData() {
     },
     {
       Category: "Bikes",
-      Color: "purple",
       Destination: "Iasi",
       "Business Type": "Warehouse",
       City: "Timisoara",
@@ -3928,7 +3558,6 @@ function getData() {
     },
     {
       Category: "Bikes",
-      Color: "red",
       Destination: "Cluj",
       "Business Type": "Warehouse",
       City: "Constanta",
@@ -3938,7 +3567,6 @@ function getData() {
     },
     {
       Category: "Bikes",
-      Color: "blue",
       Destination: "Timisoara",
       "Business Type": "Warehouse",
       City: "Craiova",
@@ -3948,7 +3576,6 @@ function getData() {
     },
     {
       Category: "Bikes",
-      Color: "blue",
       Destination: "Constanta",
       "Business Type": "Warehouse",
       City: "Brasov",
@@ -3958,7 +3585,6 @@ function getData() {
     },
     {
       Category: "Clothing",
-      Color: "yellow",
       Destination: "Craiova",
       "Business Type": "Specialty Bike Shop",
       City: "Iasi",
@@ -3968,7 +3594,6 @@ function getData() {
     },
     {
       Category: "Clothing",
-      Color: "blue",
       Destination: "Craiova",
       "Business Type": "Specialty Bike Shop",
       City: "Cluj",
@@ -3978,7 +3603,6 @@ function getData() {
     },
     {
       Category: "Clothing",
-      Color: "blue",
       Destination: "Brasov",
       "Business Type": "Specialty Bike Shop",
       City: "Timisoara",
@@ -3988,7 +3612,6 @@ function getData() {
     },
     {
       Category: "Clothing",
-      Color: "blue",
       Destination: "Iasi",
       "Business Type": "Specialty Bike Shop",
       City: "Constanta",
@@ -3998,7 +3621,6 @@ function getData() {
     },
     {
       Category: "Clothing",
-      Color: "white",
       Destination: "Cluj",
       "Business Type": "Specialty Bike Shop",
       City: "Craiova",
@@ -4008,7 +3630,6 @@ function getData() {
     },
     {
       Category: "Clothing",
-      Color: "purple",
       Destination: "Timisoara",
       "Business Type": "Specialty Bike Shop",
       City: "Brasov",
@@ -4018,7 +3639,6 @@ function getData() {
     },
     {
       Category: "Clothing",
-      Color: "red",
       Destination: "Constanta",
       "Business Type": "Value Added Reseller",
       City: "Iasi",
@@ -4028,7 +3648,6 @@ function getData() {
     },
     {
       Category: "Clothing",
-      Color: "purple",
       Destination: "Craiova",
       "Business Type": "Value Added Reseller",
       City: "Cluj",
@@ -4038,7 +3657,6 @@ function getData() {
     },
     {
       Category: "Clothing",
-      Color: "green",
       Destination: "Brasov",
       "Business Type": "Value Added Reseller",
       City: "Timisoara",
@@ -4048,7 +3666,6 @@ function getData() {
     },
     {
       Category: "Clothing",
-      Color: "red",
       Destination: "Iasi",
       "Business Type": "Value Added Reseller",
       City: "Constanta",
@@ -4058,7 +3675,6 @@ function getData() {
     },
     {
       Category: "Clothing",
-      Color: "white",
       Destination: "Cluj",
       "Business Type": "Value Added Reseller",
       City: "Craiova",
@@ -4068,7 +3684,6 @@ function getData() {
     },
     {
       Category: "Clothing",
-      Color: "white",
       Destination: "Timisoara",
       "Business Type": "Value Added Reseller",
       City: "Brasov",
@@ -4078,7 +3693,6 @@ function getData() {
     },
     {
       Category: "Clothing",
-      Color: "red",
       Destination: "Constanta",
       "Business Type": "Warehouse",
       City: "Iasi",
@@ -4088,7 +3702,6 @@ function getData() {
     },
     {
       Category: "Clothing",
-      Color: "blue",
       Destination: "Craiova",
       "Business Type": "Warehouse",
       City: "Cluj",
@@ -4098,7 +3711,6 @@ function getData() {
     },
     {
       Category: "Clothing",
-      Color: "green",
       Destination: "Brasov",
       "Business Type": "Warehouse",
       City: "Timisoara",
@@ -4108,7 +3720,6 @@ function getData() {
     },
     {
       Category: "Clothing",
-      Color: "blue",
       Destination: "Iasi",
       "Business Type": "Warehouse",
       City: "Constanta",
@@ -4118,7 +3729,6 @@ function getData() {
     },
     {
       Category: "Clothing",
-      Color: "green",
       Destination: "Cluj",
       "Business Type": "Warehouse",
       City: "Craiova",
@@ -4128,7 +3738,6 @@ function getData() {
     },
     {
       Category: "Clothing",
-      Color: "green",
       Destination: "Timisoara",
       "Business Type": "Warehouse",
       City: "Brasov",
@@ -4138,7 +3747,6 @@ function getData() {
     },
     {
       Category: "Light Commercial(<3.5t)",
-      Color: "red",
       Destination: "Constanta",
       "Business Type": "Specialty Bike Shop",
       City: "Iasi",
@@ -4148,7 +3756,6 @@ function getData() {
     },
     {
       Category: "Light Commercial(<3.5t)",
-      Color: "green",
       Destination: "Craiova",
       "Business Type": "Specialty Bike Shop",
       City: "Cluj",
@@ -4158,7 +3765,6 @@ function getData() {
     },
     {
       Category: "Light Commercial(<3.5t)",
-      Color: "red",
       Destination: "Brasov",
       "Business Type": "Specialty Bike Shop",
       City: "Timisoara",
@@ -4168,7 +3774,6 @@ function getData() {
     },
     {
       Category: "Light Commercial(<3.5t)",
-      Color: "blue",
       Destination: "Iasi",
       "Business Type": "Specialty Bike Shop",
       City: "Constanta",
@@ -4178,7 +3783,6 @@ function getData() {
     },
     {
       Category: "Light Commercial(<3.5t)",
-      Color: "blue",
       Destination: "Cluj",
       "Business Type": "Specialty Bike Shop",
       City: "Craiova",
@@ -4188,7 +3792,6 @@ function getData() {
     },
     {
       Category: "Light Commercial(<3.5t)",
-      Color: "red",
       Destination: "Timisoara",
       "Business Type": "Specialty Bike Shop",
       City: "Brasov",
@@ -4198,7 +3801,6 @@ function getData() {
     },
     {
       Category: "Light Commercial(<3.5t)",
-      Color: "blue",
       Destination: "Constanta",
       "Business Type": "Value Added Reseller",
       City: "Iasi",
@@ -4208,7 +3810,6 @@ function getData() {
     },
     {
       Category: "Light Commercial(<3.5t)",
-      Color: "red",
       Destination: "Craiova",
       "Business Type": "Value Added Reseller",
       City: "Cluj",
@@ -4218,7 +3819,6 @@ function getData() {
     },
     {
       Category: "Light Commercial(<3.5t)",
-      Color: "blue",
       Destination: "Brasov",
       "Business Type": "Value Added Reseller",
       City: "Timisoara",
@@ -4228,7 +3828,6 @@ function getData() {
     },
     {
       Category: "Light Commercial(<3.5t)",
-      Color: "red",
       Destination: "Iasi",
       "Business Type": "Value Added Reseller",
       City: "Constanta",
@@ -4238,7 +3837,6 @@ function getData() {
     },
     {
       Category: "Light Commercial(<3.5t)",
-      Color: "blue",
       Destination: "Cluj",
       "Business Type": "Value Added Reseller",
       City: "Craiova",
@@ -4248,7 +3846,6 @@ function getData() {
     },
     {
       Category: "Light Commercial(<3.5t)",
-      Color: "blue",
       Destination: "Timisoara",
       "Business Type": "Value Added Reseller",
       City: "Brasov",
@@ -4258,7 +3855,6 @@ function getData() {
     },
     {
       Category: "Light Commercial(<3.5t)",
-      Color: "green",
       Destination: "Constanta",
       "Business Type": "Warehouse",
       City: "Iasi",
@@ -4268,7 +3864,6 @@ function getData() {
     },
     {
       Category: "Light Commercial(<3.5t)",
-      Color: "white",
       Destination: "Craiova",
       "Business Type": "Warehouse",
       City: "Cluj",
@@ -4278,7 +3873,6 @@ function getData() {
     },
     {
       Category: "Light Commercial(<3.5t)",
-      Color: "blue",
       Destination: "Brasov",
       "Business Type": "Value Added Reseller",
       City: "Iasi",
@@ -4288,7 +3882,6 @@ function getData() {
     },
     {
       Category: "Light Commercial(<3.5t)",
-      Color: "red",
       Destination: "Iasi",
       "Business Type": "Value Added Reseller",
       City: "Cluj",
@@ -4298,7 +3891,6 @@ function getData() {
     },
     {
       Category: "Light Commercial(<3.5t)",
-      Color: "blue",
       Destination: "Cluj",
       "Business Type": "Value Added Reseller",
       City: "Timisoara",
@@ -4308,7 +3900,6 @@ function getData() {
     },
     {
       Category: "Light Commercial(<3.5t)",
-      Color: "red",
       Destination: "Timisoara",
       "Business Type": "Value Added Reseller",
       City: "Constanta",
@@ -4318,7 +3909,6 @@ function getData() {
     },
     {
       Category: "Light Commercial(<3.5t)",
-      Color: "blue",
       Destination: "Constanta",
       "Business Type": "Value Added Reseller",
       City: "Craiova",
@@ -4328,7 +3918,6 @@ function getData() {
     },
     {
       Category: "Light Commercial(<3.5t)",
-      Color: "blue",
       Destination: "Craiova",
       "Business Type": "Value Added Reseller",
       City: "Brasov",
@@ -4338,7 +3927,6 @@ function getData() {
     },
     {
       Category: "Light Commercial(<3.5t)",
-      Color: "green",
       Destination: "Brasov",
       "Business Type": "Warehouse",
       City: "Iasi",
@@ -4348,7 +3936,6 @@ function getData() {
     },
     {
       Category: "Light Commercial(<3.5t)",
-      Color: "white",
       Destination: "Iasi",
       "Business Type": "Warehouse",
       City: "Cluj",
@@ -4358,7 +3945,6 @@ function getData() {
     },
     {
       Category: "Light Commercial(<3.5t)",
-      Color: "green",
       Destination: "Timisoara",
       "Business Type": "Warehouse",
       City: "Iasi",
@@ -4368,7 +3954,6 @@ function getData() {
     },
     {
       Category: "Light Commercial(<3.5t)",
-      Color: "white",
       Destination: "Constanta",
       "Business Type": "Warehouse",
       City: "Cluj",
@@ -4378,7 +3963,6 @@ function getData() {
     },
     {
       Category: "Light Commercial(<3.5t)",
-      Color: "white",
       Destination: "Craiova",
       "Business Type": "Warehouse",
       City: "Timisoara",
@@ -4388,7 +3972,6 @@ function getData() {
     },
     {
       Category: "Light Commercial(<3.5t)",
-      Color: "blue",
       Destination: "Brasov",
       "Business Type": "Warehouse",
       City: "Constanta",
@@ -4398,7 +3981,6 @@ function getData() {
     },
     {
       Category: "Light Commercial(<3.5t)",
-      Color: "white",
       Destination: "Iasi",
       "Business Type": "Warehouse",
       City: "Craiova",
@@ -4408,7 +3990,6 @@ function getData() {
     },
     {
       Category: "Light Commercial(<3.5t)",
-      Color: "blue",
       Destination: "Cluj",
       "Business Type": "Warehouse",
       City: "Brasov",
@@ -4418,7 +3999,6 @@ function getData() {
     },
     {
       Category: "Light Commercial(<3.5t)",
-      Color: "red",
       Destination: "Timisoara",
       "Business Type": "Specialty Bike Shop",
       City: "Iasi",
@@ -4428,7 +4008,6 @@ function getData() {
     },
     {
       Category: "Light Commercial(<3.5t)",
-      Color: "green",
       Destination: "Constanta",
       "Business Type": "Specialty Bike Shop",
       City: "Cluj",
@@ -4438,7 +4017,6 @@ function getData() {
     },
     {
       Category: "Light Commercial(<3.5t)",
-      Color: "red",
       Destination: "Craiova",
       "Business Type": "Specialty Bike Shop",
       City: "Timisoara",
@@ -4448,7 +4026,6 @@ function getData() {
     },
     {
       Category: "Light Commercial(<3.5t)",
-      Color: "blue",
       Destination: "Brasov",
       "Business Type": "Specialty Bike Shop",
       City: "Constanta",
@@ -4458,7 +4035,6 @@ function getData() {
     },
     {
       Category: "Light Commercial(<3.5t)",
-      Color: "blue",
       Destination: "Iasi",
       "Business Type": "Specialty Bike Shop",
       City: "Craiova",
@@ -4468,7 +4044,6 @@ function getData() {
     },
     {
       Category: "Light Commercial(<3.5t)",
-      Color: "red",
       Destination: "Cluj",
       "Business Type": "Specialty Bike Shop",
       City: "Brasov",
@@ -4478,7 +4053,6 @@ function getData() {
     },
     {
       Category: "Light Commercial(<3.5t)",
-      Color: "blue",
       Destination: "Timisoara",
       "Business Type": "Value Added Reseller",
       City: "Iasi",
@@ -4488,7 +4062,6 @@ function getData() {
     },
     {
       Category: "Light Commercial(<3.5t)",
-      Color: "red",
       Destination: "Constanta",
       "Business Type": "Value Added Reseller",
       City: "Cluj",
@@ -4498,7 +4071,6 @@ function getData() {
     },
     {
       Category: "Light Commercial(<3.5t)",
-      Color: "blue",
       Destination: "Craiova",
       "Business Type": "Value Added Reseller",
       City: "Timisoara",
@@ -4508,7 +4080,6 @@ function getData() {
     },
     {
       Category: "Light Commercial(<3.5t)",
-      Color: "red",
       Destination: "Timisoara",
       "Business Type": "Value Added Reseller",
       City: "Constanta",
@@ -4518,7 +4089,6 @@ function getData() {
     },
     {
       Category: "Light Commercial(<3.5t)",
-      Color: "blue",
       Destination: "Constanta",
       "Business Type": "Value Added Reseller",
       City: "Craiova",
@@ -4528,7 +4098,6 @@ function getData() {
     },
     {
       Category: "Light Commercial(<3.5t)",
-      Color: "blue",
       Destination: "Craiova",
       "Business Type": "Value Added Reseller",
       City: "Brasov",
@@ -4538,7 +4107,6 @@ function getData() {
     },
     {
       Category: "Light Commercial(<3.5t)",
-      Color: "green",
       Destination: "Brasov",
       "Business Type": "Warehouse",
       City: "Iasi",
@@ -4548,7 +4116,6 @@ function getData() {
     },
     {
       Category: "Light Commercial(<3.5t)",
-      Color: "white",
       Destination: "Iasi",
       "Business Type": "Warehouse",
       City: "Cluj",
@@ -4558,7 +4125,6 @@ function getData() {
     },
     {
       Category: "Light Commercial(<3.5t)",
-      Color: "blue",
       Destination: "Cluj",
       "Business Type": "Value Added Reseller",
       City: "Iasi",
@@ -4568,7 +4134,6 @@ function getData() {
     },
     {
       Category: "Light Commercial(<3.5t)",
-      Color: "red",
       Destination: "Timisoara",
       "Business Type": "Value Added Reseller",
       City: "Cluj",
@@ -4578,7 +4143,6 @@ function getData() {
     },
     {
       Category: "Light Commercial(<3.5t)",
-      Color: "blue",
       Destination: "Constanta",
       "Business Type": "Value Added Reseller",
       City: "Timisoara",
@@ -4588,7 +4152,6 @@ function getData() {
     },
     {
       Category: "Light Commercial(<3.5t)",
-      Color: "red",
       Destination: "Craiova",
       "Business Type": "Value Added Reseller",
       City: "Constanta",
@@ -4598,7 +4161,6 @@ function getData() {
     },
     {
       Category: "Light Commercial(<3.5t)",
-      Color: "blue",
       Destination: "Brasov",
       "Business Type": "Value Added Reseller",
       City: "Craiova",
@@ -4608,7 +4170,6 @@ function getData() {
     },
     {
       Category: "Light Commercial(<3.5t)",
-      Color: "blue",
       Destination: "Iasi",
       "Business Type": "Value Added Reseller",
       City: "Brasov",
@@ -4618,7 +4179,6 @@ function getData() {
     },
     {
       Category: "Light Commercial(<3.5t)",
-      Color: "green",
       Destination: "Cluj",
       "Business Type": "Warehouse",
       City: "Iasi",
@@ -4628,7 +4188,6 @@ function getData() {
     },
     {
       Category: "Light Commercial(<3.5t)",
-      Color: "white",
       Destination: "Timisoara",
       "Business Type": "Warehouse",
       City: "Cluj",
@@ -4638,7 +4197,6 @@ function getData() {
     },
     {
       Category: "Light Commercial(<3.5t)",
-      Color: "green",
       Destination: "Constanta",
       "Business Type": "Warehouse",
       City: "Iasi",
@@ -4648,7 +4206,6 @@ function getData() {
     },
     {
       Category: "Light Commercial(<3.5t)",
-      Color: "white",
       Destination: "Craiova",
       "Business Type": "Warehouse",
       City: "Cluj",
@@ -4658,7 +4215,6 @@ function getData() {
     },
     {
       Category: "Light Commercial(<3.5t)",
-      Color: "white",
       Destination: "Timisoara",
       "Business Type": "Warehouse",
       City: "Timisoara",
@@ -4668,7 +4224,6 @@ function getData() {
     },
     {
       Category: "Light Commercial(<3.5t)",
-      Color: "blue",
       Destination: "Constanta",
       "Business Type": "Warehouse",
       City: "Constanta",
@@ -4678,7 +4233,6 @@ function getData() {
     },
     {
       Category: "Light Commercial(<3.5t)",
-      Color: "white",
       Destination: "Craiova",
       "Business Type": "Warehouse",
       City: "Craiova",
@@ -4688,7 +4242,6 @@ function getData() {
     },
     {
       Category: "Light Commercial(<3.5t)",
-      Color: "blue",
       Destination: "Brasov",
       "Business Type": "Warehouse",
       City: "Brasov",
@@ -4698,7 +4251,6 @@ function getData() {
     },
     {
       Category: "Light Commercial(<3.5t)",
-      Color: "red",
       Destination: "Iasi",
       "Business Type": "Specialty Bike Shop",
       City: "Iasi",
@@ -4708,7 +4260,6 @@ function getData() {
     },
     {
       Category: "Light Commercial(<3.5t)",
-      Color: "green",
       Destination: "Cluj",
       "Business Type": "Specialty Bike Shop",
       City: "Cluj",
@@ -4718,7 +4269,6 @@ function getData() {
     },
     {
       Category: "Light Commercial(<3.5t)",
-      Color: "red",
       Destination: "Timisoara",
       "Business Type": "Specialty Bike Shop",
       City: "Timisoara",
@@ -4728,7 +4278,6 @@ function getData() {
     },
     {
       Category: "Light Commercial(<3.5t)",
-      Color: "blue",
       Destination: "Constanta",
       "Business Type": "Specialty Bike Shop",
       City: "Constanta",
@@ -4738,7 +4287,6 @@ function getData() {
     },
     {
       Category: "Light Commercial(<3.5t)",
-      Color: "blue",
       Destination: "Craiova",
       "Business Type": "Specialty Bike Shop",
       City: "Craiova",
@@ -4748,7 +4296,6 @@ function getData() {
     },
     {
       Category: "Light Commercial(<3.5t)",
-      Color: "red",
       Destination: "Brasov",
       "Business Type": "Specialty Bike Shop",
       City: "Brasov",
@@ -4758,7 +4305,6 @@ function getData() {
     },
     {
       Category: "Light Commercial(<3.5t)",
-      Color: "blue",
       Destination: "Iasi",
       "Business Type": "Value Added Reseller",
       City: "Iasi",
@@ -4768,7 +4314,6 @@ function getData() {
     },
     {
       Category: "Light Commercial(<3.5t)",
-      Color: "red",
       Destination: "Cluj",
       "Business Type": "Value Added Reseller",
       City: "Cluj",
@@ -4778,7 +4323,6 @@ function getData() {
     },
     {
       Category: "Light Commercial(<3.5t)",
-      Color: "blue",
       Destination: "Timisoara",
       "Business Type": "Value Added Reseller",
       City: "Timisoara",
@@ -4788,7 +4332,6 @@ function getData() {
     },
     {
       Category: "Light Commercial(<3.5t)",
-      Color: "red",
       Destination: "Constanta",
       "Business Type": "Value Added Reseller",
       City: "Constanta",
@@ -4798,7 +4341,6 @@ function getData() {
     },
     {
       Category: "Light Commercial(<3.5t)",
-      Color: "blue",
       Destination: "Craiova",
       "Business Type": "Value Added Reseller",
       City: "Craiova",
@@ -4808,7 +4350,6 @@ function getData() {
     },
     {
       Category: "Light Commercial(<3.5t)",
-      Color: "blue",
       Destination: "Craiova",
       "Business Type": "Value Added Reseller",
       City: "Brasov",
@@ -4818,7 +4359,6 @@ function getData() {
     },
     {
       Category: "Light Commercial(<3.5t)",
-      Color: "green",
       Destination: "Brasov",
       "Business Type": "Warehouse",
       City: "Iasi",
@@ -4828,7 +4368,6 @@ function getData() {
     },
     {
       Category: "Light Commercial(<3.5t)",
-      Color: "white",
       Destination: "Iasi",
       "Business Type": "Warehouse",
       City: "Cluj",
@@ -4838,7 +4377,6 @@ function getData() {
     },
     {
       Category: "Light Commercial(<3.5t)",
-      Color: "blue",
       Destination: "Cluj",
       "Business Type": "Value Added Reseller",
       City: "Iasi",
@@ -4848,7 +4386,6 @@ function getData() {
     },
     {
       Category: "Light Commercial(<3.5t)",
-      Color: "red",
       Destination: "Timisoara",
       "Business Type": "Value Added Reseller",
       City: "Cluj",
@@ -4858,7 +4395,6 @@ function getData() {
     },
     {
       Category: "Light Commercial(<3.5t)",
-      Color: "blue",
       Destination: "Constanta",
       "Business Type": "Value Added Reseller",
       City: "Timisoara",
@@ -4868,7 +4404,6 @@ function getData() {
     },
     {
       Category: "Light Commercial(<3.5t)",
-      Color: "red",
       Destination: "Craiova",
       "Business Type": "Value Added Reseller",
       City: "Constanta",
@@ -4878,7 +4413,6 @@ function getData() {
     },
     {
       Category: "Light Commercial(<3.5t)",
-      Color: "blue",
       Destination: "Brasov",
       "Business Type": "Value Added Reseller",
       City: "Craiova",
@@ -4888,7 +4422,6 @@ function getData() {
     },
     {
       Category: "Light Commercial(<3.5t)",
-      Color: "blue",
       Destination: "Iasi",
       "Business Type": "Value Added Reseller",
       City: "Brasov",
@@ -4898,7 +4431,6 @@ function getData() {
     },
     {
       Category: "Light Commercial(<3.5t)",
-      Color: "green",
       Destination: "Cluj",
       "Business Type": "Warehouse",
       City: "Iasi",
@@ -4908,7 +4440,6 @@ function getData() {
     },
     {
       Category: "Light Commercial(<3.5t)",
-      Color: "white",
       Destination: "Timisoara",
       "Business Type": "Warehouse",
       City: "Cluj",
@@ -4918,7 +4449,6 @@ function getData() {
     },
     {
       Category: "Light Commercial(<3.5t)",
-      Color: "green",
       Destination: "Constanta",
       "Business Type": "Warehouse",
       City: "Iasi",
@@ -4928,7 +4458,6 @@ function getData() {
     },
     {
       Category: "Light Commercial(<3.5t)",
-      Color: "white",
       Destination: "Craiova",
       "Business Type": "Warehouse",
       City: "Cluj",
@@ -4938,7 +4467,6 @@ function getData() {
     },
     {
       Category: "Light Commercial(<3.5t)",
-      Color: "white",
       Destination: "Brasov",
       "Business Type": "Warehouse",
       City: "Timisoara",
@@ -4948,7 +4476,6 @@ function getData() {
     },
     {
       Category: "Light Commercial(<3.5t)",
-      Color: "blue",
       Destination: "Iasi",
       "Business Type": "Warehouse",
       City: "Constanta",
@@ -4958,7 +4485,6 @@ function getData() {
     },
     {
       Category: "Light Commercial(<3.5t)",
-      Color: "white",
       Destination: "Cluj",
       "Business Type": "Warehouse",
       City: "Craiova",
@@ -4968,7 +4494,6 @@ function getData() {
     },
     {
       Category: "Light Commercial(<3.5t)",
-      Color: "blue",
       Destination: "Timisoara",
       "Business Type": "Warehouse",
       City: "Brasov",
@@ -4978,7 +4503,6 @@ function getData() {
     },
     {
       Category: "Light Commercial(<3.5t)",
-      Color: "red",
       Destination: "Constanta",
       "Business Type": "Specialty Bike Shop",
       City: "Iasi",
@@ -4988,7 +4512,6 @@ function getData() {
     },
     {
       Category: "Light Commercial(<3.5t)",
-      Color: "green",
       Destination: "Craiova",
       "Business Type": "Specialty Bike Shop",
       City: "Cluj",
@@ -4998,7 +4521,6 @@ function getData() {
     },
     {
       Category: "Light Commercial(<3.5t)",
-      Color: "red",
       Destination: "Brasov",
       "Business Type": "Specialty Bike Shop",
       City: "Timisoara",
@@ -5008,7 +4530,6 @@ function getData() {
     },
     {
       Category: "Light Commercial(<3.5t)",
-      Color: "blue",
       Destination: "Iasi",
       "Business Type": "Specialty Bike Shop",
       City: "Constanta",
@@ -5018,7 +4539,6 @@ function getData() {
     },
     {
       Category: "Light Commercial(<3.5t)",
-      Color: "blue",
       Destination: "Cluj",
       "Business Type": "Specialty Bike Shop",
       City: "Craiova",
@@ -5028,7 +4548,6 @@ function getData() {
     },
     {
       Category: "Light Commercial(<3.5t)",
-      Color: "red",
       Destination: "Timisoara",
       "Business Type": "Specialty Bike Shop",
       City: "Brasov",
@@ -5038,7 +4557,6 @@ function getData() {
     },
     {
       Category: "Light Commercial(<3.5t)",
-      Color: "blue",
       Destination: "Constanta",
       "Business Type": "Value Added Reseller",
       City: "Iasi",
@@ -5048,7 +4566,6 @@ function getData() {
     },
     {
       Category: "Light Commercial(<3.5t)",
-      Color: "red",
       Destination: "Craiova",
       "Business Type": "Value Added Reseller",
       City: "Cluj",
@@ -5058,7 +4575,6 @@ function getData() {
     },
     {
       Category: "Light Commercial(<3.5t)",
-      Color: "blue",
       Destination: "Brasov",
       "Business Type": "Value Added Reseller",
       City: "Timisoara",
@@ -5068,7 +4584,6 @@ function getData() {
     },
     {
       Category: "Light Commercial(<3.5t)",
-      Color: "red",
       Destination: "Iasi",
       "Business Type": "Value Added Reseller",
       City: "Constanta",
@@ -5078,7 +4593,6 @@ function getData() {
     },
     {
       Category: "Light Commercial(<3.5t)",
-      Color: "blue",
       Destination: "Cluj",
       "Business Type": "Value Added Reseller",
       City: "Craiova",
@@ -5088,7 +4602,6 @@ function getData() {
     },
     {
       Category: "Light Commercial(<3.5t)",
-      Color: "blue",
       Destination: "Timisoara",
       "Business Type": "Value Added Reseller",
       City: "Brasov",
@@ -5098,7 +4611,6 @@ function getData() {
     },
     {
       Category: "Light Commercial(<3.5t)",
-      Color: "green",
       Destination: "Constanta",
       "Business Type": "Warehouse",
       City: "Iasi",
@@ -5108,7 +4620,6 @@ function getData() {
     },
     {
       Category: "Light Commercial(<3.5t)",
-      Color: "white",
       Destination: "Craiova",
       "Business Type": "Warehouse",
       City: "Cluj",
@@ -5118,7 +4629,6 @@ function getData() {
     },
     {
       Category: "Light Commercial(<3.5t)",
-      Color: "blue",
       Destination: "Brasov",
       "Business Type": "Value Added Reseller",
       City: "Iasi",
@@ -5128,7 +4638,6 @@ function getData() {
     },
     {
       Category: "Light Commercial(<3.5t)",
-      Color: "red",
       Destination: "Iasi",
       "Business Type": "Value Added Reseller",
       City: "Cluj",
@@ -5138,7 +4647,6 @@ function getData() {
     },
     {
       Category: "Light Commercial(<3.5t)",
-      Color: "blue",
       Destination: "Cluj",
       "Business Type": "Value Added Reseller",
       City: "Timisoara",
@@ -5148,7 +4656,6 @@ function getData() {
     },
     {
       Category: "Light Commercial(<3.5t)",
-      Color: "red",
       Destination: "Timisoara",
       "Business Type": "Value Added Reseller",
       City: "Constanta",
@@ -5158,7 +4665,6 @@ function getData() {
     },
     {
       Category: "Light Commercial(<3.5t)",
-      Color: "blue",
       Destination: "Constanta",
       "Business Type": "Value Added Reseller",
       City: "Craiova",
@@ -5168,7 +4674,6 @@ function getData() {
     },
     {
       Category: "Light Commercial(<3.5t)",
-      Color: "blue",
       Destination: "Craiova",
       "Business Type": "Value Added Reseller",
       City: "Brasov",
@@ -5178,7 +4683,6 @@ function getData() {
     },
     {
       Category: "Light Commercial(<3.5t)",
-      Color: "green",
       Destination: "Brasov",
       "Business Type": "Warehouse",
       City: "Iasi",
@@ -5188,7 +4692,6 @@ function getData() {
     },
     {
       Category: "Light Commercial(<3.5t)",
-      Color: "white",
       Destination: "Iasi",
       "Business Type": "Warehouse",
       City: "Cluj",
@@ -5198,7 +4701,6 @@ function getData() {
     },
     {
       Category: "Light Commercial(<3.5t)",
-      Color: "green",
       Destination: "Timisoara",
       "Business Type": "Warehouse",
       City: "Iasi",
@@ -5208,7 +4710,6 @@ function getData() {
     },
     {
       Category: "Light Commercial(<3.5t)",
-      Color: "white",
       Destination: "Constanta",
       "Business Type": "Warehouse",
       City: "Cluj",
@@ -5218,7 +4719,6 @@ function getData() {
     },
     {
       Category: "Light Commercial(<3.5t)",
-      Color: "white",
       Destination: "Craiova",
       "Business Type": "Warehouse",
       City: "Timisoara",
@@ -5228,7 +4728,6 @@ function getData() {
     },
     {
       Category: "Light Commercial(<3.5t)",
-      Color: "blue",
       Destination: "Brasov",
       "Business Type": "Warehouse",
       City: "Constanta",
@@ -5238,7 +4737,6 @@ function getData() {
     },
     {
       Category: "Light Commercial(<3.5t)",
-      Color: "white",
       Destination: "Iasi",
       "Business Type": "Warehouse",
       City: "Craiova",
@@ -5248,7 +4746,6 @@ function getData() {
     },
     {
       Category: "Light Commercial(<3.5t)",
-      Color: "blue",
       Destination: "Cluj",
       "Business Type": "Warehouse",
       City: "Brasov",
@@ -5258,7 +4755,6 @@ function getData() {
     },
     {
       Category: "Light Commercial(<3.5t)",
-      Color: "red",
       Destination: "Timisoara",
       "Business Type": "Specialty Bike Shop",
       City: "Iasi",
@@ -5268,7 +4764,6 @@ function getData() {
     },
     {
       Category: "Light Commercial(<3.5t)",
-      Color: "green",
       Destination: "Constanta",
       "Business Type": "Specialty Bike Shop",
       City: "Cluj",
@@ -5278,7 +4773,6 @@ function getData() {
     },
     {
       Category: "Light Commercial(<3.5t)",
-      Color: "red",
       Destination: "Craiova",
       "Business Type": "Specialty Bike Shop",
       City: "Timisoara",
@@ -5288,7 +4782,6 @@ function getData() {
     },
     {
       Category: "Light Commercial(<3.5t)",
-      Color: "blue",
       Destination: "Brasov",
       "Business Type": "Specialty Bike Shop",
       City: "Constanta",
@@ -5298,7 +4791,6 @@ function getData() {
     },
     {
       Category: "Light Commercial(<3.5t)",
-      Color: "blue",
       Destination: "Iasi",
       "Business Type": "Specialty Bike Shop",
       City: "Craiova",
@@ -5308,7 +4800,6 @@ function getData() {
     },
     {
       Category: "Light Commercial(<3.5t)",
-      Color: "red",
       Destination: "Cluj",
       "Business Type": "Specialty Bike Shop",
       City: "Brasov",
@@ -5318,7 +4809,6 @@ function getData() {
     },
     {
       Category: "Light Commercial(<3.5t)",
-      Color: "blue",
       Destination: "Timisoara",
       "Business Type": "Value Added Reseller",
       City: "Iasi",
@@ -5328,7 +4818,6 @@ function getData() {
     },
     {
       Category: "Light Commercial(<3.5t)",
-      Color: "red",
       Destination: "Constanta",
       "Business Type": "Value Added Reseller",
       City: "Cluj",
@@ -5338,7 +4827,6 @@ function getData() {
     },
     {
       Category: "Light Commercial(<3.5t)",
-      Color: "blue",
       Destination: "Craiova",
       "Business Type": "Value Added Reseller",
       City: "Timisoara",
@@ -5348,7 +4836,6 @@ function getData() {
     },
     {
       Category: "Light Commercial(<3.5t)",
-      Color: "red",
       Destination: "Timisoara",
       "Business Type": "Value Added Reseller",
       City: "Constanta",
@@ -5358,7 +4845,6 @@ function getData() {
     },
     {
       Category: "Light Commercial(<3.5t)",
-      Color: "blue",
       Destination: "Constanta",
       "Business Type": "Value Added Reseller",
       City: "Craiova",
@@ -5368,7 +4854,6 @@ function getData() {
     },
     {
       Category: "Light Commercial(<3.5t)",
-      Color: "blue",
       Destination: "Craiova",
       "Business Type": "Value Added Reseller",
       City: "Brasov",
@@ -5378,7 +4863,6 @@ function getData() {
     },
     {
       Category: "Light Commercial(<3.5t)",
-      Color: "green",
       Destination: "Brasov",
       "Business Type": "Warehouse",
       City: "Iasi",
@@ -5388,7 +4872,6 @@ function getData() {
     },
     {
       Category: "Light Commercial(<3.5t)",
-      Color: "white",
       Destination: "Iasi",
       "Business Type": "Warehouse",
       City: "Cluj",
@@ -5398,7 +4881,6 @@ function getData() {
     },
     {
       Category: "Light Commercial(<3.5t)",
-      Color: "blue",
       Destination: "Cluj",
       "Business Type": "Value Added Reseller",
       City: "Iasi",
@@ -5408,7 +4890,6 @@ function getData() {
     },
     {
       Category: "Light Commercial(<3.5t)",
-      Color: "red",
       Destination: "Timisoara",
       "Business Type": "Value Added Reseller",
       City: "Cluj",
@@ -5418,7 +4899,6 @@ function getData() {
     },
     {
       Category: "Light Commercial(<3.5t)",
-      Color: "blue",
       Destination: "Constanta",
       "Business Type": "Value Added Reseller",
       City: "Timisoara",
@@ -5428,7 +4908,6 @@ function getData() {
     },
     {
       Category: "Light Commercial(<3.5t)",
-      Color: "red",
       Destination: "Craiova",
       "Business Type": "Value Added Reseller",
       City: "Constanta",
@@ -5438,7 +4917,6 @@ function getData() {
     },
     {
       Category: "Light Commercial(<3.5t)",
-      Color: "blue",
       Destination: "Brasov",
       "Business Type": "Value Added Reseller",
       City: "Craiova",
@@ -5448,7 +4926,6 @@ function getData() {
     },
     {
       Category: "Light Commercial(<3.5t)",
-      Color: "blue",
       Destination: "Iasi",
       "Business Type": "Value Added Reseller",
       City: "Brasov",
@@ -5458,7 +4935,6 @@ function getData() {
     },
     {
       Category: "Light Commercial(<3.5t)",
-      Color: "green",
       Destination: "Cluj",
       "Business Type": "Warehouse",
       City: "Iasi",
@@ -5468,7 +4944,6 @@ function getData() {
     },
     {
       Category: "Light Commercial(<3.5t)",
-      Color: "white",
       Destination: "Timisoara",
       "Business Type": "Warehouse",
       City: "Cluj",
@@ -5478,7 +4953,6 @@ function getData() {
     },
     {
       Category: "Light Commercial(<3.5t)",
-      Color: "green",
       Destination: "Constanta",
       "Business Type": "Warehouse",
       City: "Iasi",
@@ -5488,7 +4962,6 @@ function getData() {
     },
     {
       Category: "Light Commercial(<3.5t)",
-      Color: "white",
       Destination: "Craiova",
       "Business Type": "Warehouse",
       City: "Cluj",
@@ -5498,7 +4971,6 @@ function getData() {
     },
     {
       Category: "Light Commercial(<3.5t)",
-      Color: "white",
       Destination: "Timisoara",
       "Business Type": "Warehouse",
       City: "Timisoara",
@@ -5508,7 +4980,6 @@ function getData() {
     },
     {
       Category: "Light Commercial(<3.5t)",
-      Color: "blue",
       Destination: "Constanta",
       "Business Type": "Warehouse",
       City: "Constanta",
@@ -5518,7 +4989,6 @@ function getData() {
     },
     {
       Category: "Light Commercial(<3.5t)",
-      Color: "white",
       Destination: "Craiova",
       "Business Type": "Warehouse",
       City: "Craiova",
@@ -5528,7 +4998,6 @@ function getData() {
     },
     {
       Category: "Light Commercial(<3.5t)",
-      Color: "blue",
       Destination: "Brasov",
       "Business Type": "Warehouse",
       City: "Brasov",
@@ -5538,7 +5007,6 @@ function getData() {
     },
     {
       Category: "Light Commercial(<3.5t)",
-      Color: "red",
       Destination: "Iasi",
       "Business Type": "Specialty Bike Shop",
       City: "Iasi",
@@ -5548,7 +5016,6 @@ function getData() {
     },
     {
       Category: "Light Commercial(<3.5t)",
-      Color: "green",
       Destination: "Cluj",
       "Business Type": "Specialty Bike Shop",
       City: "Cluj",
@@ -5558,7 +5025,6 @@ function getData() {
     },
     {
       Category: "Light Commercial(<3.5t)",
-      Color: "red",
       Destination: "Timisoara",
       "Business Type": "Specialty Bike Shop",
       City: "Timisoara",
@@ -5568,7 +5034,6 @@ function getData() {
     },
     {
       Category: "Light Commercial(<3.5t)",
-      Color: "blue",
       Destination: "Constanta",
       "Business Type": "Specialty Bike Shop",
       City: "Constanta",
@@ -5578,7 +5043,6 @@ function getData() {
     },
     {
       Category: "Light Commercial(<3.5t)",
-      Color: "blue",
       Destination: "Craiova",
       "Business Type": "Specialty Bike Shop",
       City: "Craiova",
@@ -5588,7 +5052,6 @@ function getData() {
     },
     {
       Category: "Light Commercial(<3.5t)",
-      Color: "red",
       Destination: "Brasov",
       "Business Type": "Specialty Bike Shop",
       City: "Brasov",
@@ -5598,7 +5061,6 @@ function getData() {
     },
     {
       Category: "Light Commercial(<3.5t)",
-      Color: "blue",
       Destination: "Iasi",
       "Business Type": "Value Added Reseller",
       City: "Iasi",
@@ -5608,7 +5070,6 @@ function getData() {
     },
     {
       Category: "Light Commercial(<3.5t)",
-      Color: "red",
       Destination: "Cluj",
       "Business Type": "Value Added Reseller",
       City: "Cluj",
@@ -5618,7 +5079,6 @@ function getData() {
     },
     {
       Category: "Light Commercial(<3.5t)",
-      Color: "blue",
       Destination: "Timisoara",
       "Business Type": "Value Added Reseller",
       City: "Timisoara",
@@ -5628,7 +5088,6 @@ function getData() {
     },
     {
       Category: "Light Commercial(<3.5t)",
-      Color: "red",
       Destination: "Constanta",
       "Business Type": "Value Added Reseller",
       City: "Constanta",
@@ -5638,7 +5097,6 @@ function getData() {
     },
     {
       Category: "Light Commercial(<3.5t)",
-      Color: "blue",
       Destination: "Craiova",
       "Business Type": "Value Added Reseller",
       City: "Craiova",
@@ -5648,7 +5106,6 @@ function getData() {
     },
     {
       Category: "Light Commercial(<3.5t)",
-      Color: "blue",
       Destination: "Constanta",
       "Business Type": "Value Added Reseller",
       City: "Brasov",
@@ -5658,7 +5115,6 @@ function getData() {
     },
     {
       Category: "Light Commercial(<3.5t)",
-      Color: "green",
       Destination: "Craiova",
       "Business Type": "Warehouse",
       City: "Iasi",
@@ -5668,7 +5124,6 @@ function getData() {
     },
     {
       Category: "Light Commercial(<3.5t)",
-      Color: "white",
       Destination: "Brasov",
       "Business Type": "Warehouse",
       City: "Cluj",
@@ -5678,7 +5133,6 @@ function getData() {
     },
     {
       Category: "Light Commercial(<3.5t)",
-      Color: "blue",
       Destination: "Iasi",
       "Business Type": "Value Added Reseller",
       City: "Iasi",
@@ -5688,7 +5142,6 @@ function getData() {
     },
     {
       Category: "Light Commercial(<3.5t)",
-      Color: "red",
       Destination: "Cluj",
       "Business Type": "Value Added Reseller",
       City: "Cluj",
@@ -5698,7 +5151,6 @@ function getData() {
     },
     {
       Category: "Light Commercial(<3.5t)",
-      Color: "blue",
       Destination: "Timisoara",
       "Business Type": "Value Added Reseller",
       City: "Timisoara",
@@ -5708,7 +5160,6 @@ function getData() {
     },
     {
       Category: "Light Commercial(<3.5t)",
-      Color: "red",
       Destination: "Constanta",
       "Business Type": "Value Added Reseller",
       City: "Constanta",
@@ -5718,7 +5169,6 @@ function getData() {
     },
     {
       Category: "Light Commercial(<3.5t)",
-      Color: "blue",
       Destination: "Craiova",
       "Business Type": "Value Added Reseller",
       City: "Craiova",
@@ -5728,7 +5178,6 @@ function getData() {
     },
     {
       Category: "Light Commercial(<3.5t)",
-      Color: "blue",
       Destination: "Brasov",
       "Business Type": "Value Added Reseller",
       City: "Brasov",
@@ -5738,7 +5187,6 @@ function getData() {
     },
     {
       Category: "Light Commercial(<3.5t)",
-      Color: "green",
       Destination: "Iasi",
       "Business Type": "Warehouse",
       City: "Iasi",
@@ -5748,7 +5196,6 @@ function getData() {
     },
     {
       Category: "Light Commercial(<3.5t)",
-      Color: "white",
       Destination: "Cluj",
       "Business Type": "Warehouse",
       City: "Cluj",
@@ -5758,7 +5205,6 @@ function getData() {
     },
     {
       Category: "Light Commercial(<3.5t)",
-      Color: "green",
       Destination: "Timisoara",
       "Business Type": "Warehouse",
       City: "Iasi",
@@ -5768,7 +5214,6 @@ function getData() {
     },
     {
       Category: "Light Commercial(<3.5t)",
-      Color: "white",
       Destination: "Constanta",
       "Business Type": "Warehouse",
       City: "Cluj",
@@ -5778,7 +5223,6 @@ function getData() {
     },
     {
       Category: "Light Commercial(<3.5t)",
-      Color: "white",
       Destination: "Craiova",
       "Business Type": "Warehouse",
       City: "Timisoara",
@@ -5788,7 +5232,6 @@ function getData() {
     },
     {
       Category: "Light Commercial(<3.5t)",
-      Color: "blue",
       Destination: "Brasov",
       "Business Type": "Warehouse",
       City: "Constanta",
@@ -5798,7 +5241,6 @@ function getData() {
     },
     {
       Category: "Light Commercial(<3.5t)",
-      Color: "white",
       Destination: "Iasi",
       "Business Type": "Warehouse",
       City: "Craiova",
@@ -5808,7 +5250,6 @@ function getData() {
     },
     {
       Category: "Light Commercial(<3.5t)",
-      Color: "blue",
       Destination: "Cluj",
       "Business Type": "Warehouse",
       City: "Brasov",
@@ -5818,7 +5259,6 @@ function getData() {
     },
     {
       Category: "Light Commercial(<3.5t)",
-      Color: "red",
       Destination: "Timisoara",
       "Business Type": "Specialty Bike Shop",
       City: "Iasi",
@@ -5828,7 +5268,6 @@ function getData() {
     },
     {
       Category: "Light Commercial(<3.5t)",
-      Color: "green",
       Destination: "Constanta",
       "Business Type": "Specialty Bike Shop",
       City: "Cluj",
@@ -5838,7 +5277,6 @@ function getData() {
     },
     {
       Category: "Light Commercial(<3.5t)",
-      Color: "red",
       Destination: "Craiova",
       "Business Type": "Specialty Bike Shop",
       City: "Timisoara",
@@ -5848,7 +5286,6 @@ function getData() {
     },
     {
       Category: "Light Commercial(<3.5t)",
-      Color: "blue",
       Destination: "Brasov",
       "Business Type": "Specialty Bike Shop",
       City: "Constanta",
@@ -5858,7 +5295,6 @@ function getData() {
     },
     {
       Category: "Light Commercial(<3.5t)",
-      Color: "blue",
       Destination: "Iasi",
       "Business Type": "Specialty Bike Shop",
       City: "Craiova",
@@ -5868,7 +5304,6 @@ function getData() {
     },
     {
       Category: "Light Commercial(<3.5t)",
-      Color: "red",
       Destination: "Cluj",
       "Business Type": "Specialty Bike Shop",
       City: "Brasov",
@@ -5878,7 +5313,6 @@ function getData() {
     },
     {
       Category: "Light Commercial(<3.5t)",
-      Color: "blue",
       Destination: "Timisoara",
       "Business Type": "Value Added Reseller",
       City: "Iasi",
@@ -5888,7 +5322,6 @@ function getData() {
     },
     {
       Category: "Light Commercial(<3.5t)",
-      Color: "red",
       Destination: "Constanta",
       "Business Type": "Value Added Reseller",
       City: "Cluj",
@@ -5898,7 +5331,6 @@ function getData() {
     },
     {
       Category: "Light Commercial(<3.5t)",
-      Color: "blue",
       Destination: "Craiova",
       "Business Type": "Value Added Reseller",
       City: "Timisoara",
@@ -5908,7 +5340,6 @@ function getData() {
     },
     {
       Category: "Light Commercial(<3.5t)",
-      Color: "red",
       Destination: "Brasov",
       "Business Type": "Value Added Reseller",
       City: "Constanta",
@@ -5918,7 +5349,6 @@ function getData() {
     },
     {
       Category: "Light Commercial(<3.5t)",
-      Color: "blue",
       Destination: "Iasi",
       "Business Type": "Value Added Reseller",
       City: "Craiova",
@@ -5928,7 +5358,6 @@ function getData() {
     },
     {
       Category: "Light Commercial(<3.5t)",
-      Color: "blue",
       Destination: "Cluj",
       "Business Type": "Value Added Reseller",
       City: "Brasov",
@@ -5938,7 +5367,6 @@ function getData() {
     },
     {
       Category: "Light Commercial(<3.5t)",
-      Color: "green",
       Destination: "Timisoara",
       "Business Type": "Warehouse",
       City: "Iasi",
@@ -5948,7 +5376,6 @@ function getData() {
     },
     {
       Category: "Light Commercial(<3.5t)",
-      Color: "white",
       Destination: "Constanta",
       "Business Type": "Warehouse",
       City: "Cluj",
@@ -5958,7 +5385,6 @@ function getData() {
     },
     {
       Category: "Light Commercial(<3.5t)",
-      Color: "blue",
       Destination: "Craiova",
       "Business Type": "Value Added Reseller",
       City: "Iasi",
@@ -5968,7 +5394,6 @@ function getData() {
     },
     {
       Category: "Light Commercial(<3.5t)",
-      Color: "red",
       Destination: "Brasov",
       "Business Type": "Value Added Reseller",
       City: "Cluj",
@@ -5978,7 +5403,6 @@ function getData() {
     },
     {
       Category: "Light Commercial(<3.5t)",
-      Color: "blue",
       Destination: "Iasi",
       "Business Type": "Value Added Reseller",
       City: "Timisoara",
@@ -5988,7 +5412,6 @@ function getData() {
     },
     {
       Category: "Light Commercial(<3.5t)",
-      Color: "red",
       Destination: "Cluj",
       "Business Type": "Value Added Reseller",
       City: "Constanta",
@@ -5998,7 +5421,6 @@ function getData() {
     },
     {
       Category: "Light Commercial(<3.5t)",
-      Color: "blue",
       Destination: "Timisoara",
       "Business Type": "Value Added Reseller",
       City: "Craiova",
@@ -6008,7 +5430,6 @@ function getData() {
     },
     {
       Category: "Light Commercial(<3.5t)",
-      Color: "blue",
       Destination: "Constanta",
       "Business Type": "Value Added Reseller",
       City: "Brasov",
@@ -6018,7 +5439,6 @@ function getData() {
     },
     {
       Category: "Light Commercial(<3.5t)",
-      Color: "green",
       Destination: "Craiova",
       "Business Type": "Warehouse",
       City: "Iasi",
@@ -6028,7 +5448,6 @@ function getData() {
     },
     {
       Category: "Light Commercial(<3.5t)",
-      Color: "white",
       Destination: "Brasov",
       "Business Type": "Warehouse",
       City: "Cluj",
@@ -6038,7 +5457,6 @@ function getData() {
     },
     {
       Category: "Light Commercial(<3.5t)",
-      Color: "green",
       Destination: "Iasi",
       "Business Type": "Warehouse",
       City: "Iasi",
@@ -6048,7 +5466,6 @@ function getData() {
     },
     {
       Category: "Light Commercial(<3.5t)",
-      Color: "white",
       Destination: "Cluj",
       "Business Type": "Warehouse",
       City: "Cluj",
@@ -6058,7 +5475,6 @@ function getData() {
     },
     {
       Category: "Light Commercial(<3.5t)",
-      Color: "white",
       Destination: "Timisoara",
       "Business Type": "Warehouse",
       City: "Timisoara",
@@ -6068,7 +5484,6 @@ function getData() {
     },
     {
       Category: "Light Commercial(<3.5t)",
-      Color: "blue",
       Destination: "Constanta",
       "Business Type": "Warehouse",
       City: "Constanta",
@@ -6078,7 +5493,6 @@ function getData() {
     },
     {
       Category: "Light Commercial(<3.5t)",
-      Color: "white",
       Destination: "Craiova",
       "Business Type": "Warehouse",
       City: "Craiova",
@@ -6088,7 +5502,6 @@ function getData() {
     },
     {
       Category: "Light Commercial(<3.5t)",
-      Color: "blue",
       Destination: "Brasov",
       "Business Type": "Warehouse",
       City: "Brasov",
@@ -6098,7 +5511,6 @@ function getData() {
     },
     {
       Category: "Light Commercial(<3.5t)",
-      Color: "red",
       Destination: "Iasi",
       "Business Type": "Specialty Bike Shop",
       City: "Iasi",
@@ -6108,7 +5520,6 @@ function getData() {
     },
     {
       Category: "Light Commercial(<3.5t)",
-      Color: "green",
       Destination: "Cluj",
       "Business Type": "Specialty Bike Shop",
       City: "Cluj",
@@ -6118,7 +5529,6 @@ function getData() {
     },
     {
       Category: "Light Commercial(<3.5t)",
-      Color: "red",
       Destination: "Timisoara",
       "Business Type": "Specialty Bike Shop",
       City: "Timisoara",
@@ -6128,7 +5538,6 @@ function getData() {
     },
     {
       Category: "Light Commercial(<3.5t)",
-      Color: "blue",
       Destination: "Constanta",
       "Business Type": "Specialty Bike Shop",
       City: "Constanta",
@@ -6138,7 +5547,6 @@ function getData() {
     },
     {
       Category: "Light Commercial(<3.5t)",
-      Color: "blue",
       Destination: "Craiova",
       "Business Type": "Specialty Bike Shop",
       City: "Craiova",
@@ -6148,7 +5556,6 @@ function getData() {
     },
     {
       Category: "Light Commercial(<3.5t)",
-      Color: "red",
       Destination: "Brasov",
       "Business Type": "Specialty Bike Shop",
       City: "Brasov",
@@ -6158,7 +5565,6 @@ function getData() {
     },
     {
       Category: "Light Commercial(<3.5t)",
-      Color: "blue",
       Destination: "Iasi",
       "Business Type": "Value Added Reseller",
       City: "Iasi",
@@ -6168,7 +5574,6 @@ function getData() {
     },
     {
       Category: "Light Commercial(<3.5t)",
-      Color: "red",
       Destination: "Cluj",
       "Business Type": "Value Added Reseller",
       City: "Cluj",
@@ -6178,7 +5583,6 @@ function getData() {
     },
     {
       Category: "Light Commercial(<3.5t)",
-      Color: "blue",
       Destination: "Timisoara",
       "Business Type": "Value Added Reseller",
       City: "Timisoara",
@@ -6188,7 +5592,6 @@ function getData() {
     },
     {
       Category: "Light Commercial(<3.5t)",
-      Color: "red",
       Destination: "Constanta",
       "Business Type": "Value Added Reseller",
       City: "Constanta",
@@ -6198,7 +5601,6 @@ function getData() {
     },
     {
       Category: "Light Commercial(<3.5t)",
-      Color: "blue",
       Destination: "Craiova",
       "Business Type": "Value Added Reseller",
       City: "Craiova",
@@ -6208,7 +5610,6 @@ function getData() {
     },
     {
       Category: "Light Commercial(<3.5t)",
-      Color: "blue",
       Destination: "Brasov",
       "Business Type": "Value Added Reseller",
       City: "Brasov",
@@ -6218,7 +5619,6 @@ function getData() {
     },
     {
       Category: "Light Commercial(<3.5t)",
-      Color: "green",
       Destination: "Iasi",
       "Business Type": "Warehouse",
       City: "Iasi",
@@ -6228,7 +5628,6 @@ function getData() {
     },
     {
       Category: "Light Commercial(<3.5t)",
-      Color: "white",
       Destination: "Cluj",
       "Business Type": "Warehouse",
       City: "Cluj",
@@ -6238,7 +5637,6 @@ function getData() {
     },
     {
       Category: "Light Commercial(<3.5t)",
-      Color: "blue",
       Destination: "Iasi",
       "Business Type": "Value Added Reseller",
       City: "Iasi",
@@ -6248,7 +5646,6 @@ function getData() {
     },
     {
       Category: "Light Commercial(<3.5t)",
-      Color: "red",
       Destination: "Cluj",
       "Business Type": "Value Added Reseller",
       City: "Cluj",
@@ -6258,7 +5655,6 @@ function getData() {
     },
     {
       Category: "Light Commercial(<3.5t)",
-      Color: "blue",
       Destination: "Timisoara",
       "Business Type": "Value Added Reseller",
       City: "Timisoara",
@@ -6268,7 +5664,6 @@ function getData() {
     },
     {
       Category: "Light Commercial(<3.5t)",
-      Color: "red",
       Destination: "Constanta",
       "Business Type": "Value Added Reseller",
       City: "Constanta",
@@ -6278,7 +5673,6 @@ function getData() {
     },
     {
       Category: "Light Commercial(<3.5t)",
-      Color: "blue",
       Destination: "Craiova",
       "Business Type": "Value Added Reseller",
       City: "Craiova",
@@ -6288,7 +5682,6 @@ function getData() {
     },
     {
       Category: "Light Commercial(<3.5t)",
-      Color: "blue",
       Destination: "Brasov",
       "Business Type": "Value Added Reseller",
       City: "Brasov",
@@ -6298,7 +5691,6 @@ function getData() {
     },
     {
       Category: "Light Commercial(<3.5t)",
-      Color: "green",
       Destination: "Iasi",
       "Business Type": "Warehouse",
       City: "Iasi",
@@ -6308,7 +5700,6 @@ function getData() {
     },
     {
       Category: "Light Commercial(<3.5t)",
-      Color: "white",
       Destination: "Cluj",
       "Business Type": "Warehouse",
       City: "Cluj",
@@ -6318,7 +5709,6 @@ function getData() {
     },
     {
       Category: "Light Commercial(<3.5t)",
-      Color: "green",
       Destination: "Iasi",
       "Business Type": "Warehouse",
       City: "Iasi",
@@ -6328,7 +5718,6 @@ function getData() {
     },
     {
       Category: "Light Commercial(<3.5t)",
-      Color: "white",
       Destination: "Cluj",
       "Business Type": "Warehouse",
       City: "Cluj",
@@ -6338,7 +5727,6 @@ function getData() {
     },
     {
       Category: "Light Commercial(<3.5t)",
-      Color: "white",
       Destination: "Timisoara",
       "Business Type": "Warehouse",
       City: "Timisoara",
@@ -6348,7 +5736,6 @@ function getData() {
     },
     {
       Category: "Light Commercial(<3.5t)",
-      Color: "blue",
       Destination: "Constanta",
       "Business Type": "Warehouse",
       City: "Constanta",
@@ -6358,7 +5745,6 @@ function getData() {
     },
     {
       Category: "Light Commercial(<3.5t)",
-      Color: "white",
       Destination: "Craiova",
       "Business Type": "Warehouse",
       City: "Craiova",
@@ -6368,7 +5754,6 @@ function getData() {
     },
     {
       Category: "Light Commercial(<3.5t)",
-      Color: "blue",
       Destination: "Brasov",
       "Business Type": "Warehouse",
       City: "Brasov",
@@ -6378,7 +5763,6 @@ function getData() {
     },
     {
       Category: "Cars",
-      Color: "green",
       Destination: "Iasi",
       "Business Type": "Specialty Bike Shop",
       City: "Iasi",
@@ -6388,7 +5772,6 @@ function getData() {
     },
     {
       Category: "Cars",
-      Color: "white",
       Destination: "Cluj",
       "Business Type": "Specialty Bike Shop",
       City: "Cluj",
@@ -6398,7 +5781,6 @@ function getData() {
     },
     {
       Category: "Cars",
-      Color: "green",
       Destination: "Timisoara",
       "Business Type": "Specialty Bike Shop",
       City: "Timisoara",
@@ -6408,7 +5790,6 @@ function getData() {
     },
     {
       Category: "Cars",
-      Color: "red",
       Destination: "Constanta",
       "Business Type": "Specialty Bike Shop",
       City: "Constanta",
@@ -6418,7 +5799,6 @@ function getData() {
     },
     {
       Category: "Cars",
-      Color: "blue",
       Destination: "Craiova",
       "Business Type": "Specialty Bike Shop",
       City: "Craiova",
@@ -6428,7 +5808,6 @@ function getData() {
     },
     {
       Category: "Cars",
-      Color: "white",
       Destination: "Brasov",
       "Business Type": "Specialty Bike Shop",
       City: "Brasov",
@@ -6438,7 +5817,6 @@ function getData() {
     },
     {
       Category: "Cars",
-      Color: "red",
       Destination: "Iasi",
       "Business Type": "Value Added Reseller",
       City: "Iasi",
@@ -6448,7 +5826,6 @@ function getData() {
     },
     {
       Category: "Cars",
-      Color: "green",
       Destination: "Cluj",
       "Business Type": "Value Added Reseller",
       City: "Cluj",
@@ -6458,7 +5835,6 @@ function getData() {
     },
     {
       Category: "Cars",
-      Color: "red",
       Destination: "Timisoara",
       "Business Type": "Value Added Reseller",
       City: "Timisoara",
@@ -6468,7 +5844,6 @@ function getData() {
     },
     {
       Category: "Cars",
-      Color: "blue",
       Destination: "Constanta",
       "Business Type": "Value Added Reseller",
       City: "Constanta",
@@ -6478,7 +5853,6 @@ function getData() {
     },
     {
       Category: "Cars",
-      Color: "white",
       Destination: "Craiova",
       "Business Type": "Value Added Reseller",
       City: "Craiova",
@@ -6488,7 +5862,6 @@ function getData() {
     },
     {
       Category: "Cars",
-      Color: "white",
       Destination: "Brasov",
       "Business Type": "Value Added Reseller",
       City: "Brasov",
@@ -6498,7 +5871,6 @@ function getData() {
     },
     {
       Category: "Cars",
-      Color: "red",
       Destination: "Iasi",
       "Business Type": "Warehouse",
       City: "Iasi",
@@ -6508,7 +5880,6 @@ function getData() {
     },
     {
       Category: "Cars",
-      Color: "blue",
       Destination: "Cluj",
       "Business Type": "Warehouse",
       City: "Cluj",
@@ -6518,7 +5889,6 @@ function getData() {
     },
     {
       Category: "Cars",
-      Color: "white",
       Destination: "Iasi",
       "Business Type": "Warehouse",
       City: "Timisoara",
@@ -6528,7 +5898,6 @@ function getData() {
     },
     {
       Category: "Cars",
-      Color: "red",
       Destination: "Cluj",
       "Business Type": "Warehouse",
       City: "Constanta",
@@ -6538,7 +5907,6 @@ function getData() {
     },
     {
       Category: "Cars",
-      Color: "white",
       Destination: "Timisoara",
       "Business Type": "Warehouse",
       City: "Craiova",
@@ -6548,7 +5916,6 @@ function getData() {
     },
     {
       Category: "Cars",
-      Color: "white",
       Destination: "Constanta",
       "Business Type": "Warehouse",
       City: "Brasov",
@@ -6558,7 +5925,6 @@ function getData() {
     },
     {
       Category: "Cars",
-      Color: "green",
       Destination: "Craiova",
       "Business Type": "Specialty Bike Shop",
       City: "Iasi",
@@ -6568,7 +5934,6 @@ function getData() {
     },
     {
       Category: "Cars",
-      Color: "white",
       Destination: "Brasov",
       "Business Type": "Specialty Bike Shop",
       City: "Cluj",
@@ -6578,7 +5943,6 @@ function getData() {
     },
     {
       Category: "Cars",
-      Color: "green",
       Destination: "Iasi",
       "Business Type": "Specialty Bike Shop",
       City: "Timisoara",
@@ -6588,7 +5952,6 @@ function getData() {
     },
     {
       Category: "Cars",
-      Color: "red",
       Destination: "Cluj",
       "Business Type": "Specialty Bike Shop",
       City: "Constanta",
@@ -6598,7 +5961,6 @@ function getData() {
     },
     {
       Category: "Cars",
-      Color: "blue",
       Destination: "Iasi",
       "Business Type": "Specialty Bike Shop",
       City: "Craiova",
@@ -6608,7 +5970,6 @@ function getData() {
     },
     {
       Category: "Cars",
-      Color: "white",
       Destination: "Cluj",
       "Business Type": "Specialty Bike Shop",
       City: "Brasov",
@@ -6618,7 +5979,6 @@ function getData() {
     },
     {
       Category: "Cars",
-      Color: "red",
       Destination: "Timisoara",
       "Business Type": "Value Added Reseller",
       City: "Iasi",
@@ -6628,7 +5988,6 @@ function getData() {
     },
     {
       Category: "Cars",
-      Color: "green",
       Destination: "Constanta",
       "Business Type": "Value Added Reseller",
       City: "Cluj",
@@ -6638,7 +5997,6 @@ function getData() {
     },
     {
       Category: "Cars",
-      Color: "red",
       Destination: "Craiova",
       "Business Type": "Value Added Reseller",
       City: "Timisoara",
@@ -6648,7 +6006,6 @@ function getData() {
     },
     {
       Category: "Cars",
-      Color: "blue",
       Destination: "Brasov",
       "Business Type": "Value Added Reseller",
       City: "Constanta",
@@ -6658,7 +6015,6 @@ function getData() {
     },
     {
       Category: "Cars",
-      Color: "white",
       Destination: "Iasi",
       "Business Type": "Value Added Reseller",
       City: "Craiova",
@@ -6668,7 +6024,6 @@ function getData() {
     },
     {
       Category: "Cars",
-      Color: "white",
       Destination: "Cluj",
       "Business Type": "Value Added Reseller",
       City: "Brasov",
@@ -6678,7 +6033,6 @@ function getData() {
     },
     {
       Category: "Cars",
-      Color: "red",
       Destination: "Timisoara",
       "Business Type": "Warehouse",
       City: "Iasi",
@@ -6688,7 +6042,6 @@ function getData() {
     },
     {
       Category: "Cars",
-      Color: "blue",
       Destination: "Constanta",
       "Business Type": "Warehouse",
       City: "Cluj",
@@ -6698,7 +6051,6 @@ function getData() {
     },
     {
       Category: "Cars",
-      Color: "white",
       Destination: "Craiova",
       "Business Type": "Warehouse",
       City: "Timisoara",
@@ -6708,7 +6060,6 @@ function getData() {
     },
     {
       Category: "Cars",
-      Color: "red",
       Destination: "Brasov",
       "Business Type": "Warehouse",
       City: "Constanta",
@@ -6718,7 +6069,6 @@ function getData() {
     },
     {
       Category: "Cars",
-      Color: "white",
       Destination: "Iasi",
       "Business Type": "Warehouse",
       City: "Craiova",
@@ -6728,7 +6078,6 @@ function getData() {
     },
     {
       Category: "Cars",
-      Color: "white",
       Destination: "Cluj",
       "Business Type": "Warehouse",
       City: "Brasov",
@@ -6738,7 +6087,6 @@ function getData() {
     },
     {
       Category: "Cars",
-      Color: "green",
       Destination: "Timisoara",
       "Business Type": "Specialty Bike Shop",
       City: "Iasi",
@@ -6748,7 +6096,6 @@ function getData() {
     },
     {
       Category: "Cars",
-      Color: "white",
       Destination: "Constanta",
       "Business Type": "Specialty Bike Shop",
       City: "Cluj",
@@ -6758,7 +6105,6 @@ function getData() {
     },
     {
       Category: "Cars",
-      Color: "green",
       Destination: "Craiova",
       "Business Type": "Specialty Bike Shop",
       City: "Timisoara",
@@ -6768,7 +6114,6 @@ function getData() {
     },
     {
       Category: "Cars",
-      Color: "red",
       Destination: "Brasov",
       "Business Type": "Specialty Bike Shop",
       City: "Constanta",
@@ -6778,7 +6123,6 @@ function getData() {
     },
     {
       Category: "Cars",
-      Color: "blue",
       Destination: "Iasi",
       "Business Type": "Specialty Bike Shop",
       City: "Craiova",
@@ -6788,7 +6132,6 @@ function getData() {
     },
     {
       Category: "Cars",
-      Color: "white",
       Destination: "Cluj",
       "Business Type": "Specialty Bike Shop",
       City: "Brasov",
@@ -6798,7 +6141,6 @@ function getData() {
     },
     {
       Category: "Cars",
-      Color: "red",
       Destination: "Iasi",
       "Business Type": "Value Added Reseller",
       City: "Iasi",
@@ -6808,7 +6150,6 @@ function getData() {
     },
     {
       Category: "Cars",
-      Color: "green",
       Destination: "Cluj",
       "Business Type": "Value Added Reseller",
       City: "Cluj",
@@ -6818,7 +6159,6 @@ function getData() {
     },
     {
       Category: "Cars",
-      Color: "red",
       Destination: "Timisoara",
       "Business Type": "Value Added Reseller",
       City: "Timisoara",
@@ -6828,7 +6168,6 @@ function getData() {
     },
     {
       Category: "Cars",
-      Color: "blue",
       Destination: "Constanta",
       "Business Type": "Value Added Reseller",
       City: "Constanta",
@@ -6838,7 +6177,6 @@ function getData() {
     },
     {
       Category: "Cars",
-      Color: "white",
       Destination: "Craiova",
       "Business Type": "Value Added Reseller",
       City: "Craiova",
@@ -6848,7 +6186,6 @@ function getData() {
     },
     {
       Category: "Cars",
-      Color: "white",
       Destination: "Brasov",
       "Business Type": "Value Added Reseller",
       City: "Brasov",
@@ -6858,7 +6195,6 @@ function getData() {
     },
     {
       Category: "Cars",
-      Color: "red",
       Destination: "Iasi",
       "Business Type": "Warehouse",
       City: "Iasi",
@@ -6868,7 +6204,6 @@ function getData() {
     },
     {
       Category: "Cars",
-      Color: "blue",
       Destination: "Cluj",
       "Business Type": "Warehouse",
       City: "Cluj",
@@ -6878,7 +6213,6 @@ function getData() {
     },
     {
       Category: "Cars",
-      Color: "white",
       Destination: "Iasi",
       "Business Type": "Warehouse",
       City: "Timisoara",
@@ -6888,7 +6222,6 @@ function getData() {
     },
     {
       Category: "Cars",
-      Color: "red",
       Destination: "Cluj",
       "Business Type": "Warehouse",
       City: "Constanta",
@@ -6898,7 +6231,6 @@ function getData() {
     },
     {
       Category: "Cars",
-      Color: "white",
       Destination: "Timisoara",
       "Business Type": "Warehouse",
       City: "Craiova",
@@ -6908,7 +6240,6 @@ function getData() {
     },
     {
       Category: "Cars",
-      Color: "white",
       Destination: "Constanta",
       "Business Type": "Warehouse",
       City: "Brasov",
@@ -6918,7 +6249,6 @@ function getData() {
     },
     {
       Category: "Light Commercial(<3.5t)",
-      Color: "blue",
       Destination: "Timisoara",
       "Business Type": "Value Added Reseller",
       City: "Craiova",
@@ -6928,7 +6258,6 @@ function getData() {
     },
     {
       Category: "Light Commercial(<3.5t)",
-      Color: "blue",
       Destination: "Constanta",
       "Business Type": "Value Added Reseller",
       City: "Brasov",
@@ -6938,7 +6267,6 @@ function getData() {
     },
     {
       Category: "Light Commercial(<3.5t)",
-      Color: "green",
       Destination: "Craiova",
       "Business Type": "Warehouse",
       City: "Iasi",
@@ -6948,7 +6276,6 @@ function getData() {
     },
     {
       Category: "Light Commercial(<3.5t)",
-      Color: "white",
       Destination: "Brasov",
       "Business Type": "Warehouse",
       City: "Cluj",
@@ -6958,7 +6285,6 @@ function getData() {
     },
     {
       Category: "Light Commercial(<3.5t)",
-      Color: "green",
       Destination: "Iasi",
       "Business Type": "Warehouse",
       City: "Iasi",
@@ -6968,7 +6294,6 @@ function getData() {
     },
     {
       Category: "Light Commercial(<3.5t)",
-      Color: "white",
       Destination: "Cluj",
       "Business Type": "Warehouse",
       City: "Cluj",
@@ -6978,7 +6303,6 @@ function getData() {
     },
     {
       Category: "Light Commercial(<3.5t)",
-      Color: "white",
       Destination: "Timisoara",
       "Business Type": "Warehouse",
       City: "Timisoara",
@@ -6988,7 +6312,6 @@ function getData() {
     },
     {
       Category: "Light Commercial(<3.5t)",
-      Color: "blue",
       Destination: "Constanta",
       "Business Type": "Warehouse",
       City: "Constanta",
@@ -6998,7 +6321,6 @@ function getData() {
     },
     {
       Category: "Light Commercial(<3.5t)",
-      Color: "white",
       Destination: "Craiova",
       "Business Type": "Warehouse",
       City: "Craiova",
@@ -7008,7 +6330,6 @@ function getData() {
     },
     {
       Category: "Light Commercial(<3.5t)",
-      Color: "blue",
       Destination: "Brasov",
       "Business Type": "Warehouse",
       City: "Brasov",
@@ -7018,7 +6339,6 @@ function getData() {
     },
     {
       Category: "Light Commercial(<3.5t)",
-      Color: "red",
       Destination: "Iasi",
       "Business Type": "Specialty Bike Shop",
       City: "Iasi",
@@ -7028,7 +6348,6 @@ function getData() {
     },
     {
       Category: "Light Commercial(<3.5t)",
-      Color: "green",
       Destination: "Cluj",
       "Business Type": "Specialty Bike Shop",
       City: "Cluj",
@@ -7038,7 +6357,6 @@ function getData() {
     },
     {
       Category: "Light Commercial(<3.5t)",
-      Color: "red",
       Destination: "Timisoara",
       "Business Type": "Specialty Bike Shop",
       City: "Timisoara",
@@ -7048,7 +6366,6 @@ function getData() {
     },
     {
       Category: "Light Commercial(<3.5t)",
-      Color: "blue",
       Destination: "Constanta",
       "Business Type": "Specialty Bike Shop",
       City: "Constanta",
@@ -7058,7 +6375,6 @@ function getData() {
     },
     {
       Category: "Light Commercial(<3.5t)",
-      Color: "blue",
       Destination: "Craiova",
       "Business Type": "Specialty Bike Shop",
       City: "Craiova",
@@ -7068,7 +6384,6 @@ function getData() {
     },
     {
       Category: "Light Commercial(<3.5t)",
-      Color: "red",
       Destination: "Brasov",
       "Business Type": "Specialty Bike Shop",
       City: "Brasov",
@@ -7078,7 +6393,6 @@ function getData() {
     },
     {
       Category: "Light Commercial(<3.5t)",
-      Color: "blue",
       Destination: "Iasi",
       "Business Type": "Value Added Reseller",
       City: "Iasi",
@@ -7088,7 +6402,6 @@ function getData() {
     },
     {
       Category: "Light Commercial(<3.5t)",
-      Color: "red",
       Destination: "Cluj",
       "Business Type": "Value Added Reseller",
       City: "Cluj",
@@ -7098,7 +6411,6 @@ function getData() {
     },
     {
       Category: "Light Commercial(<3.5t)",
-      Color: "blue",
       Destination: "Timisoara",
       "Business Type": "Value Added Reseller",
       City: "Timisoara",
@@ -7108,7 +6420,6 @@ function getData() {
     },
     {
       Category: "Light Commercial(<3.5t)",
-      Color: "red",
       Destination: "Constanta",
       "Business Type": "Value Added Reseller",
       City: "Constanta",
@@ -7118,7 +6429,6 @@ function getData() {
     },
     {
       Category: "Light Commercial(<3.5t)",
-      Color: "blue",
       Destination: "Craiova",
       "Business Type": "Value Added Reseller",
       City: "Craiova",
@@ -7128,7 +6438,6 @@ function getData() {
     },
     {
       Category: "Light Commercial(<3.5t)",
-      Color: "blue",
       Destination: "Brasov",
       "Business Type": "Value Added Reseller",
       City: "Brasov",
@@ -7138,7 +6447,6 @@ function getData() {
     },
     {
       Category: "Light Commercial(<3.5t)",
-      Color: "green",
       Destination: "Iasi",
       "Business Type": "Warehouse",
       City: "Iasi",
@@ -7148,7 +6456,6 @@ function getData() {
     },
     {
       Category: "Light Commercial(<3.5t)",
-      Color: "white",
       Destination: "Cluj",
       "Business Type": "Warehouse",
       City: "Cluj",
@@ -7158,7 +6465,6 @@ function getData() {
     },
     {
       Category: "Light Commercial(<3.5t)",
-      Color: "blue",
       Destination: "Iasi",
       "Business Type": "Value Added Reseller",
       City: "Iasi",
@@ -7168,7 +6474,6 @@ function getData() {
     },
     {
       Category: "Light Commercial(<3.5t)",
-      Color: "red",
       Destination: "Cluj",
       "Business Type": "Value Added Reseller",
       City: "Cluj",
@@ -7178,7 +6483,6 @@ function getData() {
     },
     {
       Category: "Light Commercial(<3.5t)",
-      Color: "blue",
       Destination: "Timisoara",
       "Business Type": "Value Added Reseller",
       City: "Timisoara",
@@ -7188,7 +6492,6 @@ function getData() {
     },
     {
       Category: "Light Commercial(<3.5t)",
-      Color: "red",
       Destination: "Constanta",
       "Business Type": "Value Added Reseller",
       City: "Constanta",
@@ -7198,7 +6501,6 @@ function getData() {
     },
     {
       Category: "Light Commercial(<3.5t)",
-      Color: "blue",
       Destination: "Craiova",
       "Business Type": "Value Added Reseller",
       City: "Craiova",
@@ -7208,7 +6510,6 @@ function getData() {
     },
     {
       Category: "Light Commercial(<3.5t)",
-      Color: "blue",
       Destination: "Brasov",
       "Business Type": "Value Added Reseller",
       City: "Brasov",
@@ -7218,7 +6519,6 @@ function getData() {
     },
     {
       Category: "Light Commercial(<3.5t)",
-      Color: "green",
       Destination: "Iasi",
       "Business Type": "Warehouse",
       City: "Iasi",
@@ -7228,7 +6528,6 @@ function getData() {
     },
     {
       Category: "Light Commercial(<3.5t)",
-      Color: "white",
       Destination: "Cluj",
       "Business Type": "Warehouse",
       City: "Cluj",
@@ -7238,7 +6537,6 @@ function getData() {
     },
     {
       Category: "Light Commercial(<3.5t)",
-      Color: "green",
       Destination: "Iasi",
       "Business Type": "Warehouse",
       City: "Iasi",
@@ -7248,7 +6546,6 @@ function getData() {
     },
     {
       Category: "Light Commercial(<3.5t)",
-      Color: "white",
       Destination: "Cluj",
       "Business Type": "Warehouse",
       City: "Cluj",
@@ -7258,7 +6555,6 @@ function getData() {
     },
     {
       Category: "Light Commercial(<3.5t)",
-      Color: "white",
       Destination: "Timisoara",
       "Business Type": "Warehouse",
       City: "Timisoara",
@@ -7268,7 +6564,6 @@ function getData() {
     },
     {
       Category: "Light Commercial(<3.5t)",
-      Color: "blue",
       Destination: "Constanta",
       "Business Type": "Warehouse",
       City: "Constanta",
@@ -7278,7 +6573,6 @@ function getData() {
     },
     {
       Category: "Light Commercial(<3.5t)",
-      Color: "white",
       Destination: "Craiova",
       "Business Type": "Warehouse",
       City: "Craiova",
@@ -7288,7 +6582,6 @@ function getData() {
     },
     {
       Category: "Light Commercial(<3.5t)",
-      Color: "blue",
       Destination: "Brasov",
       "Business Type": "Warehouse",
       City: "Brasov",
@@ -7298,7 +6591,6 @@ function getData() {
     },
     {
       Category: "Cars",
-      Color: "green",
       Destination: "Iasi",
       "Business Type": "Specialty Bike Shop",
       City: "Iasi",
@@ -7308,7 +6600,6 @@ function getData() {
     },
     {
       Category: "Cars",
-      Color: "white",
       Destination: "Cluj",
       "Business Type": "Specialty Bike Shop",
       City: "Cluj",
@@ -7318,7 +6609,6 @@ function getData() {
     },
     {
       Category: "Cars",
-      Color: "green",
       Destination: "Timisoara",
       "Business Type": "Specialty Bike Shop",
       City: "Timisoara",
@@ -7328,7 +6618,6 @@ function getData() {
     },
     {
       Category: "Cars",
-      Color: "red",
       Destination: "Constanta",
       "Business Type": "Specialty Bike Shop",
       City: "Constanta",
@@ -7338,7 +6627,6 @@ function getData() {
     },
     {
       Category: "Cars",
-      Color: "blue",
       Destination: "Craiova",
       "Business Type": "Specialty Bike Shop",
       City: "Craiova",
@@ -7348,7 +6636,6 @@ function getData() {
     },
     {
       Category: "Cars",
-      Color: "white",
       Destination: "Brasov",
       "Business Type": "Specialty Bike Shop",
       City: "Brasov",
@@ -7358,7 +6645,6 @@ function getData() {
     },
     {
       Category: "Cars",
-      Color: "red",
       Destination: "Iasi",
       "Business Type": "Value Added Reseller",
       City: "Iasi",
@@ -7368,7 +6654,6 @@ function getData() {
     },
     {
       Category: "Cars",
-      Color: "green",
       Destination: "Cluj",
       "Business Type": "Value Added Reseller",
       City: "Cluj",
@@ -7378,7 +6663,6 @@ function getData() {
     },
     {
       Category: "Cars",
-      Color: "red",
       Destination: "Timisoara",
       "Business Type": "Value Added Reseller",
       City: "Timisoara",
@@ -7388,7 +6672,6 @@ function getData() {
     },
     {
       Category: "Cars",
-      Color: "blue",
       Destination: "Constanta",
       "Business Type": "Value Added Reseller",
       City: "Constanta",
@@ -7398,7 +6681,6 @@ function getData() {
     },
     {
       Category: "Cars",
-      Color: "white",
       Destination: "Craiova",
       "Business Type": "Value Added Reseller",
       City: "Craiova",
@@ -7408,7 +6690,6 @@ function getData() {
     },
     {
       Category: "Cars",
-      Color: "white",
       Destination: "Brasov",
       "Business Type": "Value Added Reseller",
       City: "Brasov",
@@ -7418,7 +6699,6 @@ function getData() {
     },
     {
       Category: "Cars",
-      Color: "red",
       Destination: "Iasi",
       "Business Type": "Warehouse",
       City: "Iasi",
@@ -7428,7 +6708,6 @@ function getData() {
     },
     {
       Category: "Cars",
-      Color: "blue",
       Destination: "Cluj",
       "Business Type": "Warehouse",
       City: "Cluj",
@@ -7438,7 +6717,6 @@ function getData() {
     },
     {
       Category: "Cars",
-      Color: "white",
       Destination: "Iasi",
       "Business Type": "Warehouse",
       City: "Timisoara",
@@ -7448,7 +6726,6 @@ function getData() {
     },
     {
       Category: "Cars",
-      Color: "red",
       Destination: "Cluj",
       "Business Type": "Warehouse",
       City: "Constanta",
@@ -7458,7 +6735,6 @@ function getData() {
     },
     {
       Category: "Light Commercial(<3.5t)",
-      Color: "blue",
       Destination: "Timisoara",
       "Business Type": "Value Added Reseller",
       City: "Craiova",
@@ -7468,7 +6744,6 @@ function getData() {
     },
     {
       Category: "Light Commercial(<3.5t)",
-      Color: "blue",
       Destination: "Constanta",
       "Business Type": "Value Added Reseller",
       City: "Brasov",
@@ -7478,7 +6753,6 @@ function getData() {
     },
     {
       Category: "Light Commercial(<3.5t)",
-      Color: "green",
       Destination: "Craiova",
       "Business Type": "Warehouse",
       City: "Iasi",
@@ -7488,7 +6762,6 @@ function getData() {
     },
     {
       Category: "Light Commercial(<3.5t)",
-      Color: "white",
       Destination: "Brasov",
       "Business Type": "Warehouse",
       City: "Cluj",
@@ -7498,7 +6771,6 @@ function getData() {
     },
     {
       Category: "Light Commercial(<3.5t)",
-      Color: "green",
       Destination: "Iasi",
       "Business Type": "Warehouse",
       City: "Iasi",
@@ -7508,7 +6780,6 @@ function getData() {
     },
     {
       Category: "Light Commercial(<3.5t)",
-      Color: "white",
       Destination: "Cluj",
       "Business Type": "Warehouse",
       City: "Cluj",
@@ -7518,7 +6789,6 @@ function getData() {
     },
     {
       Category: "Light Commercial(<3.5t)",
-      Color: "white",
       Destination: "Timisoara",
       "Business Type": "Warehouse",
       City: "Timisoara",
@@ -7528,7 +6798,6 @@ function getData() {
     },
     {
       Category: "Light Commercial(<3.5t)",
-      Color: "blue",
       Destination: "Constanta",
       "Business Type": "Warehouse",
       City: "Constanta",
@@ -7538,7 +6807,6 @@ function getData() {
     },
     {
       Category: "Light Commercial(<3.5t)",
-      Color: "white",
       Destination: "Craiova",
       "Business Type": "Warehouse",
       City: "Craiova",
@@ -7548,7 +6816,6 @@ function getData() {
     },
     {
       Category: "Light Commercial(<3.5t)",
-      Color: "blue",
       Destination: "Brasov",
       "Business Type": "Warehouse",
       City: "Brasov",
@@ -7558,7 +6825,6 @@ function getData() {
     },
     {
       Category: "Light Commercial(<3.5t)",
-      Color: "red",
       Destination: "Iasi",
       "Business Type": "Specialty Bike Shop",
       City: "Iasi",
@@ -7568,7 +6834,6 @@ function getData() {
     },
     {
       Category: "Light Commercial(<3.5t)",
-      Color: "green",
       Destination: "Cluj",
       "Business Type": "Specialty Bike Shop",
       City: "Cluj",
@@ -7578,7 +6843,6 @@ function getData() {
     },
     {
       Category: "Light Commercial(<3.5t)",
-      Color: "red",
       Destination: "Timisoara",
       "Business Type": "Specialty Bike Shop",
       City: "Timisoara",
@@ -7588,7 +6852,6 @@ function getData() {
     },
     {
       Category: "Light Commercial(<3.5t)",
-      Color: "blue",
       Destination: "Constanta",
       "Business Type": "Specialty Bike Shop",
       City: "Constanta",
@@ -7598,7 +6861,6 @@ function getData() {
     },
     {
       Category: "Light Commercial(<3.5t)",
-      Color: "blue",
       Destination: "Craiova",
       "Business Type": "Specialty Bike Shop",
       City: "Craiova",
@@ -7608,7 +6870,6 @@ function getData() {
     },
     {
       Category: "Light Commercial(<3.5t)",
-      Color: "red",
       Destination: "Brasov",
       "Business Type": "Specialty Bike Shop",
       City: "Brasov",
@@ -7618,7 +6879,6 @@ function getData() {
     },
     {
       Category: "Light Commercial(<3.5t)",
-      Color: "blue",
       Destination: "Iasi",
       "Business Type": "Value Added Reseller",
       City: "Iasi",
@@ -7628,7 +6888,6 @@ function getData() {
     },
     {
       Category: "Light Commercial(<3.5t)",
-      Color: "red",
       Destination: "Cluj",
       "Business Type": "Value Added Reseller",
       City: "Cluj",
@@ -7638,7 +6897,6 @@ function getData() {
     },
     {
       Category: "Light Commercial(<3.5t)",
-      Color: "blue",
       Destination: "Timisoara",
       "Business Type": "Value Added Reseller",
       City: "Timisoara",
@@ -7648,7 +6906,6 @@ function getData() {
     },
     {
       Category: "Light Commercial(<3.5t)",
-      Color: "red",
       Destination: "Constanta",
       "Business Type": "Value Added Reseller",
       City: "Constanta",
@@ -7658,7 +6915,6 @@ function getData() {
     },
     {
       Category: "Light Commercial(<3.5t)",
-      Color: "blue",
       Destination: "Craiova",
       "Business Type": "Value Added Reseller",
       City: "Craiova",
@@ -7668,7 +6924,6 @@ function getData() {
     },
     {
       Category: "Light Commercial(<3.5t)",
-      Color: "blue",
       Destination: "Brasov",
       "Business Type": "Value Added Reseller",
       City: "Brasov",
@@ -7678,7 +6933,6 @@ function getData() {
     },
     {
       Category: "Light Commercial(<3.5t)",
-      Color: "green",
       Destination: "Iasi",
       "Business Type": "Warehouse",
       City: "Iasi",
@@ -7688,7 +6942,6 @@ function getData() {
     },
     {
       Category: "Light Commercial(<3.5t)",
-      Color: "white",
       Destination: "Cluj",
       "Business Type": "Warehouse",
       City: "Cluj",
@@ -7698,7 +6951,6 @@ function getData() {
     },
     {
       Category: "Light Commercial(<3.5t)",
-      Color: "blue",
       Destination: "Iasi",
       "Business Type": "Value Added Reseller",
       City: "Iasi",
@@ -7708,7 +6960,6 @@ function getData() {
     },
     {
       Category: "Light Commercial(<3.5t)",
-      Color: "red",
       Destination: "Cluj",
       "Business Type": "Value Added Reseller",
       City: "Cluj",
@@ -7718,7 +6969,6 @@ function getData() {
     },
     {
       Category: "Light Commercial(<3.5t)",
-      Color: "blue",
       Destination: "Timisoara",
       "Business Type": "Value Added Reseller",
       City: "Timisoara",
@@ -7728,7 +6978,6 @@ function getData() {
     },
     {
       Category: "Light Commercial(<3.5t)",
-      Color: "red",
       Destination: "Constanta",
       "Business Type": "Value Added Reseller",
       City: "Constanta",
@@ -7738,7 +6987,6 @@ function getData() {
     },
     {
       Category: "Light Commercial(<3.5t)",
-      Color: "blue",
       Destination: "Craiova",
       "Business Type": "Value Added Reseller",
       City: "Craiova",
@@ -7748,7 +6996,6 @@ function getData() {
     },
     {
       Category: "Light Commercial(<3.5t)",
-      Color: "blue",
       Destination: "Brasov",
       "Business Type": "Value Added Reseller",
       City: "Brasov",
@@ -7758,7 +7005,6 @@ function getData() {
     },
     {
       Category: "Light Commercial(<3.5t)",
-      Color: "green",
       Destination: "Iasi",
       "Business Type": "Warehouse",
       City: "Iasi",
@@ -7768,7 +7014,6 @@ function getData() {
     },
     {
       Category: "Light Commercial(<3.5t)",
-      Color: "white",
       Destination: "Cluj",
       "Business Type": "Warehouse",
       City: "Cluj",
@@ -7778,7 +7023,6 @@ function getData() {
     },
     {
       Category: "Light Commercial(<3.5t)",
-      Color: "green",
       Destination: "Iasi",
       "Business Type": "Warehouse",
       City: "Iasi",
@@ -7788,7 +7032,6 @@ function getData() {
     },
     {
       Category: "Light Commercial(<3.5t)",
-      Color: "white",
       Destination: "Cluj",
       "Business Type": "Warehouse",
       City: "Cluj",
@@ -7798,7 +7041,6 @@ function getData() {
     },
     {
       Category: "Light Commercial(<3.5t)",
-      Color: "white",
       Destination: "Timisoara",
       "Business Type": "Warehouse",
       City: "Timisoara",
@@ -7808,7 +7050,6 @@ function getData() {
     },
     {
       Category: "Light Commercial(<3.5t)",
-      Color: "blue",
       Destination: "Constanta",
       "Business Type": "Warehouse",
       City: "Constanta",
@@ -7818,7 +7059,6 @@ function getData() {
     },
     {
       Category: "Light Commercial(<3.5t)",
-      Color: "white",
       Destination: "Craiova",
       "Business Type": "Warehouse",
       City: "Craiova",
@@ -7828,7 +7068,6 @@ function getData() {
     },
     {
       Category: "Light Commercial(<3.5t)",
-      Color: "blue",
       Destination: "Brasov",
       "Business Type": "Warehouse",
       City: "Brasov",
@@ -7838,7 +7077,6 @@ function getData() {
     },
     {
       Category: "Cars",
-      Color: "green",
       Destination: "Iasi",
       "Business Type": "Specialty Bike Shop",
       City: "Iasi",
@@ -7848,7 +7086,6 @@ function getData() {
     },
     {
       Category: "Cars",
-      Color: "white",
       Destination: "Cluj",
       "Business Type": "Specialty Bike Shop",
       City: "Cluj",
@@ -7858,7 +7095,6 @@ function getData() {
     },
     {
       Category: "Cars",
-      Color: "green",
       Destination: "Timisoara",
       "Business Type": "Specialty Bike Shop",
       City: "Timisoara",
@@ -7868,7 +7104,6 @@ function getData() {
     },
     {
       Category: "Cars",
-      Color: "red",
       Destination: "Constanta",
       "Business Type": "Specialty Bike Shop",
       City: "Constanta",
@@ -7878,7 +7113,6 @@ function getData() {
     },
     {
       Category: "Cars",
-      Color: "blue",
       Destination: "Craiova",
       "Business Type": "Specialty Bike Shop",
       City: "Craiova",
@@ -7888,7 +7122,6 @@ function getData() {
     },
     {
       Category: "Cars",
-      Color: "white",
       Destination: "Brasov",
       "Business Type": "Specialty Bike Shop",
       City: "Brasov",
@@ -7898,7 +7131,6 @@ function getData() {
     },
     {
       Category: "Cars",
-      Color: "red",
       Destination: "Iasi",
       "Business Type": "Value Added Reseller",
       City: "Iasi",
@@ -7908,7 +7140,6 @@ function getData() {
     },
     {
       Category: "Cars",
-      Color: "green",
       Destination: "Cluj",
       "Business Type": "Value Added Reseller",
       City: "Cluj",
@@ -7918,7 +7149,6 @@ function getData() {
     },
     {
       Category: "Cars",
-      Color: "red",
       Destination: "Timisoara",
       "Business Type": "Value Added Reseller",
       City: "Timisoara",
@@ -7928,7 +7158,6 @@ function getData() {
     },
     {
       Category: "Cars",
-      Color: "blue",
       Destination: "Constanta",
       "Business Type": "Value Added Reseller",
       City: "Constanta",
@@ -7938,7 +7167,6 @@ function getData() {
     },
     {
       Category: "Cars",
-      Color: "white",
       Destination: "Craiova",
       "Business Type": "Value Added Reseller",
       City: "Craiova",
@@ -7948,7 +7176,6 @@ function getData() {
     },
     {
       Category: "Cars",
-      Color: "white",
       Destination: "Brasov",
       "Business Type": "Value Added Reseller",
       City: "Brasov",
@@ -7958,7 +7185,6 @@ function getData() {
     },
     {
       Category: "Cars",
-      Color: "red",
       Destination: "Iasi",
       "Business Type": "Warehouse",
       City: "Iasi",
@@ -7968,7 +7194,6 @@ function getData() {
     },
     {
       Category: "Cars",
-      Color: "blue",
       Destination: "Cluj",
       "Business Type": "Warehouse",
       City: "Cluj",
@@ -7978,7 +7203,6 @@ function getData() {
     },
     {
       Category: "Cars",
-      Color: "white",
       Destination: "Iasi",
       "Business Type": "Warehouse",
       City: "Timisoara",
@@ -7988,7 +7212,6 @@ function getData() {
     },
     {
       Category: "Cars",
-      Color: "red",
       Destination: "Cluj",
       "Business Type": "Warehouse",
       City: "Constanta",
@@ -7998,7 +7221,6 @@ function getData() {
     },
     {
       Category: "Light Commercial(<3.5t)",
-      Color: "blue",
       Destination: "Timisoara",
       "Business Type": "Value Added Reseller",
       City: "Craiova",
@@ -8008,7 +7230,6 @@ function getData() {
     },
     {
       Category: "Light Commercial(<3.5t)",
-      Color: "blue",
       Destination: "Constanta",
       "Business Type": "Value Added Reseller",
       City: "Brasov",
@@ -8018,7 +7239,6 @@ function getData() {
     },
     {
       Category: "Light Commercial(<3.5t)",
-      Color: "green",
       Destination: "Craiova",
       "Business Type": "Warehouse",
       City: "Iasi",
@@ -8028,7 +7248,6 @@ function getData() {
     },
     {
       Category: "Light Commercial(<3.5t)",
-      Color: "white",
       Destination: "Brasov",
       "Business Type": "Warehouse",
       City: "Cluj",
@@ -8038,7 +7257,6 @@ function getData() {
     },
     {
       Category: "Light Commercial(<3.5t)",
-      Color: "green",
       Destination: "Iasi",
       "Business Type": "Warehouse",
       City: "Iasi",
@@ -8048,7 +7266,6 @@ function getData() {
     },
     {
       Category: "Light Commercial(<3.5t)",
-      Color: "white",
       Destination: "Cluj",
       "Business Type": "Warehouse",
       City: "Cluj",
@@ -8058,7 +7275,6 @@ function getData() {
     },
     {
       Category: "Light Commercial(<3.5t)",
-      Color: "white",
       Destination: "Timisoara",
       "Business Type": "Warehouse",
       City: "Timisoara",
@@ -8068,7 +7284,6 @@ function getData() {
     },
     {
       Category: "Light Commercial(<3.5t)",
-      Color: "blue",
       Destination: "Constanta",
       "Business Type": "Warehouse",
       City: "Constanta",
@@ -8078,7 +7293,6 @@ function getData() {
     },
     {
       Category: "Light Commercial(<3.5t)",
-      Color: "white",
       Destination: "Craiova",
       "Business Type": "Warehouse",
       City: "Craiova",
@@ -8088,7 +7302,6 @@ function getData() {
     },
     {
       Category: "Light Commercial(<3.5t)",
-      Color: "blue",
       Destination: "Brasov",
       "Business Type": "Warehouse",
       City: "Brasov",
@@ -8098,7 +7311,6 @@ function getData() {
     },
     {
       Category: "Light Commercial(<3.5t)",
-      Color: "red",
       Destination: "Iasi",
       "Business Type": "Specialty Bike Shop",
       City: "Iasi",
@@ -8108,7 +7320,6 @@ function getData() {
     },
     {
       Category: "Light Commercial(<3.5t)",
-      Color: "green",
       Destination: "Cluj",
       "Business Type": "Specialty Bike Shop",
       City: "Cluj",
@@ -8118,7 +7329,6 @@ function getData() {
     },
     {
       Category: "Light Commercial(<3.5t)",
-      Color: "red",
       Destination: "Timisoara",
       "Business Type": "Specialty Bike Shop",
       City: "Timisoara",
@@ -8128,7 +7338,6 @@ function getData() {
     },
     {
       Category: "Light Commercial(<3.5t)",
-      Color: "blue",
       Destination: "Constanta",
       "Business Type": "Specialty Bike Shop",
       City: "Constanta",
@@ -8138,7 +7347,6 @@ function getData() {
     },
     {
       Category: "Light Commercial(<3.5t)",
-      Color: "blue",
       Destination: "Craiova",
       "Business Type": "Specialty Bike Shop",
       City: "Craiova",
@@ -8148,7 +7356,6 @@ function getData() {
     },
     {
       Category: "Light Commercial(<3.5t)",
-      Color: "red",
       Destination: "Brasov",
       "Business Type": "Specialty Bike Shop",
       City: "Brasov",
@@ -8158,7 +7365,6 @@ function getData() {
     },
     {
       Category: "Light Commercial(<3.5t)",
-      Color: "blue",
       Destination: "Iasi",
       "Business Type": "Value Added Reseller",
       City: "Iasi",
@@ -8168,7 +7374,6 @@ function getData() {
     },
     {
       Category: "Light Commercial(<3.5t)",
-      Color: "red",
       Destination: "Cluj",
       "Business Type": "Value Added Reseller",
       City: "Cluj",
@@ -8178,7 +7383,6 @@ function getData() {
     },
     {
       Category: "Light Commercial(<3.5t)",
-      Color: "blue",
       Destination: "Timisoara",
       "Business Type": "Value Added Reseller",
       City: "Timisoara",
@@ -8188,7 +7392,6 @@ function getData() {
     },
     {
       Category: "Light Commercial(<3.5t)",
-      Color: "red",
       Destination: "Constanta",
       "Business Type": "Value Added Reseller",
       City: "Constanta",
@@ -8198,7 +7401,6 @@ function getData() {
     },
     {
       Category: "Light Commercial(<3.5t)",
-      Color: "blue",
       Destination: "Craiova",
       "Business Type": "Value Added Reseller",
       City: "Craiova",
@@ -8208,7 +7410,6 @@ function getData() {
     },
     {
       Category: "Light Commercial(<3.5t)",
-      Color: "blue",
       Destination: "Brasov",
       "Business Type": "Value Added Reseller",
       City: "Brasov",
@@ -8218,7 +7419,6 @@ function getData() {
     },
     {
       Category: "Light Commercial(<3.5t)",
-      Color: "green",
       Destination: "Iasi",
       "Business Type": "Warehouse",
       City: "Iasi",
@@ -8228,7 +7428,6 @@ function getData() {
     },
     {
       Category: "Light Commercial(<3.5t)",
-      Color: "white",
       Destination: "Cluj",
       "Business Type": "Warehouse",
       City: "Cluj",
@@ -8238,7 +7437,6 @@ function getData() {
     },
     {
       Category: "Light Commercial(<3.5t)",
-      Color: "blue",
       Destination: "Iasi",
       "Business Type": "Value Added Reseller",
       City: "Iasi",
@@ -8248,7 +7446,6 @@ function getData() {
     },
     {
       Category: "Light Commercial(<3.5t)",
-      Color: "red",
       Destination: "Cluj",
       "Business Type": "Value Added Reseller",
       City: "Cluj",
@@ -8258,7 +7455,6 @@ function getData() {
     },
     {
       Category: "Light Commercial(<3.5t)",
-      Color: "blue",
       Destination: "Timisoara",
       "Business Type": "Value Added Reseller",
       City: "Timisoara",
@@ -8268,7 +7464,6 @@ function getData() {
     },
     {
       Category: "Light Commercial(<3.5t)",
-      Color: "red",
       Destination: "Constanta",
       "Business Type": "Value Added Reseller",
       City: "Constanta",
@@ -8278,7 +7473,6 @@ function getData() {
     },
     {
       Category: "Light Commercial(<3.5t)",
-      Color: "blue",
       Destination: "Craiova",
       "Business Type": "Value Added Reseller",
       City: "Craiova",
@@ -8288,7 +7482,6 @@ function getData() {
     },
     {
       Category: "Light Commercial(<3.5t)",
-      Color: "blue",
       Destination: "Brasov",
       "Business Type": "Value Added Reseller",
       City: "Brasov",
@@ -8298,7 +7491,6 @@ function getData() {
     },
     {
       Category: "Light Commercial(<3.5t)",
-      Color: "green",
       Destination: "Iasi",
       "Business Type": "Warehouse",
       City: "Iasi",
@@ -8308,7 +7500,6 @@ function getData() {
     },
     {
       Category: "Light Commercial(<3.5t)",
-      Color: "white",
       Destination: "Cluj",
       "Business Type": "Warehouse",
       City: "Cluj",
@@ -8318,7 +7509,6 @@ function getData() {
     },
     {
       Category: "Light Commercial(<3.5t)",
-      Color: "green",
       Destination: "Iasi",
       "Business Type": "Warehouse",
       City: "Iasi",
@@ -8328,7 +7518,6 @@ function getData() {
     },
     {
       Category: "Light Commercial(<3.5t)",
-      Color: "white",
       Destination: "Cluj",
       "Business Type": "Warehouse",
       City: "Cluj",
@@ -8338,7 +7527,6 @@ function getData() {
     },
     {
       Category: "Light Commercial(<3.5t)",
-      Color: "white",
       Destination: "Timisoara",
       "Business Type": "Warehouse",
       City: "Timisoara",
@@ -8348,7 +7536,6 @@ function getData() {
     },
     {
       Category: "Light Commercial(<3.5t)",
-      Color: "blue",
       Destination: "Constanta",
       "Business Type": "Warehouse",
       City: "Constanta",
@@ -8358,7 +7545,6 @@ function getData() {
     },
     {
       Category: "Light Commercial(<3.5t)",
-      Color: "white",
       Destination: "Craiova",
       "Business Type": "Warehouse",
       City: "Craiova",
@@ -8368,7 +7554,6 @@ function getData() {
     },
     {
       Category: "Light Commercial(<3.5t)",
-      Color: "blue",
       Destination: "Brasov",
       "Business Type": "Warehouse",
       City: "Brasov",
@@ -8378,7 +7563,6 @@ function getData() {
     },
     {
       Category: "Cars",
-      Color: "green",
       Destination: "Iasi",
       "Business Type": "Specialty Bike Shop",
       City: "Iasi",
@@ -8388,7 +7572,6 @@ function getData() {
     },
     {
       Category: "Cars",
-      Color: "white",
       Destination: "Cluj",
       "Business Type": "Specialty Bike Shop",
       City: "Cluj",
@@ -8398,7 +7581,6 @@ function getData() {
     },
     {
       Category: "Cars",
-      Color: "green",
       Destination: "Timisoara",
       "Business Type": "Specialty Bike Shop",
       City: "Timisoara",
@@ -8408,7 +7590,6 @@ function getData() {
     },
     {
       Category: "Cars",
-      Color: "red",
       Destination: "Constanta",
       "Business Type": "Specialty Bike Shop",
       City: "Constanta",
@@ -8418,7 +7599,6 @@ function getData() {
     },
     {
       Category: "Cars",
-      Color: "blue",
       Destination: "Craiova",
       "Business Type": "Specialty Bike Shop",
       City: "Craiova",
@@ -8428,7 +7608,6 @@ function getData() {
     },
     {
       Category: "Cars",
-      Color: "white",
       Destination: "Brasov",
       "Business Type": "Specialty Bike Shop",
       City: "Brasov",
@@ -8438,7 +7617,6 @@ function getData() {
     },
     {
       Category: "Cars",
-      Color: "red",
       Destination: "Iasi",
       "Business Type": "Value Added Reseller",
       City: "Iasi",
@@ -8448,7 +7626,6 @@ function getData() {
     },
     {
       Category: "Cars",
-      Color: "green",
       Destination: "Cluj",
       "Business Type": "Value Added Reseller",
       City: "Cluj",
@@ -8458,7 +7635,6 @@ function getData() {
     },
     {
       Category: "Cars",
-      Color: "red",
       Destination: "Timisoara",
       "Business Type": "Value Added Reseller",
       City: "Timisoara",
@@ -8468,7 +7644,6 @@ function getData() {
     },
     {
       Category: "Cars",
-      Color: "blue",
       Destination: "Constanta",
       "Business Type": "Value Added Reseller",
       City: "Constanta",
@@ -8478,7 +7653,6 @@ function getData() {
     },
     {
       Category: "Cars",
-      Color: "white",
       Destination: "Craiova",
       "Business Type": "Value Added Reseller",
       City: "Craiova",
@@ -8488,7 +7662,6 @@ function getData() {
     },
     {
       Category: "Cars",
-      Color: "white",
       Destination: "Brasov",
       "Business Type": "Value Added Reseller",
       City: "Brasov",
@@ -8498,7 +7671,6 @@ function getData() {
     },
     {
       Category: "Cars",
-      Color: "red",
       Destination: "Iasi",
       "Business Type": "Warehouse",
       City: "Iasi",
@@ -8508,7 +7680,6 @@ function getData() {
     },
     {
       Category: "Cars",
-      Color: "blue",
       Destination: "Cluj",
       "Business Type": "Warehouse",
       City: "Cluj",
@@ -8518,7 +7689,6 @@ function getData() {
     },
     {
       Category: "Cars",
-      Color: "white",
       Destination: "Iasi",
       "Business Type": "Warehouse",
       City: "Timisoara",
@@ -8528,7 +7698,6 @@ function getData() {
     },
     {
       Category: "Cars",
-      Color: "red",
       Destination: "Cluj",
       "Business Type": "Warehouse",
       City: "Constanta",
@@ -8538,7 +7707,6 @@ function getData() {
     },
     {
       Category: "Light Commercial(<3.5t)",
-      Color: "blue",
       Destination: "Timisoara",
       "Business Type": "Value Added Reseller",
       City: "Craiova",
@@ -8548,7 +7716,6 @@ function getData() {
     },
     {
       Category: "Light Commercial(<3.5t)",
-      Color: "blue",
       Destination: "Constanta",
       "Business Type": "Value Added Reseller",
       City: "Brasov",
@@ -8558,7 +7725,6 @@ function getData() {
     },
     {
       Category: "Light Commercial(<3.5t)",
-      Color: "green",
       Destination: "Craiova",
       "Business Type": "Warehouse",
       City: "Iasi",
@@ -8568,7 +7734,6 @@ function getData() {
     },
     {
       Category: "Light Commercial(<3.5t)",
-      Color: "white",
       Destination: "Brasov",
       "Business Type": "Warehouse",
       City: "Cluj",
@@ -8578,7 +7743,6 @@ function getData() {
     },
     {
       Category: "Light Commercial(<3.5t)",
-      Color: "green",
       Destination: "Iasi",
       "Business Type": "Warehouse",
       City: "Iasi",
@@ -8588,7 +7752,6 @@ function getData() {
     },
     {
       Category: "Light Commercial(<3.5t)",
-      Color: "white",
       Destination: "Cluj",
       "Business Type": "Warehouse",
       City: "Cluj",
@@ -8598,7 +7761,6 @@ function getData() {
     },
     {
       Category: "Light Commercial(<3.5t)",
-      Color: "white",
       Destination: "Timisoara",
       "Business Type": "Warehouse",
       City: "Timisoara",
@@ -8608,7 +7770,6 @@ function getData() {
     },
     {
       Category: "Light Commercial(<3.5t)",
-      Color: "blue",
       Destination: "Constanta",
       "Business Type": "Warehouse",
       City: "Constanta",
@@ -8618,7 +7779,6 @@ function getData() {
     },
     {
       Category: "Light Commercial(<3.5t)",
-      Color: "white",
       Destination: "Craiova",
       "Business Type": "Warehouse",
       City: "Craiova",
@@ -8628,7 +7788,6 @@ function getData() {
     },
     {
       Category: "Light Commercial(<3.5t)",
-      Color: "blue",
       Destination: "Brasov",
       "Business Type": "Warehouse",
       City: "Brasov",
@@ -8638,7 +7797,6 @@ function getData() {
     },
     {
       Category: "Light Commercial(<3.5t)",
-      Color: "red",
       Destination: "Iasi",
       "Business Type": "Specialty Bike Shop",
       City: "Iasi",
@@ -8648,7 +7806,6 @@ function getData() {
     },
     {
       Category: "Light Commercial(<3.5t)",
-      Color: "green",
       Destination: "Cluj",
       "Business Type": "Specialty Bike Shop",
       City: "Cluj",
@@ -8658,7 +7815,6 @@ function getData() {
     },
     {
       Category: "Light Commercial(<3.5t)",
-      Color: "red",
       Destination: "Timisoara",
       "Business Type": "Specialty Bike Shop",
       City: "Timisoara",
@@ -8668,7 +7824,6 @@ function getData() {
     },
     {
       Category: "Light Commercial(<3.5t)",
-      Color: "blue",
       Destination: "Constanta",
       "Business Type": "Specialty Bike Shop",
       City: "Constanta",
@@ -8678,7 +7833,6 @@ function getData() {
     },
     {
       Category: "Light Commercial(<3.5t)",
-      Color: "blue",
       Destination: "Craiova",
       "Business Type": "Specialty Bike Shop",
       City: "Craiova",
@@ -8688,7 +7842,6 @@ function getData() {
     },
     {
       Category: "Light Commercial(<3.5t)",
-      Color: "red",
       Destination: "Brasov",
       "Business Type": "Specialty Bike Shop",
       City: "Brasov",
@@ -8698,7 +7851,6 @@ function getData() {
     },
     {
       Category: "Light Commercial(<3.5t)",
-      Color: "blue",
       Destination: "Iasi",
       "Business Type": "Value Added Reseller",
       City: "Iasi",
@@ -8708,7 +7860,6 @@ function getData() {
     },
     {
       Category: "Light Commercial(<3.5t)",
-      Color: "red",
       Destination: "Cluj",
       "Business Type": "Value Added Reseller",
       City: "Cluj",
@@ -8718,7 +7869,6 @@ function getData() {
     },
     {
       Category: "Light Commercial(<3.5t)",
-      Color: "blue",
       Destination: "Timisoara",
       "Business Type": "Value Added Reseller",
       City: "Timisoara",
@@ -8728,7 +7878,6 @@ function getData() {
     },
     {
       Category: "Light Commercial(<3.5t)",
-      Color: "red",
       Destination: "Constanta",
       "Business Type": "Value Added Reseller",
       City: "Constanta",
@@ -8738,7 +7887,6 @@ function getData() {
     },
     {
       Category: "Light Commercial(<3.5t)",
-      Color: "blue",
       Destination: "Craiova",
       "Business Type": "Value Added Reseller",
       City: "Craiova",
@@ -8748,7 +7896,6 @@ function getData() {
     },
     {
       Category: "Light Commercial(<3.5t)",
-      Color: "blue",
       Destination: "Brasov",
       "Business Type": "Value Added Reseller",
       City: "Brasov",
@@ -8758,7 +7905,6 @@ function getData() {
     },
     {
       Category: "Light Commercial(<3.5t)",
-      Color: "green",
       Destination: "Iasi",
       "Business Type": "Warehouse",
       City: "Iasi",
@@ -8768,7 +7914,6 @@ function getData() {
     },
     {
       Category: "Light Commercial(<3.5t)",
-      Color: "white",
       Destination: "Cluj",
       "Business Type": "Warehouse",
       City: "Cluj",
@@ -8778,7 +7923,6 @@ function getData() {
     },
     {
       Category: "Light Commercial(<3.5t)",
-      Color: "blue",
       Destination: "Iasi",
       "Business Type": "Value Added Reseller",
       City: "Iasi",
@@ -8788,7 +7932,6 @@ function getData() {
     },
     {
       Category: "Light Commercial(<3.5t)",
-      Color: "red",
       Destination: "Cluj",
       "Business Type": "Value Added Reseller",
       City: "Cluj",
@@ -8798,7 +7941,6 @@ function getData() {
     },
     {
       Category: "Light Commercial(<3.5t)",
-      Color: "blue",
       Destination: "Timisoara",
       "Business Type": "Value Added Reseller",
       City: "Timisoara",
@@ -8808,7 +7950,6 @@ function getData() {
     },
     {
       Category: "Light Commercial(<3.5t)",
-      Color: "red",
       Destination: "Constanta",
       "Business Type": "Value Added Reseller",
       City: "Constanta",
@@ -8818,7 +7959,6 @@ function getData() {
     },
     {
       Category: "Light Commercial(<3.5t)",
-      Color: "blue",
       Destination: "Craiova",
       "Business Type": "Value Added Reseller",
       City: "Craiova",
@@ -8828,7 +7968,6 @@ function getData() {
     },
     {
       Category: "Light Commercial(<3.5t)",
-      Color: "blue",
       Destination: "Brasov",
       "Business Type": "Value Added Reseller",
       City: "Brasov",
@@ -8838,7 +7977,6 @@ function getData() {
     },
     {
       Category: "Light Commercial(<3.5t)",
-      Color: "green",
       Destination: "Iasi",
       "Business Type": "Warehouse",
       City: "Iasi",
@@ -8848,7 +7986,6 @@ function getData() {
     },
     {
       Category: "Light Commercial(<3.5t)",
-      Color: "white",
       Destination: "Cluj",
       "Business Type": "Warehouse",
       City: "Cluj",
@@ -8858,7 +7995,6 @@ function getData() {
     },
     {
       Category: "Light Commercial(<3.5t)",
-      Color: "green",
       Destination: "Iasi",
       "Business Type": "Warehouse",
       City: "Iasi",
@@ -8868,7 +8004,6 @@ function getData() {
     },
     {
       Category: "Light Commercial(<3.5t)",
-      Color: "white",
       Destination: "Cluj",
       "Business Type": "Warehouse",
       City: "Cluj",
@@ -8878,7 +8013,6 @@ function getData() {
     },
     {
       Category: "Light Commercial(<3.5t)",
-      Color: "white",
       Destination: "Timisoara",
       "Business Type": "Warehouse",
       City: "Timisoara",
@@ -8888,7 +8022,6 @@ function getData() {
     },
     {
       Category: "Light Commercial(<3.5t)",
-      Color: "blue",
       Destination: "Constanta",
       "Business Type": "Warehouse",
       City: "Constanta",
@@ -8898,7 +8031,6 @@ function getData() {
     },
     {
       Category: "Light Commercial(<3.5t)",
-      Color: "white",
       Destination: "Craiova",
       "Business Type": "Warehouse",
       City: "Craiova",
@@ -8908,7 +8040,6 @@ function getData() {
     },
     {
       Category: "Light Commercial(<3.5t)",
-      Color: "blue",
       Destination: "Brasov",
       "Business Type": "Warehouse",
       City: "Brasov",
@@ -8918,7 +8049,6 @@ function getData() {
     },
     {
       Category: "Cars",
-      Color: "green",
       Destination: "Iasi",
       "Business Type": "Specialty Bike Shop",
       City: "Iasi",
@@ -8928,7 +8058,6 @@ function getData() {
     },
     {
       Category: "Cars",
-      Color: "white",
       Destination: "Cluj",
       "Business Type": "Specialty Bike Shop",
       City: "Cluj",
@@ -8938,7 +8067,6 @@ function getData() {
     },
     {
       Category: "Cars",
-      Color: "green",
       Destination: "Timisoara",
       "Business Type": "Specialty Bike Shop",
       City: "Timisoara",
@@ -8948,7 +8076,6 @@ function getData() {
     },
     {
       Category: "Cars",
-      Color: "red",
       Destination: "Constanta",
       "Business Type": "Specialty Bike Shop",
       City: "Constanta",
@@ -8958,7 +8085,6 @@ function getData() {
     },
     {
       Category: "Cars",
-      Color: "blue",
       Destination: "Craiova",
       "Business Type": "Specialty Bike Shop",
       City: "Craiova",
@@ -8968,7 +8094,6 @@ function getData() {
     },
     {
       Category: "Cars",
-      Color: "white",
       Destination: "Brasov",
       "Business Type": "Specialty Bike Shop",
       City: "Brasov",
@@ -8978,7 +8103,6 @@ function getData() {
     },
     {
       Category: "Cars",
-      Color: "red",
       Destination: "Iasi",
       "Business Type": "Value Added Reseller",
       City: "Iasi",
@@ -8988,7 +8112,6 @@ function getData() {
     },
     {
       Category: "Cars",
-      Color: "green",
       Destination: "Cluj",
       "Business Type": "Value Added Reseller",
       City: "Cluj",
@@ -8998,7 +8121,6 @@ function getData() {
     },
     {
       Category: "Cars",
-      Color: "red",
       Destination: "Timisoara",
       "Business Type": "Value Added Reseller",
       City: "Timisoara",
@@ -9008,7 +8130,6 @@ function getData() {
     },
     {
       Category: "Cars",
-      Color: "blue",
       Destination: "Constanta",
       "Business Type": "Value Added Reseller",
       City: "Constanta",
@@ -9018,7 +8139,6 @@ function getData() {
     },
     {
       Category: "Cars",
-      Color: "white",
       Destination: "Craiova",
       "Business Type": "Value Added Reseller",
       City: "Craiova",
@@ -9028,7 +8148,6 @@ function getData() {
     },
     {
       Category: "Cars",
-      Color: "white",
       Destination: "Brasov",
       "Business Type": "Value Added Reseller",
       City: "Brasov",
@@ -9038,7 +8157,6 @@ function getData() {
     },
     {
       Category: "Cars",
-      Color: "red",
       Destination: "Iasi",
       "Business Type": "Warehouse",
       City: "Iasi",
@@ -9048,7 +8166,6 @@ function getData() {
     },
     {
       Category: "Cars",
-      Color: "blue",
       Destination: "Cluj",
       "Business Type": "Warehouse",
       City: "Cluj",
@@ -9058,7 +8175,6 @@ function getData() {
     },
     {
       Category: "Cars",
-      Color: "white",
       Destination: "Iasi",
       "Business Type": "Warehouse",
       City: "Timisoara",
@@ -9068,7 +8184,6 @@ function getData() {
     },
     {
       Category: "Cars",
-      Color: "red",
       Destination: "Cluj",
       "Business Type": "Warehouse",
       City: "Constanta",
@@ -9078,7 +8193,6 @@ function getData() {
     },
     {
       Category: "Passenger Cars",
-      Color: "red",
       Destination: "Iasi",
       "Business Type": "Specialty Bike Shop",
       City: "Iasi",
@@ -9088,7 +8202,6 @@ function getData() {
     },
     {
       Category: "Passenger Cars",
-      Color: "yellow",
       Destination: "Cluj",
       "Business Type": "Specialty Bike Shop",
       City: "Cluj",
@@ -9098,7 +8211,6 @@ function getData() {
     },
     {
       Category: "Passenger Cars",
-      Color: "white",
       Destination: "Timisoara",
       "Business Type": "Specialty Bike Shop",
       City: "Timisoara",
@@ -9108,7 +8220,6 @@ function getData() {
     },
     {
       Category: "Passenger Cars",
-      Color: "yellow",
       Destination: "Constanta",
       "Business Type": "Specialty Bike Shop",
       City: "Constanta",
@@ -9118,7 +8229,6 @@ function getData() {
     },
     {
       Category: "Passenger Cars",
-      Color: "red",
       Destination: "Craiova",
       "Business Type": "Specialty Bike Shop",
       City: "Craiova",
@@ -9128,7 +8238,6 @@ function getData() {
     },
     {
       Category: "Passenger Cars",
-      Color: "yellow",
       Destination: "Brasov",
       "Business Type": "Specialty Bike Shop",
       City: "Brasov",
@@ -9138,7 +8247,6 @@ function getData() {
     },
     {
       Category: "Passenger Cars",
-      Color: "green",
       Destination: "Iasi",
       "Business Type": "Value Added Reseller",
       City: "Iasi",
@@ -9148,7 +8256,6 @@ function getData() {
     },
     {
       Category: "Passenger Cars",
-      Color: "yellow",
       Destination: "Cluj",
       "Business Type": "Value Added Reseller",
       City: "Cluj",
@@ -9158,7 +8265,6 @@ function getData() {
     },
     {
       Category: "Passenger Cars",
-      Color: "yellow",
       Destination: "Timisoara",
       "Business Type": "Value Added Reseller",
       City: "Timisoara",
@@ -9168,7 +8274,6 @@ function getData() {
     },
     {
       Category: "Passenger Cars",
-      Color: "red",
       Destination: "Constanta",
       "Business Type": "Value Added Reseller",
       City: "Constanta",
@@ -9178,7 +8283,6 @@ function getData() {
     },
     {
       Category: "Passenger Cars",
-      Color: "yellow",
       Destination: "Craiova",
       "Business Type": "Value Added Reseller",
       City: "Craiova",
@@ -9188,7 +8292,6 @@ function getData() {
     },
     {
       Category: "Passenger Cars",
-      Color: "red",
       Destination: "Brasov",
       "Business Type": "Value Added Reseller",
       City: "Brasov",
@@ -9198,7 +8301,6 @@ function getData() {
     },
     {
       Category: "Passenger Cars",
-      Color: "yellow",
       Destination: "Iasi",
       "Business Type": "Warehouse",
       City: "Iasi",
@@ -9208,7 +8310,6 @@ function getData() {
     },
     {
       Category: "Passenger Cars",
-      Color: "red",
       Destination: "Cluj",
       "Business Type": "Warehouse",
       City: "Cluj",
@@ -9218,7 +8319,6 @@ function getData() {
     },
     {
       Category: "Passenger Cars",
-      Color: "green",
       Destination: "Timisoara",
       "Business Type": "Warehouse",
       City: "Timisoara",
@@ -9228,7 +8328,6 @@ function getData() {
     },
     {
       Category: "Passenger Cars",
-      Color: "yellow",
       Destination: "Constanta",
       "Business Type": "Warehouse",
       City: "Constanta",
@@ -9238,7 +8337,6 @@ function getData() {
     },
     {
       Category: "Passenger Cars",
-      Color: "red",
       Destination: "Craiova",
       "Business Type": "Warehouse",
       City: "Craiova",
@@ -9248,7 +8346,6 @@ function getData() {
     },
     {
       Category: "Passenger Cars",
-      Color: "white",
       Destination: "Brasov",
       "Business Type": "Warehouse",
       City: "Brasov",
@@ -9258,7 +8355,6 @@ function getData() {
     },
     {
       Category: "Bikes",
-      Color: "white",
       Destination: "Iasi",
       "Business Type": "Specialty Bike Shop",
       City: "Iasi",
@@ -9268,7 +8364,6 @@ function getData() {
     },
     {
       Category: "Bikes",
-      Color: "red",
       Destination: "Cluj",
       "Business Type": "Specialty Bike Shop",
       City: "Cluj",
@@ -9278,7 +8373,6 @@ function getData() {
     },
     {
       Category: "Bikes",
-      Color: "red",
       Destination: "Timisoara",
       "Business Type": "Specialty Bike Shop",
       City: "Timisoara",
@@ -9288,7 +8382,6 @@ function getData() {
     },
     {
       Category: "Bikes",
-      Color: "green",
       Destination: "Constanta",
       "Business Type": "Specialty Bike Shop",
       City: "Constanta",
@@ -9298,7 +8391,6 @@ function getData() {
     },
     {
       Category: "Bikes",
-      Color: "green",
       Destination: "Craiova",
       "Business Type": "Specialty Bike Shop",
       City: "Craiova",
@@ -9308,7 +8400,6 @@ function getData() {
     },
     {
       Category: "Bikes",
-      Color: "green",
       Destination: "Brasov",
       "Business Type": "Specialty Bike Shop",
       City: "Brasov",
@@ -9318,7 +8409,6 @@ function getData() {
     },
     {
       Category: "Bikes",
-      Color: "green",
       Destination: "Iasi",
       "Business Type": "Value Added Reseller",
       City: "Iasi",
@@ -9328,7 +8418,6 @@ function getData() {
     },
     {
       Category: "Bikes",
-      Color: "red",
       Destination: "Cluj",
       "Business Type": "Value Added Reseller",
       City: "Cluj",
@@ -9338,7 +8427,6 @@ function getData() {
     },
     {
       Category: "Bikes",
-      Color: "yellow",
       Destination: "Timisoara",
       "Business Type": "Value Added Reseller",
       City: "Timisoara",
@@ -9348,7 +8436,6 @@ function getData() {
     },
     {
       Category: "Bikes",
-      Color: "red",
       Destination: "Constanta",
       "Business Type": "Value Added Reseller",
       City: "Constanta",
@@ -9358,7 +8445,6 @@ function getData() {
     },
     {
       Category: "Bikes",
-      Color: "blue",
       Destination: "Craiova",
       "Business Type": "Value Added Reseller",
       City: "Craiova",
@@ -9368,7 +8454,6 @@ function getData() {
     },
     {
       Category: "Bikes",
-      Color: "red",
       Destination: "Iasi",
       "Business Type": "Value Added Reseller",
       City: "Brasov",
@@ -9378,7 +8463,6 @@ function getData() {
     },
     {
       Category: "Bikes",
-      Color: "blue",
       Destination: "Cluj",
       "Business Type": "Warehouse",
       City: "Iasi",
@@ -9388,7 +8472,6 @@ function getData() {
     },
     {
       Category: "Bikes",
-      Color: "blue",
       Destination: "Timisoara",
       "Business Type": "Warehouse",
       City: "Cluj",
@@ -9398,7 +8481,6 @@ function getData() {
     },
     {
       Category: "Bikes",
-      Color: "purple",
       Destination: "Constanta",
       "Business Type": "Warehouse",
       City: "Timisoara",
@@ -9408,7 +8490,6 @@ function getData() {
     },
     {
       Category: "Bikes",
-      Color: "red",
       Destination: "Craiova",
       "Business Type": "Warehouse",
       City: "Constanta",
@@ -9418,7 +8499,6 @@ function getData() {
     },
     {
       Category: "Bikes",
-      Color: "blue",
       Destination: "Brasov",
       "Business Type": "Warehouse",
       City: "Craiova",
@@ -9428,7 +8508,6 @@ function getData() {
     },
     {
       Category: "Bikes",
-      Color: "blue",
       Destination: "Iasi",
       "Business Type": "Warehouse",
       City: "Brasov",
@@ -9438,7 +8517,6 @@ function getData() {
     },
     {
       Category: "Clothing",
-      Color: "yellow",
       Destination: "Cluj",
       "Business Type": "Specialty Bike Shop",
       City: "Iasi",
@@ -9448,7 +8526,6 @@ function getData() {
     },
     {
       Category: "Clothing",
-      Color: "blue",
       Destination: "Timisoara",
       "Business Type": "Specialty Bike Shop",
       City: "Cluj",
@@ -9458,7 +8535,6 @@ function getData() {
     },
     {
       Category: "Clothing",
-      Color: "blue",
       Destination: "Constanta",
       "Business Type": "Specialty Bike Shop",
       City: "Timisoara",
@@ -9468,7 +8544,6 @@ function getData() {
     },
     {
       Category: "Clothing",
-      Color: "blue",
       Destination: "Craiova",
       "Business Type": "Specialty Bike Shop",
       City: "Constanta",
@@ -9478,7 +8553,6 @@ function getData() {
     },
     {
       Category: "Clothing",
-      Color: "white",
       Destination: "Brasov",
       "Business Type": "Specialty Bike Shop",
       City: "Craiova",
@@ -9488,7 +8562,6 @@ function getData() {
     },
     {
       Category: "Clothing",
-      Color: "purple",
       Destination: "Iasi",
       "Business Type": "Specialty Bike Shop",
       City: "Brasov",
@@ -9498,7 +8571,6 @@ function getData() {
     },
     {
       Category: "Clothing",
-      Color: "red",
       Destination: "Cluj",
       "Business Type": "Value Added Reseller",
       City: "Iasi",
@@ -9508,7 +8580,6 @@ function getData() {
     },
     {
       Category: "Clothing",
-      Color: "purple",
       Destination: "Timisoara",
       "Business Type": "Value Added Reseller",
       City: "Cluj",
@@ -9518,7 +8589,6 @@ function getData() {
     },
     {
       Category: "Clothing",
-      Color: "green",
       Destination: "Constanta",
       "Business Type": "Value Added Reseller",
       City: "Timisoara",
@@ -9528,7 +8598,6 @@ function getData() {
     },
     {
       Category: "Clothing",
-      Color: "red",
       Destination: "Craiova",
       "Business Type": "Value Added Reseller",
       City: "Constanta",
@@ -9538,7 +8607,6 @@ function getData() {
     },
     {
       Category: "Clothing",
-      Color: "white",
       Destination: "Brasov",
       "Business Type": "Value Added Reseller",
       City: "Craiova",
@@ -9548,7 +8616,6 @@ function getData() {
     },
     {
       Category: "Clothing",
-      Color: "white",
       Destination: "Iasi",
       "Business Type": "Value Added Reseller",
       City: "Brasov",
@@ -9558,7 +8625,6 @@ function getData() {
     },
     {
       Category: "Clothing",
-      Color: "red",
       Destination: "Craiova",
       "Business Type": "Warehouse",
       City: "Iasi",
@@ -9568,7 +8634,6 @@ function getData() {
     },
     {
       Category: "Clothing",
-      Color: "blue",
       Destination: "Brasov",
       "Business Type": "Warehouse",
       City: "Cluj",
@@ -9578,7 +8643,6 @@ function getData() {
     },
     {
       Category: "Clothing",
-      Color: "green",
       Destination: "Iasi",
       "Business Type": "Warehouse",
       City: "Timisoara",
@@ -9588,7 +8652,6 @@ function getData() {
     },
     {
       Category: "Clothing",
-      Color: "blue",
       Destination: "Cluj",
       "Business Type": "Warehouse",
       City: "Constanta",
@@ -9598,7 +8661,6 @@ function getData() {
     },
     {
       Category: "Clothing",
-      Color: "green",
       Destination: "Timisoara",
       "Business Type": "Warehouse",
       City: "Craiova",
@@ -9608,7 +8670,6 @@ function getData() {
     },
     {
       Category: "Clothing",
-      Color: "green",
       Destination: "Constanta",
       "Business Type": "Warehouse",
       City: "Brasov",
@@ -9618,7 +8679,6 @@ function getData() {
     },
     {
       Category: "Light Commercial(<3.5t)",
-      Color: "red",
       Destination: "Craiova",
       "Business Type": "Specialty Bike Shop",
       City: "Iasi",
@@ -9628,7 +8688,6 @@ function getData() {
     },
     {
       Category: "Light Commercial(<3.5t)",
-      Color: "green",
       Destination: "Brasov",
       "Business Type": "Specialty Bike Shop",
       City: "Cluj",
@@ -9638,7 +8697,6 @@ function getData() {
     },
     {
       Category: "Light Commercial(<3.5t)",
-      Color: "red",
       Destination: "Iasi",
       "Business Type": "Specialty Bike Shop",
       City: "Timisoara",
@@ -9648,7 +8706,6 @@ function getData() {
     },
     {
       Category: "Light Commercial(<3.5t)",
-      Color: "blue",
       Destination: "Craiova",
       "Business Type": "Specialty Bike Shop",
       City: "Constanta",
@@ -9658,7 +8715,6 @@ function getData() {
     },
     {
       Category: "Light Commercial(<3.5t)",
-      Color: "blue",
       Destination: "Brasov",
       "Business Type": "Specialty Bike Shop",
       City: "Craiova",
@@ -9668,7 +8724,6 @@ function getData() {
     },
     {
       Category: "Light Commercial(<3.5t)",
-      Color: "red",
       Destination: "Iasi",
       "Business Type": "Specialty Bike Shop",
       City: "Brasov",
@@ -9678,7 +8733,6 @@ function getData() {
     },
     {
       Category: "Light Commercial(<3.5t)",
-      Color: "blue",
       Destination: "Cluj",
       "Business Type": "Value Added Reseller",
       City: "Iasi",
@@ -9688,7 +8742,6 @@ function getData() {
     },
     {
       Category: "Light Commercial(<3.5t)",
-      Color: "red",
       Destination: "Timisoara",
       "Business Type": "Value Added Reseller",
       City: "Cluj",
@@ -9698,7 +8751,6 @@ function getData() {
     },
     {
       Category: "Light Commercial(<3.5t)",
-      Color: "blue",
       Destination: "Constanta",
       "Business Type": "Value Added Reseller",
       City: "Timisoara",
@@ -9708,7 +8760,6 @@ function getData() {
     },
     {
       Category: "Light Commercial(<3.5t)",
-      Color: "red",
       Destination: "Timisoara",
       "Business Type": "Value Added Reseller",
       City: "Constanta",
@@ -9718,7 +8769,6 @@ function getData() {
     },
     {
       Category: "Light Commercial(<3.5t)",
-      Color: "blue",
       Destination: "Constanta",
       "Business Type": "Value Added Reseller",
       City: "Craiova",
@@ -9728,7 +8778,6 @@ function getData() {
     },
     {
       Category: "Light Commercial(<3.5t)",
-      Color: "blue",
       Destination: "Craiova",
       "Business Type": "Value Added Reseller",
       City: "Brasov",
@@ -9738,7 +8787,6 @@ function getData() {
     },
     {
       Category: "Light Commercial(<3.5t)",
-      Color: "green",
       Destination: "Brasov",
       "Business Type": "Warehouse",
       City: "Iasi",
@@ -9748,7 +8796,6 @@ function getData() {
     },
     {
       Category: "Light Commercial(<3.5t)",
-      Color: "white",
       Destination: "Iasi",
       "Business Type": "Warehouse",
       City: "Cluj",
@@ -9758,7 +8805,6 @@ function getData() {
     },
     {
       Category: "Light Commercial(<3.5t)",
-      Color: "blue",
       Destination: "Cluj",
       "Business Type": "Value Added Reseller",
       City: "Iasi",
@@ -9768,7 +8814,6 @@ function getData() {
     },
     {
       Category: "Light Commercial(<3.5t)",
-      Color: "red",
       Destination: "Iasi",
       "Business Type": "Value Added Reseller",
       City: "Cluj",
@@ -9778,7 +8823,6 @@ function getData() {
     },
     {
       Category: "Light Commercial(<3.5t)",
-      Color: "blue",
       Destination: "Cluj",
       "Business Type": "Value Added Reseller",
       City: "Timisoara",
@@ -9788,7 +8832,6 @@ function getData() {
     },
     {
       Category: "Light Commercial(<3.5t)",
-      Color: "red",
       Destination: "Timisoara",
       "Business Type": "Value Added Reseller",
       City: "Constanta",
@@ -9798,7 +8841,6 @@ function getData() {
     },
     {
       Category: "Light Commercial(<3.5t)",
-      Color: "blue",
       Destination: "Constanta",
       "Business Type": "Value Added Reseller",
       City: "Craiova",
@@ -9808,7 +8850,6 @@ function getData() {
     },
     {
       Category: "Light Commercial(<3.5t)",
-      Color: "blue",
       Destination: "Craiova",
       "Business Type": "Value Added Reseller",
       City: "Brasov",
@@ -9818,7 +8859,6 @@ function getData() {
     },
     {
       Category: "Light Commercial(<3.5t)",
-      Color: "green",
       Destination: "Brasov",
       "Business Type": "Warehouse",
       City: "Iasi",
@@ -9828,7 +8868,6 @@ function getData() {
     },
     {
       Category: "Light Commercial(<3.5t)",
-      Color: "white",
       Destination: "Constanta",
       "Business Type": "Warehouse",
       City: "Cluj",
@@ -9838,7 +8877,6 @@ function getData() {
     },
     {
       Category: "Light Commercial(<3.5t)",
-      Color: "green",
       Destination: "Craiova",
       "Business Type": "Warehouse",
       City: "Iasi",
@@ -9848,7 +8886,6 @@ function getData() {
     },
     {
       Category: "Light Commercial(<3.5t)",
-      Color: "white",
       Destination: "Brasov",
       "Business Type": "Warehouse",
       City: "Cluj",
@@ -9858,7 +8895,6 @@ function getData() {
     },
     {
       Category: "Light Commercial(<3.5t)",
-      Color: "white",
       Destination: "Iasi",
       "Business Type": "Warehouse",
       City: "Timisoara",
@@ -9868,7 +8904,6 @@ function getData() {
     },
     {
       Category: "Light Commercial(<3.5t)",
-      Color: "blue",
       Destination: "Cluj",
       "Business Type": "Warehouse",
       City: "Constanta",
@@ -9878,7 +8913,6 @@ function getData() {
     },
     {
       Category: "Light Commercial(<3.5t)",
-      Color: "white",
       Destination: "Iasi",
       "Business Type": "Warehouse",
       City: "Craiova",
@@ -9888,7 +8922,6 @@ function getData() {
     },
     {
       Category: "Light Commercial(<3.5t)",
-      Color: "blue",
       Destination: "Cluj",
       "Business Type": "Warehouse",
       City: "Brasov",
@@ -9898,7 +8931,6 @@ function getData() {
     },
     {
       Category: "Light Commercial(<3.5t)",
-      Color: "red",
       Destination: "Timisoara",
       "Business Type": "Specialty Bike Shop",
       City: "Iasi",
@@ -9908,7 +8940,6 @@ function getData() {
     },
     {
       Category: "Light Commercial(<3.5t)",
-      Color: "green",
       Destination: "Constanta",
       "Business Type": "Specialty Bike Shop",
       City: "Cluj",
@@ -9918,7 +8949,6 @@ function getData() {
     },
     {
       Category: "Passenger Cars",
-      Color: "red",
       Destination: "Iasi",
       "Business Type": "Specialty Bike Shop",
       City: "Iasi",
@@ -9928,7 +8958,6 @@ function getData() {
     },
     {
       Category: "Passenger Cars",
-      Color: "yellow",
       Destination: "Cluj",
       "Business Type": "Specialty Bike Shop",
       City: "Cluj",
@@ -9938,7 +8967,6 @@ function getData() {
     },
     {
       Category: "Passenger Cars",
-      Color: "white",
       Destination: "Timisoara",
       "Business Type": "Specialty Bike Shop",
       City: "Timisoara",
@@ -9948,7 +8976,6 @@ function getData() {
     },
     {
       Category: "Passenger Cars",
-      Color: "yellow",
       Destination: "Constanta",
       "Business Type": "Specialty Bike Shop",
       City: "Constanta",
@@ -9958,7 +8985,6 @@ function getData() {
     },
     {
       Category: "Passenger Cars",
-      Color: "red",
       Destination: "Craiova",
       "Business Type": "Specialty Bike Shop",
       City: "Craiova",
@@ -9968,7 +8994,6 @@ function getData() {
     },
     {
       Category: "Passenger Cars",
-      Color: "yellow",
       Destination: "Brasov",
       "Business Type": "Specialty Bike Shop",
       City: "Brasov",
@@ -9978,7 +9003,6 @@ function getData() {
     },
     {
       Category: "Passenger Cars",
-      Color: "green",
       Destination: "Iasi",
       "Business Type": "Value Added Reseller",
       City: "Iasi",
@@ -9988,7 +9012,6 @@ function getData() {
     },
     {
       Category: "Passenger Cars",
-      Color: "yellow",
       Destination: "Cluj",
       "Business Type": "Value Added Reseller",
       City: "Cluj",
@@ -9998,7 +9021,6 @@ function getData() {
     },
     {
       Category: "Passenger Cars",
-      Color: "yellow",
       Destination: "Timisoara",
       "Business Type": "Value Added Reseller",
       City: "Timisoara",
@@ -10008,7 +9030,6 @@ function getData() {
     },
     {
       Category: "Passenger Cars",
-      Color: "red",
       Destination: "Constanta",
       "Business Type": "Value Added Reseller",
       City: "Constanta",
@@ -10018,7 +9039,6 @@ function getData() {
     },
     {
       Category: "Passenger Cars",
-      Color: "yellow",
       Destination: "Craiova",
       "Business Type": "Value Added Reseller",
       City: "Craiova",
@@ -10028,7 +9048,6 @@ function getData() {
     },
     {
       Category: "Passenger Cars",
-      Color: "red",
       Destination: "Brasov",
       "Business Type": "Value Added Reseller",
       City: "Brasov",
@@ -10038,7 +9057,6 @@ function getData() {
     },
     {
       Category: "Passenger Cars",
-      Color: "yellow",
       Destination: "Iasi",
       "Business Type": "Warehouse",
       City: "Iasi",
@@ -10048,7 +9066,6 @@ function getData() {
     },
     {
       Category: "Passenger Cars",
-      Color: "red",
       Destination: "Cluj",
       "Business Type": "Warehouse",
       City: "Cluj",
@@ -10058,7 +9075,6 @@ function getData() {
     },
     {
       Category: "Passenger Cars",
-      Color: "green",
       Destination: "Timisoara",
       "Business Type": "Warehouse",
       City: "Timisoara",
@@ -10068,7 +9084,6 @@ function getData() {
     },
     {
       Category: "Passenger Cars",
-      Color: "yellow",
       Destination: "Constanta",
       "Business Type": "Warehouse",
       City: "Constanta",
@@ -10078,7 +9093,6 @@ function getData() {
     },
     {
       Category: "Passenger Cars",
-      Color: "red",
       Destination: "Craiova",
       "Business Type": "Warehouse",
       City: "Craiova",
@@ -10088,7 +9102,6 @@ function getData() {
     },
     {
       Category: "Passenger Cars",
-      Color: "white",
       Destination: "Brasov",
       "Business Type": "Warehouse",
       City: "Brasov",
@@ -10098,7 +9111,6 @@ function getData() {
     },
     {
       Category: "Bikes",
-      Color: "white",
       Destination: "Iasi",
       "Business Type": "Specialty Bike Shop",
       City: "Iasi",
@@ -10108,7 +9120,6 @@ function getData() {
     },
     {
       Category: "Bikes",
-      Color: "red",
       Destination: "Cluj",
       "Business Type": "Specialty Bike Shop",
       City: "Cluj",
@@ -10118,7 +9129,6 @@ function getData() {
     },
     {
       Category: "Bikes",
-      Color: "red",
       Destination: "Timisoara",
       "Business Type": "Specialty Bike Shop",
       City: "Timisoara",
@@ -10128,7 +9138,6 @@ function getData() {
     },
     {
       Category: "Bikes",
-      Color: "green",
       Destination: "Constanta",
       "Business Type": "Specialty Bike Shop",
       City: "Constanta",
@@ -10138,7 +9147,6 @@ function getData() {
     },
     {
       Category: "Bikes",
-      Color: "green",
       Destination: "Craiova",
       "Business Type": "Specialty Bike Shop",
       City: "Craiova",
@@ -10148,7 +9156,6 @@ function getData() {
     },
     {
       Category: "Bikes",
-      Color: "green",
       Destination: "Brasov",
       "Business Type": "Specialty Bike Shop",
       City: "Brasov",
@@ -10158,7 +9165,6 @@ function getData() {
     },
     {
       Category: "Bikes",
-      Color: "green",
       Destination: "Iasi",
       "Business Type": "Value Added Reseller",
       City: "Iasi",
@@ -10168,7 +9174,6 @@ function getData() {
     },
     {
       Category: "Bikes",
-      Color: "red",
       Destination: "Cluj",
       "Business Type": "Value Added Reseller",
       City: "Cluj",
@@ -10178,7 +9183,6 @@ function getData() {
     },
     {
       Category: "Bikes",
-      Color: "yellow",
       Destination: "Timisoara",
       "Business Type": "Value Added Reseller",
       City: "Timisoara",
@@ -10188,7 +9192,6 @@ function getData() {
     },
     {
       Category: "Bikes",
-      Color: "red",
       Destination: "Constanta",
       "Business Type": "Value Added Reseller",
       City: "Constanta",
@@ -10198,7 +9201,6 @@ function getData() {
     },
     {
       Category: "Bikes",
-      Color: "blue",
       Destination: "Craiova",
       "Business Type": "Value Added Reseller",
       City: "Craiova",
@@ -10208,7 +9210,6 @@ function getData() {
     },
     {
       Category: "Bikes",
-      Color: "red",
       Destination: "Iasi",
       "Business Type": "Value Added Reseller",
       City: "Brasov",
@@ -10218,7 +9219,6 @@ function getData() {
     },
     {
       Category: "Bikes",
-      Color: "blue",
       Destination: "Cluj",
       "Business Type": "Warehouse",
       City: "Iasi",
@@ -10228,7 +9228,6 @@ function getData() {
     },
     {
       Category: "Bikes",
-      Color: "blue",
       Destination: "Timisoara",
       "Business Type": "Warehouse",
       City: "Cluj",
@@ -10238,7 +9237,6 @@ function getData() {
     },
     {
       Category: "Bikes",
-      Color: "purple",
       Destination: "Constanta",
       "Business Type": "Warehouse",
       City: "Timisoara",
@@ -10248,7 +9246,6 @@ function getData() {
     },
     {
       Category: "Bikes",
-      Color: "red",
       Destination: "Craiova",
       "Business Type": "Warehouse",
       City: "Constanta",

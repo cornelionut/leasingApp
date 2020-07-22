@@ -12,13 +12,28 @@ const useStyle = makeStyles({
 
 function Header() {
   const classes = useStyle();
+
   return (
     <header>
       <Grid container>
         <Grid item xs={11}></Grid>
         <Grid item xs={1}>
           <Fab size="small" color="primary" className={classes.icon}>
+            {/* <Link
+              to={{
+                pathname: isAdmin
+                  ? "/admin/editOffer/assets"
+                  : "/dealer/editOffer/assets",
+                // search:
+                //   "leasingDocumentId=" +
+                //   offer.leasingDocumentId.toString(),
+                // state: {
+                //   offerToEdit: offer,
+                // },
+              }}
+            > */}
             <AddIcon />
+            {/* </Link> */}
           </Fab>
         </Grid>
       </Grid>

@@ -29,8 +29,7 @@ const styles = (theme) => ({
     minWidth: 200,
   },
   cardContent: {
-    textAlign: "center",
-    marginLeft: "40px",
+    marginLeft: "30px",
   },
   expand: {
     transform: "rotate(0deg)",
@@ -52,6 +51,9 @@ const styles = (theme) => ({
   },
   pos: {
     marginBottom: 12,
+  },
+  marginBottom: {
+    marginBottom: "30px",
   },
   img: {
     margin: "auto",
@@ -155,16 +157,6 @@ const PassengerCar = (props) => {
     // eslint-disable-next-line react-hooks/exhaustive-deps
   }, []);
 
-  // useEffect(() => {
-  //   setLocalState({
-  //     ...localState,
-  //     imageUrl:
-  //       leasingDocument[0].document.documentDetail.item.assetHierarchy.imageUrl,
-  //   });
-
-  //   // eslint-disable-next-line react-hooks/exhaustive-deps
-  // }, [localState.imageUrl]);
-
   const handleChangeAssetTypes = (event) => {
     const name = event.target.name;
     const value = event.target.value;
@@ -210,11 +202,12 @@ const PassengerCar = (props) => {
 
   const handleChangeCarVersion = (event) => {
     const name = event.target.name;
+    const selectedImageUrl = carVersions[0].imageUrl;
 
     setLocalState({
       ...localState,
       [name]: event.target.value,
-      imageUrl: "bmw-m135i.png",
+      imageUrl: selectedImageUrl,
     });
   };
 
@@ -232,7 +225,7 @@ const PassengerCar = (props) => {
         }
         subheader={
           <Typography className={classes.title} variant="body2">
-            Autoturism
+            AUTOTURISM
           </Typography>
         }
       />
@@ -275,7 +268,11 @@ const PassengerCar = (props) => {
                 className={classes.img}
                 alt="isn't available"
                 src={
-                  leasingDocument.length > 0
+                  localState.imageUrl !== ""
+                    ? process.env.PUBLIC_URL +
+                      "/images/cars/" +
+                      localState.imageUrl
+                    : leasingDocument.length > 0
                     ? process.env.PUBLIC_URL +
                       "/images/cars/" +
                       leasingDocument[0].document.documentDetail.item
@@ -299,8 +296,13 @@ const PassengerCar = (props) => {
 
       <Collapse in={expanded} timeout="auto" unmountOnExit>
         <CardContent className={classes.cardContent}>
-          <Grid container spacing={2} alignItems="center">
-            <Grid container item xs={12} spacing={3}>
+          <Grid container direction="column">
+            <Grid
+              container
+              item
+              direction="row"
+              className={classes.marginBottom}
+            >
               <Grid item xs={3}>
                 <InputLabel shrink htmlFor="assetType-native-label-placeholder">
                   Categorie autoturisme*
@@ -324,7 +326,6 @@ const PassengerCar = (props) => {
                     ))}
                 </NativeSelect>
               </Grid>
-
               <Grid item xs={3}>
                 <InputLabel shrink htmlFor="carMake-native-label-placeholder">
                   Marca*
@@ -348,7 +349,6 @@ const PassengerCar = (props) => {
                     ))}
                 </Select>
               </Grid>
-
               <Grid item xs={3}>
                 <InputLabel shrink htmlFor="carModel-native-label-placeholder">
                   Model*
@@ -372,7 +372,6 @@ const PassengerCar = (props) => {
                     ))}
                 </Select>
               </Grid>
-
               <Grid item xs={3}>
                 <InputLabel
                   shrink
@@ -395,19 +394,23 @@ const PassengerCar = (props) => {
                       </option>
                     ))}
                 </Select>
-              </Grid>
+              </Grid>{" "}
             </Grid>
 
-            <Grid container item xs={12} spacing={3}>
-              <Grid item xs={9}></Grid>
-
-              <Grid item xs={3}>
+            <Grid
+              container
+              alignItems="center"
+              direction="row"
+              className={classes.marginBottom}
+              style={{ margintTop: "50px" }}
+            >
+              <Grid item>
                 <Button
                   variant="contained"
                   color="primary"
                   className={classes.blue900}
                 >
-                  Salvare
+                  Salveaza
                 </Button>
               </Grid>
             </Grid>

@@ -5,17 +5,15 @@
 var bugs = [
   "Corectare scadentar oferta 11202",
   "Modificare activ din autoturism in macara oferta 22301",
-  "Flooded: One year later, assessing what was lost and what was found when a ravaging rain swept through metro Detroit",
-  "Create 4 Invisible User Experiences you Never Knew About",
+  "Corectare dosar",
+  "Modificare tip activ oferta 124990",
 ];
-var website = [
-  "Flooded: One year later, assessing what was lost and what was found when a ravaging rain swept through metro Detroit",
-  "Corectare scadentar oferta 11202",
-];
+var website = ["Corectare scadentar oferta 11202"];
 var server = [
-  "Lines From Great Russian Literature? Or E-mails From My Boss?",
-  "Flooded: One year later, assessing what was lost and what was found when a ravaging rain swept through metro Detroit",
-  'Sign contract for "What are conference organizers afraid of?"',
+  "Corectare scadentar oferta 11202",
+  "Modificare activ din autoturism in macara oferta 22301",
+  "Modificare tip activ oferta 124990",
+  "Corectare dosar",
 ];
 
 module.exports = {

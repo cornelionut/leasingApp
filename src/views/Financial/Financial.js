@@ -2,6 +2,7 @@ import React from "react";
 import FinancialStructure from "../Financial/FinancialStructure.js";
 import { Grid } from "@material-ui/core";
 import AdditionalData from "./AdditionalData.js";
+import Scadentar from "./Scadentar.js";
 
 const Financial = (props) => {
   return (
@@ -12,6 +13,10 @@ const Financial = (props) => {
 
       <Grid item xs={12}>
         <AdditionalData></AdditionalData>
+      </Grid>
+
+      <Grid item xs={12}>
+        <Scadentar></Scadentar>
       </Grid>
     </Grid>
   );
